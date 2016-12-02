@@ -73,9 +73,9 @@ def mapToEnglish(m):
 	# otherwise, it's a map with a constant
 	[m, num] = m.split()
 	if m == "MULT":
-		return " ".join(num, "times")
+		return " ".join([num, "times"])
 	elif m == "ADD":
-		return " ".join(num, "plus")
+		return " ".join([num, "plus"])
 	else:
 		raise NotImplementedError
 
@@ -124,7 +124,7 @@ def gen_rep():
 		rep[FILTER] = choice(filters) + " " + str(gen_num())
 
 	if hasMap:
-		hasConstant = hasMap < MAP_PROBABILITY / 2.0
+		hasConstant = random() < MAP_PROBABILITY / 2.0
 		if hasConstant:
 			rep[MAP] = choice(maps_with_consts) + " " + str(gen_num())
 		else:

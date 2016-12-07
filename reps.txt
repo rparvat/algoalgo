@@ -1,3000 +1,3000 @@
-SQUARE, PROD
-tell me the product of the squares of the numbers
+DIVIS_BY 2, SQUARE, PROD
+the product of the squares of the even elements
 
-LESS_THAN 5, MULT 3, AVG
-take the mean value of 3 times the numbers less than 5
-
-DIVIS_BY 2, INVERSE, MIN
-compute the minimum of the inverses of the even values
-
-INVERSE
-evaluate the inverses of the things
-
-LESS_THAN 5, SQUARE, MIN
-take the min value of the squares of the things less than 5
-
-LESS_THAN 4
-find the values less than 4
-
-LESS_THAN 3, MULT 3, AVG
-find the average of 3 times the numbers less than 3
-
-INVERSE, SUM
-evaluate the sum of the reciprocals of the values
-
-DIVIS_BY 2
-evaluate the even values
-
-DIVIS_BY 5, ADD 3
-compute 3 plus the values divisible by 5
-
-
-tell me the things
-
-DIVIS_BY 3, SQUARE, MIN
-take the min of the squares of the numbers divisible by 3
-
-DIVIS_BY 4, INVERSE, PROD
-the product of the inverses of the elements divisible by 4
-
-DIVIS_BY 5, AVG
-the average of the things divisible by 5
-
-LESS_THAN 3, ADD 3, SUM
-the sum of 3 plus the things less than 3
-
-
-find the values
-
-INVERSE, MIN
-tell me the minimum value of the reciprocals of the elements
-
-LESS_THAN 4, ADD 5
-evaluate 5 plus the things less than 4
+LESS_THAN 3, ADD 5, PROD
+tell me the product of 5 plus the elements less than 3
 
 SQUARE
-find the squares of the things
+evaluate the squares of the values
 
-LESS_THAN 4, INVERSE
-compute the reciprocals of the elements less than 4
+SQUARE, MIN
+tell me the minimum of the squares of the things
 
-INVERSE
-take the reciprocals of the things
-
-MULT 2, MIN
-find the minimum of 2 times the values
-
-LESS_THAN 5, MIN
-the minimum of the things less than 5
-
-LESS_THAN 2, ADD 5
-find 5 plus the elements less than 2
-
-PROD
-multiply the elements
-
-INVERSE, PROD
-find the product of the inverses of the things
-
-DIVIS_BY 3, SQUARE, PROD
-evaluate the product of the squares of the values divisible by 3
-
-PROD
-tell me the product of the elements
-
-DIVIS_BY 2, AVG
-the mean value of the even elements
-
-LESS_THAN 4
-compute the values less than 4
-
-INVERSE
-compute the inverses of the things
-
-LESS_THAN 4, SQUARE
-tell me the squares of the values less than 4
-
-LESS_THAN 5, INVERSE, PROD
-the product of the inverses of the elements less than 5
-
-LESS_THAN 4, INVERSE, AVG
-average the reciprocals of the elements less than 4
-
-LESS_THAN 4, MULT 3
-find 3 times the values less than 4
-
-DIVIS_BY 4, INVERSE
-take the inverses of the numbers divisible by 4
-
-DIVIS_BY 2, SQUARE, PROD
-tell me the product of the squares of the even values
-
-LESS_THAN 5, INVERSE
-evaluate the inverses of the things less than 5
-
-ADD 3, SUM
-compute the sum of 3 plus the values
-
-INVERSE, MIN
-tell me the min value of the inverses of the things
-
-LESS_THAN 5, ADD 2
-take 2 plus the values less than 5
-
-MULT 5, SUM
-evaluate the sum of 5 times the values
-
-
-compute the elements
+DIVIS_BY 4, ADD 5, AVG
+find the mean of 5 plus the numbers divisible by 4
 
 SQUARE, PROD
-evaluate the product of the squares of the elements
+compute the product of the squares of the elements
 
-LESS_THAN 5, INVERSE, SUM
-add all the inverses of the numbers less than 5
+INVERSE, SUM
+find the sum of the reciprocals of the things
+
+
+evaluate the elements
+
+DIVIS_BY 5
+evaluate the elements divisible by 5
+
+LESS_THAN 4, INVERSE, MIN
+tell me the minimum of the inverses of the elements less than 4
+
+LESS_THAN 2, ADD 4
+compute 4 plus the numbers less than 2
+
+LESS_THAN 5, ADD 5, AVG
+average 5 plus the elements less than 5
+
+INVERSE
+find the reciprocals of the things
 
 DIVIS_BY 5, SQUARE
-tell me the squares of the numbers divisible by 5
+compute the squares of the elements divisible by 5
 
-LESS_THAN 3, INVERSE
-compute the reciprocals of the elements less than 3
+DIVIS_BY 4, ADD 5, AVG
+the mean value of 5 plus the numbers divisible by 4
 
-DIVIS_BY 2, MIN
-the minimum value of the even elements
+DIVIS_BY 4, SQUARE, MIN
+tell me the min value of the squares of the numbers divisible by 4
 
-DIVIS_BY 3, MULT 2, MIN
-compute the min of 2 times the elements divisible by 3
+LESS_THAN 3, ADD 4, AVG
+tell me the average of 4 plus the elements less than 3
 
-MULT 4
-compute 4 times the things
+LESS_THAN 4, INVERSE, AVG
+take the mean of the inverses of the values less than 4
 
-LESS_THAN 4, SQUARE
-evaluate the squares of the elements less than 4
-
-DIVIS_BY 3
-tell me the elements divisible by 3
-
-LESS_THAN 3
-tell me the numbers less than 3
-
-DIVIS_BY 3, MULT 2, AVG
-take the mean value of 2 times the things divisible by 3
-
-MULT 2, PROD
-take the product of 2 times the things
-
-LESS_THAN 3, MULT 5, MIN
-find the min of 5 times the values less than 3
-
-LESS_THAN 3, INVERSE
-evaluate the reciprocals of the elements less than 3
-
-INVERSE, PROD
-compute the product of the inverses of the numbers
-
-SQUARE, AVG
-find the average of the squares of the numbers
-
-DIVIS_BY 4, MULT 2, SUM
-take the sum of 2 times the values divisible by 4
-
-DIVIS_BY 5, ADD 3
-compute 3 plus the values divisible by 5
-
-ADD 4
-tell me 4 plus the numbers
-
-DIVIS_BY 5, INVERSE
-compute the inverses of the numbers divisible by 5
-
-DIVIS_BY 3, MULT 2, MIN
-find the min value of 2 times the things divisible by 3
-
-LESS_THAN 2
-take the numbers less than 2
-
-LESS_THAN 3
-tell me the things less than 3
-
-LESS_THAN 5, SQUARE
-tell me the squares of the numbers less than 5
-
-DIVIS_BY 4, SQUARE
-evaluate the squares of the numbers divisible by 4
-
-DIVIS_BY 3, MIN
-compute the minimum value of the numbers divisible by 3
-
-INVERSE, PROD
-tell me the product of the reciprocals of the elements
-
-DIVIS_BY 3, INVERSE, PROD
-the product of the inverses of the numbers divisible by 3
-
-
-find the things
-
-LESS_THAN 5, MIN
-find the min of the things less than 5
-
-DIVIS_BY 5, MULT 2, SUM
-take the sum of 2 times the elements divisible by 5
-
-LESS_THAN 4, INVERSE
-evaluate the reciprocals of the elements less than 4
-
-LESS_THAN 3
-tell me the elements less than 3
-
-DIVIS_BY 5, INVERSE
-evaluate the reciprocals of the values divisible by 5
+DIVIS_BY 2, MULT 5, AVG
+take the average of 5 times the even elements
 
 DIVIS_BY 4
 take the elements divisible by 4
 
-LESS_THAN 5, SQUARE
-evaluate the squares of the things less than 5
+DIVIS_BY 4, INVERSE, SUM
+the sum of the inverses of the numbers divisible by 4
 
-DIVIS_BY 2, SQUARE
-take the squares of the even numbers
+DIVIS_BY 5, MULT 3, AVG
+evaluate the average of 3 times the numbers divisible by 5
 
-DIVIS_BY 5, MULT 2, AVG
-the average of 2 times the values divisible by 5
+DIVIS_BY 5
+find the things divisible by 5
 
-LESS_THAN 3
-take the things less than 3
+SQUARE
+find the squares of the values
+
+DIVIS_BY 2, ADD 4, SUM
+add up 4 plus the even things
 
 LESS_THAN 5
-take the values less than 5
+tell me the numbers less than 5
 
-LESS_THAN 4, INVERSE
-tell me the inverses of the values less than 4
+LESS_THAN 5, INVERSE, PROD
+multiply the inverses of the elements less than 5
 
-LESS_THAN 2, INVERSE, AVG
-average the inverses of the elements less than 2
-
-MULT 4
-find 4 times the numbers
-
-ADD 4, MIN
-evaluate the min of 4 plus the elements
-
-DIVIS_BY 2, INVERSE, AVG
-evaluate the mean value of the reciprocals of the even things
-
-MIN
-tell me the minimum value of the values
-
-DIVIS_BY 4, SQUARE, PROD
-compute the product of the squares of the elements divisible by 4
-
-SQUARE
-compute the squares of the things
-
-LESS_THAN 4, ADD 5, PROD
-find the product of 5 plus the numbers less than 4
-
-LESS_THAN 5, SQUARE
-tell me the squares of the elements less than 5
-
-DIVIS_BY 5, INVERSE, SUM
-tell me the sum of the inverses of the numbers divisible by 5
-
-LESS_THAN 3, INVERSE
-find the inverses of the values less than 3
-
-MULT 3
-find 3 times the elements
-
-DIVIS_BY 2, SQUARE
-evaluate the squares of the even things
-
-DIVIS_BY 4, INVERSE
-take the inverses of the numbers divisible by 4
-
-LESS_THAN 4, ADD 5, AVG
-compute the mean of 5 plus the elements less than 4
-
-DIVIS_BY 4, SQUARE, SUM
-evaluate the sum of the squares of the values divisible by 4
-
-DIVIS_BY 3
-evaluate the values divisible by 3
-
-DIVIS_BY 4, INVERSE, PROD
-find the product of the inverses of the elements divisible by 4
-
-DIVIS_BY 2, SQUARE, PROD
-compute the product of the squares of the even things
-
-LESS_THAN 4
-take the numbers less than 4
-
-LESS_THAN 4, ADD 4, MIN
-evaluate the min of 4 plus the things less than 4
-
-LESS_THAN 3, SQUARE, MIN
-find the min of the squares of the numbers less than 3
-
-DIVIS_BY 4, SQUARE
-evaluate the squares of the numbers divisible by 4
-
-LESS_THAN 4, SQUARE
-tell me the squares of the elements less than 4
-
-DIVIS_BY 3, MULT 5, PROD
-compute the product of 5 times the things divisible by 3
-
-LESS_THAN 5, INVERSE
-compute the inverses of the things less than 5
-
-LESS_THAN 3, SQUARE, AVG
-average the squares of the values less than 3
-
-LESS_THAN 3, ADD 2
-take 2 plus the things less than 3
-
-LESS_THAN 4, ADD 3, MIN
-compute the min value of 3 plus the numbers less than 4
-
-DIVIS_BY 2, AVG
-take the average of the even elements
-
-DIVIS_BY 4, ADD 2
-take 2 plus the numbers divisible by 4
-
-DIVIS_BY 5, SQUARE, SUM
-tell me the sum of the squares of the elements divisible by 5
-
-DIVIS_BY 3, MULT 4
-find 4 times the elements divisible by 3
-
-DIVIS_BY 2, INVERSE
-take the reciprocals of the even things
-
-DIVIS_BY 4, INVERSE, SUM
-sum the reciprocals of the elements divisible by 4
-
-LESS_THAN 3, INVERSE, PROD
-multiply the reciprocals of the elements less than 3
-
-LESS_THAN 4, INVERSE
-find the reciprocals of the things less than 4
-
-DIVIS_BY 3, SQUARE
-find the squares of the things divisible by 3
-
-LESS_THAN 4, SQUARE, AVG
-average the squares of the elements less than 4
-
-DIVIS_BY 4, SQUARE
-evaluate the squares of the values divisible by 4
+LESS_THAN 2, SQUARE, PROD
+evaluate the product of the squares of the elements less than 2
 
 DIVIS_BY 4
-find the things divisible by 4
-
-
-compute the values
-
-DIVIS_BY 2
-find the even numbers
-
-LESS_THAN 2, INVERSE, SUM
-sum the inverses of the values less than 2
-
-LESS_THAN 3
-compute the numbers less than 3
-
-LESS_THAN 4, MULT 2, PROD
-take the product of 2 times the numbers less than 4
-
-INVERSE
-find the inverses of the numbers
-
-DIVIS_BY 2, MIN
-find the min of the even numbers
-
-LESS_THAN 2, ADD 2, SUM
-the sum of 2 plus the things less than 2
-
-DIVIS_BY 5, INVERSE, SUM
-sum the reciprocals of the values divisible by 5
-
-DIVIS_BY 5, ADD 2, PROD
-the product of 2 plus the values divisible by 5
-
-DIVIS_BY 5, ADD 4
-find 4 plus the numbers divisible by 5
-
-ADD 3, PROD
-find the product of 3 plus the elements
-
-DIVIS_BY 3, SQUARE, AVG
-tell me the mean value of the squares of the things divisible by 3
-
-INVERSE, PROD
-the product of the inverses of the things
-
-INVERSE, AVG
-evaluate the mean of the reciprocals of the things
-
-DIVIS_BY 4, ADD 4, MIN
-take the min value of 4 plus the values divisible by 4
-
-LESS_THAN 2, SQUARE, MIN
-find the minimum of the squares of the things less than 2
-
-DIVIS_BY 5, SQUARE
-take the squares of the numbers divisible by 5
-
-DIVIS_BY 3, ADD 2
-tell me 2 plus the numbers divisible by 3
-
-SQUARE
-find the squares of the elements
-
-MULT 5, SUM
-take the sum of 5 times the numbers
-
-DIVIS_BY 2, SQUARE
-take the squares of the even values
-
-DIVIS_BY 2
-tell me the even numbers
+find the values divisible by 4
 
 LESS_THAN 5, INVERSE
-take the inverses of the values less than 5
+compute the reciprocals of the elements less than 5
 
-DIVIS_BY 3, SQUARE
-find the squares of the values divisible by 3
+DIVIS_BY 2, MULT 4
+evaluate 4 times the even things
+
+DIVIS_BY 5, INVERSE, AVG
+average the inverses of the values divisible by 5
+
+LESS_THAN 4, SQUARE
+evaluate the squares of the numbers less than 4
+
+LESS_THAN 2
+evaluate the values less than 2
+
+LESS_THAN 5
+take the numbers less than 5
+
+LESS_THAN 3, MULT 3, AVG
+the mean of 3 times the things less than 3
+
+LESS_THAN 2, MULT 4
+evaluate 4 times the things less than 2
+
+INVERSE, PROD
+tell me the product of the inverses of the things
+
+DIVIS_BY 3, PROD
+the product of the things divisible by 3
+
+DIVIS_BY 4, AVG
+average the numbers divisible by 4
 
 DIVIS_BY 3, SQUARE
 find the squares of the elements divisible by 3
 
+ADD 4
+compute 4 plus the values
+
+LESS_THAN 2, INVERSE
+take the inverses of the values less than 2
+
+DIVIS_BY 5
+find the elements divisible by 5
+
+SUM
+compute the sum of the values
+
+ADD 2, AVG
+the mean value of 2 plus the things
+
+DIVIS_BY 2, SQUARE, PROD
+find the product of the squares of the even numbers
+
+DIVIS_BY 4, INVERSE
+tell me the reciprocals of the things divisible by 4
+
 DIVIS_BY 4, SQUARE
-compute the squares of the values divisible by 4
+take the squares of the things divisible by 4
 
-DIVIS_BY 5, INVERSE, AVG
-evaluate the mean of the reciprocals of the values divisible by 5
+DIVIS_BY 3, MIN
+evaluate the minimum of the things divisible by 3
 
-DIVIS_BY 3, SQUARE, SUM
-evaluate the sum of the squares of the elements divisible by 3
+LESS_THAN 4, SQUARE
+evaluate the squares of the things less than 4
 
-DIVIS_BY 3, INVERSE
-compute the reciprocals of the values divisible by 3
+SQUARE
+evaluate the squares of the numbers
 
-LESS_THAN 3, INVERSE
-compute the reciprocals of the values less than 3
+SQUARE, MIN
+find the min of the squares of the numbers
 
-LESS_THAN 4, PROD
-evaluate the product of the numbers less than 4
+DIVIS_BY 4, MULT 5, SUM
+add up 5 times the numbers divisible by 4
+
+INVERSE, MIN
+the min of the reciprocals of the values
+
+DIVIS_BY 4
+find the values divisible by 4
 
 INVERSE, AVG
-tell me the mean value of the reciprocals of the things
+average the reciprocals of the numbers
+
+LESS_THAN 3, MIN
+take the minimum value of the values less than 3
+
+DIVIS_BY 3, ADD 2
+tell me 2 plus the things divisible by 3
+
+INVERSE, MIN
+tell me the min value of the reciprocals of the values
+
+SQUARE, PROD
+multiply all the squares of the values
+
+DIVIS_BY 3, MULT 5
+find 5 times the values divisible by 3
+
+LESS_THAN 4, PROD
+find the product of the numbers less than 4
+
+LESS_THAN 2, SQUARE, MIN
+tell me the min value of the squares of the elements less than 2
+
+LESS_THAN 5, INVERSE, PROD
+multiply all the inverses of the numbers less than 5
+
+LESS_THAN 4, SQUARE
+find the squares of the things less than 4
+
+DIVIS_BY 4, SQUARE, SUM
+evaluate the sum of the squares of the things divisible by 4
+
+SQUARE
+find the squares of the elements
+
+LESS_THAN 3, ADD 3
+find 3 plus the values less than 3
+
+LESS_THAN 5, MIN
+take the min value of the things less than 5
+
+LESS_THAN 5
+compute the things less than 5
+
+LESS_THAN 4, INVERSE
+compute the reciprocals of the things less than 4
+
+LESS_THAN 2, INVERSE
+evaluate the inverses of the numbers less than 2
+
+LESS_THAN 5, PROD
+tell me the product of the elements less than 5
+
+LESS_THAN 4
+find the elements less than 4
+
+ADD 5, MIN
+tell me the min value of 5 plus the things
+
+DIVIS_BY 3, SQUARE, MIN
+evaluate the min value of the squares of the values divisible by 3
+
+INVERSE, SUM
+take the sum of the reciprocals of the elements
+
+LESS_THAN 5, INVERSE
+evaluate the reciprocals of the elements less than 5
+
+INVERSE
+compute the reciprocals of the numbers
+
+DIVIS_BY 2, INVERSE, SUM
+the sum of the reciprocals of the even numbers
+
+LESS_THAN 3, INVERSE, PROD
+take the product of the reciprocals of the numbers less than 3
+
+LESS_THAN 5, SQUARE, PROD
+multiply all the squares of the elements less than 5
+
+LESS_THAN 2, ADD 2
+tell me 2 plus the elements less than 2
+
+LESS_THAN 3, INVERSE
+find the inverses of the values less than 3
+
+DIVIS_BY 3, MULT 5
+tell me 5 times the numbers divisible by 3
+
+
+take the numbers
+
+INVERSE
+evaluate the reciprocals of the values
+
+LESS_THAN 2
+compute the things less than 2
+
+LESS_THAN 5, SQUARE
+evaluate the squares of the things less than 5
+
+ADD 3
+take 3 plus the elements
+
+SQUARE
+tell me the squares of the numbers
+
+LESS_THAN 3
+tell me the things less than 3
+
+ADD 5
+compute 5 plus the numbers
+
+LESS_THAN 3, ADD 4
+compute 4 plus the elements less than 3
+
+LESS_THAN 2, INVERSE
+take the reciprocals of the elements less than 2
+
+DIVIS_BY 3, MULT 3, AVG
+average 3 times the elements divisible by 3
+
+LESS_THAN 5, SQUARE
+find the squares of the numbers less than 5
+
+DIVIS_BY 5
+find the numbers divisible by 5
+
+DIVIS_BY 5, SQUARE
+evaluate the squares of the elements divisible by 5
+
+LESS_THAN 3, INVERSE, MIN
+tell me the minimum of the reciprocals of the numbers less than 3
+
+LESS_THAN 4, INVERSE, MIN
+tell me the minimum of the inverses of the numbers less than 4
+
+DIVIS_BY 4, INVERSE
+compute the reciprocals of the values divisible by 4
+
+DIVIS_BY 3, INVERSE
+take the inverses of the values divisible by 3
+
+MULT 4
+find 4 times the elements
+
+DIVIS_BY 2, INVERSE
+find the reciprocals of the even numbers
+
+DIVIS_BY 4, INVERSE, SUM
+tell me the sum of the inverses of the values divisible by 4
+
+MULT 3
+tell me 3 times the values
+
+DIVIS_BY 4, INVERSE
+evaluate the inverses of the things divisible by 4
+
+DIVIS_BY 4, ADD 4
+tell me 4 plus the values divisible by 4
+
+DIVIS_BY 2, PROD
+tell me the product of the even things
+
+DIVIS_BY 4, INVERSE, SUM
+sum the reciprocals of the numbers divisible by 4
+
+DIVIS_BY 5, MULT 4, MIN
+tell me the min of 4 times the numbers divisible by 5
+
+LESS_THAN 5, INVERSE, PROD
+take the product of the reciprocals of the things less than 5
+
+DIVIS_BY 5, INVERSE, PROD
+multiply all the reciprocals of the numbers divisible by 5
+
+DIVIS_BY 3, INVERSE, SUM
+add all the reciprocals of the things divisible by 3
+
+LESS_THAN 5
+find the numbers less than 5
+
+AVG
+the average of the things
+
+DIVIS_BY 3, ADD 4
+tell me 4 plus the elements divisible by 3
+
+INVERSE, SUM
+sum the reciprocals of the values
+
+LESS_THAN 2, MULT 3
+find 3 times the things less than 2
+
+DIVIS_BY 4, INVERSE, AVG
+evaluate the average of the inverses of the things divisible by 4
+
+DIVIS_BY 3, INVERSE
+evaluate the inverses of the values divisible by 3
+
+MULT 2
+find 2 times the things
+
+LESS_THAN 3, MULT 4, AVG
+evaluate the average of 4 times the numbers less than 3
+
+LESS_THAN 4, INVERSE, MIN
+find the min of the inverses of the things less than 4
+
+DIVIS_BY 4, MULT 4, PROD
+take the product of 4 times the numbers divisible by 4
+
+LESS_THAN 4, INVERSE, MIN
+find the min of the reciprocals of the elements less than 4
+
+INVERSE, SUM
+compute the sum of the reciprocals of the things
+
+LESS_THAN 4, INVERSE
+tell me the reciprocals of the things less than 4
+
+DIVIS_BY 2, MULT 3
+take 3 times the even values
+
+LESS_THAN 4, INVERSE, PROD
+multiply all the reciprocals of the things less than 4
+
+DIVIS_BY 4, MULT 3
+tell me 3 times the things divisible by 4
+
+DIVIS_BY 5, MULT 4, MIN
+evaluate the minimum of 4 times the values divisible by 5
+
+DIVIS_BY 2, ADD 5
+compute 5 plus the even values
+
+LESS_THAN 4, SQUARE, SUM
+add up the squares of the values less than 4
+
+DIVIS_BY 5, INVERSE, AVG
+compute the mean value of the inverses of the elements divisible by 5
+
+LESS_THAN 5, INVERSE, MIN
+tell me the minimum of the reciprocals of the values less than 5
+
+DIVIS_BY 4, ADD 2, SUM
+evaluate the sum of 2 plus the things divisible by 4
+
+ADD 2
+tell me 2 plus the things
+
+LESS_THAN 5, INVERSE
+compute the inverses of the numbers less than 5
+
+LESS_THAN 4
+take the things less than 4
+
+DIVIS_BY 5, SQUARE
+evaluate the squares of the elements divisible by 5
+
+DIVIS_BY 3, SUM
+tell me the sum of the values divisible by 3
+
+DIVIS_BY 3, SQUARE
+tell me the squares of the numbers divisible by 3
+
+DIVIS_BY 3, ADD 4
+compute 4 plus the numbers divisible by 3
+
+PROD
+compute the product of the numbers
+
+LESS_THAN 4, SQUARE, SUM
+compute the sum of the squares of the values less than 4
+
+LESS_THAN 3, ADD 2, SUM
+evaluate the sum of 2 plus the numbers less than 3
+
+LESS_THAN 4, SQUARE
+evaluate the squares of the things less than 4
+
+LESS_THAN 3
+compute the things less than 3
+
+SUM
+take the sum of the things
+
+INVERSE
+find the reciprocals of the values
+
+DIVIS_BY 2
+take the even numbers
+
+DIVIS_BY 5, AVG
+find the mean of the numbers divisible by 5
+
+LESS_THAN 3, MULT 3
+take 3 times the elements less than 3
+
+DIVIS_BY 3, INVERSE, PROD
+evaluate the product of the inverses of the numbers divisible by 3
+
+SQUARE, SUM
+tell me the sum of the squares of the elements
+
+DIVIS_BY 5, ADD 5, PROD
+evaluate the product of 5 plus the elements divisible by 5
+
+DIVIS_BY 2, ADD 4, AVG
+find the mean of 4 plus the even values
+
+LESS_THAN 5, MULT 4
+tell me 4 times the elements less than 5
+
+ADD 4, AVG
+the mean of 4 plus the things
+
+LESS_THAN 4, MULT 3, AVG
+tell me the average of 3 times the numbers less than 4
+
+DIVIS_BY 4, ADD 2
+tell me 2 plus the things divisible by 4
+
+LESS_THAN 3, SQUARE, PROD
+take the product of the squares of the things less than 3
+
+DIVIS_BY 4, AVG
+average the elements divisible by 4
+
+LESS_THAN 3, INVERSE
+evaluate the reciprocals of the values less than 3
+
+LESS_THAN 4, AVG
+evaluate the mean of the values less than 4
+
+LESS_THAN 2, SQUARE, PROD
+tell me the product of the squares of the things less than 2
+
+DIVIS_BY 2
+evaluate the even numbers
+
+LESS_THAN 5, AVG
+find the mean of the things less than 5
+
+LESS_THAN 5, MULT 4, MIN
+tell me the min of 4 times the elements less than 5
+
+LESS_THAN 2, MULT 2
+compute 2 times the things less than 2
 
 
 compute the values
 
-DIVIS_BY 2, ADD 3
-compute 3 plus the even numbers
+DIVIS_BY 5, SQUARE, AVG
+compute the average of the squares of the elements divisible by 5
+
+DIVIS_BY 3, SUM
+add up the numbers divisible by 3
+
+LESS_THAN 5, SUM
+find the sum of the values less than 5
+
+DIVIS_BY 2
+tell me the even values
+
+LESS_THAN 3, SQUARE, SUM
+tell me the sum of the squares of the elements less than 3
+
+LESS_THAN 4
+tell me the elements less than 4
+
+DIVIS_BY 2
+evaluate the even elements
+
+DIVIS_BY 2, INVERSE
+compute the inverses of the even values
+
+DIVIS_BY 4, SQUARE
+find the squares of the numbers divisible by 4
+
+DIVIS_BY 3, MIN
+tell me the min value of the numbers divisible by 3
+
+LESS_THAN 4, SUM
+sum the elements less than 4
+
+DIVIS_BY 4
+evaluate the values divisible by 4
+
+DIVIS_BY 4, SQUARE, PROD
+multiply all the squares of the values divisible by 4
+
+DIVIS_BY 4
+evaluate the things divisible by 4
+
+LESS_THAN 3, ADD 5, PROD
+tell me the product of 5 plus the things less than 3
+
+LESS_THAN 4, SQUARE, MIN
+take the minimum of the squares of the values less than 4
+
+LESS_THAN 3, ADD 4, MIN
+find the min of 4 plus the elements less than 3
+
+LESS_THAN 3, INVERSE
+evaluate the reciprocals of the values less than 3
+
+DIVIS_BY 5, INVERSE
+take the inverses of the things divisible by 5
+
+LESS_THAN 4, MULT 3
+tell me 3 times the values less than 4
+
+LESS_THAN 3, SQUARE
+take the squares of the numbers less than 3
+
+LESS_THAN 3, INVERSE, AVG
+average the inverses of the elements less than 3
+
+DIVIS_BY 5, MULT 3
+compute 3 times the elements divisible by 5
+
+LESS_THAN 4, ADD 5, MIN
+the minimum of 5 plus the things less than 4
+
+MULT 5
+compute 5 times the things
+
+DIVIS_BY 5, MULT 2
+find 2 times the things divisible by 5
+
+MULT 4, MIN
+tell me the minimum value of 4 times the values
+
+LESS_THAN 4, INVERSE
+evaluate the inverses of the elements less than 4
+
+LESS_THAN 2, INVERSE, MIN
+evaluate the minimum value of the inverses of the numbers less than 2
+
+LESS_THAN 2, SQUARE, PROD
+evaluate the product of the squares of the numbers less than 2
+
+DIVIS_BY 2, MULT 4
+find 4 times the even numbers
+
+DIVIS_BY 5, MULT 4
+evaluate 4 times the values divisible by 5
+
+DIVIS_BY 3, INVERSE
+compute the inverses of the values divisible by 3
+
+LESS_THAN 5, SQUARE, MIN
+find the min of the squares of the elements less than 5
+
+INVERSE, AVG
+evaluate the average of the inverses of the values
+
+LESS_THAN 4, ADD 2, PROD
+the product of 2 plus the values less than 4
+
+DIVIS_BY 4, MIN
+take the min of the elements divisible by 4
+
+DIVIS_BY 3, PROD
+take the product of the numbers divisible by 3
+
+INVERSE
+find the inverses of the numbers
+
+ADD 3
+evaluate 3 plus the numbers
+
+LESS_THAN 4, ADD 5, MIN
+take the min value of 5 plus the numbers less than 4
+
+LESS_THAN 3, MIN
+find the min of the things less than 3
+
+DIVIS_BY 3, PROD
+the product of the values divisible by 3
+
+ADD 2
+compute 2 plus the elements
+
+LESS_THAN 4, ADD 3, AVG
+average 3 plus the things less than 4
+
+DIVIS_BY 3
+take the numbers divisible by 3
+
+DIVIS_BY 4, MIN
+tell me the minimum value of the elements divisible by 4
+
+LESS_THAN 4, MULT 4, SUM
+evaluate the sum of 4 times the values less than 4
+
+LESS_THAN 3, MIN
+compute the min of the values less than 3
+
+DIVIS_BY 5, SQUARE, AVG
+average the squares of the things divisible by 5
+
+LESS_THAN 3, SUM
+find the sum of the values less than 3
+
+LESS_THAN 5
+take the values less than 5
+
+LESS_THAN 4
+find the values less than 4
+
+LESS_THAN 3, ADD 3
+tell me 3 plus the elements less than 3
+
+LESS_THAN 4, INVERSE
+evaluate the inverses of the things less than 4
+
+DIVIS_BY 2, INVERSE, AVG
+the mean of the inverses of the even elements
+
+SQUARE, PROD
+evaluate the product of the squares of the values
+
+ADD 5, MIN
+find the min of 5 plus the values
+
+LESS_THAN 3, ADD 4
+find 4 plus the numbers less than 3
+
+MULT 4, MIN
+find the minimum of 4 times the numbers
+
+DIVIS_BY 4, ADD 3, SUM
+find the sum of 3 plus the elements divisible by 4
+
+DIVIS_BY 4, INVERSE
+evaluate the reciprocals of the values divisible by 4
+
+DIVIS_BY 3, ADD 2, AVG
+average 2 plus the elements divisible by 3
+
+DIVIS_BY 4, SQUARE
+compute the squares of the values divisible by 4
+
+LESS_THAN 5, ADD 3, SUM
+tell me the sum of 3 plus the values less than 5
+
+DIVIS_BY 3, ADD 4, PROD
+the product of 4 plus the things divisible by 3
 
 LESS_THAN 2, SQUARE
 find the squares of the elements less than 2
 
+DIVIS_BY 2, SQUARE, SUM
+the sum of the squares of the even things
+
+LESS_THAN 3
+find the things less than 3
+
+LESS_THAN 4, MULT 3
+compute 3 times the numbers less than 4
+
+LESS_THAN 4, MULT 3
+evaluate 3 times the numbers less than 4
+
+DIVIS_BY 2, INVERSE, MIN
+find the min of the reciprocals of the even values
+
+DIVIS_BY 5, SQUARE, MIN
+take the minimum of the squares of the things divisible by 5
+
+DIVIS_BY 4, ADD 5
+tell me 5 plus the elements divisible by 4
+
+LESS_THAN 2, SQUARE
+find the squares of the values less than 2
+
+SQUARE
+find the squares of the values
+
+SQUARE
+compute the squares of the things
+
+DIVIS_BY 5, MULT 3, MIN
+the min of 3 times the things divisible by 5
+
+LESS_THAN 2, SQUARE, AVG
+the average of the squares of the values less than 2
+
+PROD
+the product of the things
+
+LESS_THAN 4, INVERSE
+tell me the inverses of the things less than 4
+
+INVERSE
+find the inverses of the things
+
+SUM
+find the sum of the things
+
+DIVIS_BY 3, SQUARE, MIN
+the min value of the squares of the values divisible by 3
+
+DIVIS_BY 3, INVERSE, MIN
+compute the minimum value of the inverses of the elements divisible by 3
+
+LESS_THAN 2, SQUARE
+evaluate the squares of the elements less than 2
+
+DIVIS_BY 3, ADD 5, MIN
+compute the min of 5 plus the elements divisible by 3
+
+LESS_THAN 4, PROD
+compute the product of the numbers less than 4
+
+LESS_THAN 4, SQUARE, PROD
+the product of the squares of the things less than 4
+
+LESS_THAN 4, ADD 4, MIN
+find the min of 4 plus the elements less than 4
+
 LESS_THAN 2, INVERSE
-evaluate the inverses of the values less than 2
+take the inverses of the things less than 2
 
-DIVIS_BY 4, ADD 5, MIN
-the minimum of 5 plus the numbers divisible by 4
+DIVIS_BY 5, ADD 4, PROD
+tell me the product of 4 plus the numbers divisible by 5
 
-LESS_THAN 5, SUM
-evaluate the sum of the elements less than 5
+ADD 3, AVG
+the average of 3 plus the things
 
-LESS_THAN 5
-compute the numbers less than 5
+DIVIS_BY 3, MULT 3, AVG
+find the mean value of 3 times the things divisible by 3
 
-DIVIS_BY 5, ADD 3, SUM
-evaluate the sum of 3 plus the values divisible by 5
+DIVIS_BY 3, SQUARE
+compute the squares of the elements divisible by 3
 
-LESS_THAN 2, ADD 5
-take 5 plus the numbers less than 2
+DIVIS_BY 3, SUM
+the sum of the values divisible by 3
 
-ADD 2, SUM
-the sum of 2 plus the values
+LESS_THAN 5, INVERSE
+evaluate the inverses of the values less than 5
 
-LESS_THAN 2, MULT 3
-take 3 times the numbers less than 2
+LESS_THAN 3, INVERSE
+compute the inverses of the values less than 3
 
-LESS_THAN 5, SQUARE, AVG
-find the mean of the squares of the things less than 5
+DIVIS_BY 2, MULT 5
+compute 5 times the even numbers
 
-DIVIS_BY 2, SQUARE, MIN
-find the minimum of the squares of the even things
+DIVIS_BY 5, SQUARE, AVG
+find the average of the squares of the elements divisible by 5
 
-DIVIS_BY 4, MULT 3
-tell me 3 times the elements divisible by 4
+LESS_THAN 2, SQUARE
+evaluate the squares of the things less than 2
 
-DIVIS_BY 4, INVERSE
-tell me the reciprocals of the numbers divisible by 4
+DIVIS_BY 4
+take the values divisible by 4
 
-DIVIS_BY 4, SQUARE, AVG
-tell me the mean value of the squares of the numbers divisible by 4
+SQUARE, PROD
+find the product of the squares of the values
 
-LESS_THAN 3, MULT 4, MIN
-compute the min value of 4 times the values less than 3
-
-DIVIS_BY 3, ADD 5
-tell me 5 plus the values divisible by 3
-
-LESS_THAN 3, SQUARE
-compute the squares of the numbers less than 3
-
-LESS_THAN 5
-compute the numbers less than 5
-
-DIVIS_BY 5, INVERSE
-take the inverses of the values divisible by 5
-
-ADD 5
-compute 5 plus the values
+INVERSE
+evaluate the reciprocals of the things
 
 LESS_THAN 5, SQUARE
-find the squares of the elements less than 5
+take the squares of the numbers less than 5
 
-LESS_THAN 5
-compute the elements less than 5
+DIVIS_BY 2, ADD 4
+find 4 plus the even values
+
+LESS_THAN 3, SQUARE, SUM
+evaluate the sum of the squares of the values less than 3
+
+LESS_THAN 5, MULT 5
+find 5 times the numbers less than 5
+
+LESS_THAN 4, ADD 3
+evaluate 3 plus the values less than 4
+
+LESS_THAN 3, MULT 3, PROD
+multiply 3 times the values less than 3
+
+
+find the things
+
+LESS_THAN 3, SQUARE, PROD
+take the product of the squares of the values less than 3
+
+LESS_THAN 4, ADD 3
+find 3 plus the elements less than 4
+
+DIVIS_BY 4, MULT 4
+find 4 times the values divisible by 4
+
+DIVIS_BY 4, MULT 4, PROD
+multiply all 4 times the values divisible by 4
+
+LESS_THAN 3, SQUARE, MIN
+find the minimum of the squares of the things less than 3
+
+LESS_THAN 3, INVERSE
+take the inverses of the values less than 3
+
+LESS_THAN 5, MIN
+evaluate the min of the things less than 5
+
+DIVIS_BY 5, INVERSE
+evaluate the inverses of the numbers divisible by 5
+
+INVERSE
+evaluate the inverses of the elements
+
+LESS_THAN 4, INVERSE, AVG
+evaluate the average of the reciprocals of the values less than 4
+
+INVERSE, AVG
+find the mean value of the reciprocals of the elements
+
+LESS_THAN 5, INVERSE, AVG
+the mean of the inverses of the numbers less than 5
+
+LESS_THAN 5, SUM
+compute the sum of the numbers less than 5
+
+INVERSE, AVG
+average the reciprocals of the numbers
+
+LESS_THAN 2, ADD 3, AVG
+find the average of 3 plus the numbers less than 2
+
+DIVIS_BY 5, SQUARE, MIN
+take the min of the squares of the numbers divisible by 5
+
+LESS_THAN 3, ADD 3
+take 3 plus the numbers less than 3
 
 DIVIS_BY 3
-compute the numbers divisible by 3
+take the values divisible by 3
 
-LESS_THAN 3, INVERSE, AVG
-evaluate the mean of the inverses of the values less than 3
+LESS_THAN 4, SQUARE
+tell me the squares of the things less than 4
 
-MULT 5, MIN
-find the min of 5 times the elements
+LESS_THAN 3, INVERSE, SUM
+tell me the sum of the reciprocals of the things less than 3
 
-DIVIS_BY 2
-find the even numbers
+SQUARE, AVG
+find the mean of the squares of the values
 
-DIVIS_BY 3
-compute the numbers divisible by 3
+LESS_THAN 2, SQUARE
+find the squares of the values less than 2
 
-LESS_THAN 4
-compute the things less than 4
+LESS_THAN 5, ADD 2, AVG
+evaluate the mean value of 2 plus the things less than 5
 
-INVERSE, SUM
-take the sum of the reciprocals of the values
+LESS_THAN 3, SQUARE
+find the squares of the numbers less than 3
 
-LESS_THAN 3, ADD 4
-take 4 plus the values less than 3
+DIVIS_BY 4, SQUARE, PROD
+multiply the squares of the numbers divisible by 4
 
-DIVIS_BY 3, INVERSE
-find the inverses of the elements divisible by 3
+DIVIS_BY 2, ADD 3, PROD
+find the product of 3 plus the even elements
 
-SQUARE, SUM
-take the sum of the squares of the things
+LESS_THAN 4, SQUARE
+evaluate the squares of the values less than 4
 
-DIVIS_BY 2, MULT 5, SUM
-evaluate the sum of 5 times the even elements
+LESS_THAN 4, INVERSE
+tell me the inverses of the numbers less than 4
+
+MULT 3
+tell me 3 times the values
+
+DIVIS_BY 3, MULT 2, SUM
+compute the sum of 2 times the numbers divisible by 3
 
 MIN
 evaluate the minimum of the elements
 
-LESS_THAN 3, MULT 5
-tell me 5 times the things less than 3
+DIVIS_BY 2, SUM
+compute the sum of the even numbers
+
+LESS_THAN 2, MULT 4, SUM
+add up 4 times the things less than 2
+
+SQUARE
+compute the squares of the elements
+
+DIVIS_BY 4
+evaluate the numbers divisible by 4
+
+DIVIS_BY 5, SQUARE, SUM
+compute the sum of the squares of the numbers divisible by 5
+
+
+compute the numbers
+
+LESS_THAN 3, ADD 4
+find 4 plus the numbers less than 3
+
+LESS_THAN 3, SQUARE
+evaluate the squares of the values less than 3
+
+DIVIS_BY 5, INVERSE, PROD
+tell me the product of the reciprocals of the values divisible by 5
+
+LESS_THAN 5
+evaluate the things less than 5
+
+DIVIS_BY 3, INVERSE
+take the reciprocals of the values divisible by 3
+
+SQUARE
+take the squares of the things
+
+LESS_THAN 2, SQUARE
+evaluate the squares of the numbers less than 2
+
+DIVIS_BY 2
+find the even things
+
+LESS_THAN 2
+take the values less than 2
+
+
+evaluate the things
+
+LESS_THAN 2, INVERSE
+take the reciprocals of the elements less than 2
+
+LESS_THAN 3
+find the things less than 3
+
+LESS_THAN 5, SQUARE
+tell me the squares of the elements less than 5
+
+DIVIS_BY 2, SQUARE
+find the squares of the even values
+
+PROD
+tell me the product of the things
+
+DIVIS_BY 3, SQUARE
+compute the squares of the things divisible by 3
+
+DIVIS_BY 5, SQUARE, AVG
+tell me the mean value of the squares of the things divisible by 5
+
+DIVIS_BY 5, MIN
+the minimum value of the elements divisible by 5
+
+INVERSE, SUM
+evaluate the sum of the inverses of the things
+
+LESS_THAN 3, ADD 5
+take 5 plus the values less than 3
+
+SQUARE, AVG
+evaluate the mean of the squares of the things
+
+SQUARE, SUM
+evaluate the sum of the squares of the things
+
+LESS_THAN 5, SQUARE, AVG
+find the mean of the squares of the numbers less than 5
+
+DIVIS_BY 3, ADD 5
+find 5 plus the values divisible by 3
+
+LESS_THAN 5, SQUARE, SUM
+take the sum of the squares of the numbers less than 5
+
+LESS_THAN 4, INVERSE
+evaluate the reciprocals of the values less than 4
+
+DIVIS_BY 5, SQUARE, SUM
+tell me the sum of the squares of the elements divisible by 5
+
+DIVIS_BY 3, SQUARE
+take the squares of the numbers divisible by 3
+
+MULT 5
+find 5 times the things
+
+LESS_THAN 3, SQUARE, AVG
+evaluate the average of the squares of the numbers less than 3
+
+DIVIS_BY 2, INVERSE
+take the reciprocals of the even things
+
+LESS_THAN 3, SQUARE
+tell me the squares of the elements less than 3
+
+LESS_THAN 3, SQUARE, PROD
+find the product of the squares of the values less than 3
+
+INVERSE, AVG
+the average of the reciprocals of the values
+
+ADD 2, PROD
+multiply all 2 plus the things
+
+LESS_THAN 3, MULT 4
+tell me 4 times the numbers less than 3
+
+LESS_THAN 2, ADD 4
+take 4 plus the numbers less than 2
+
+LESS_THAN 5, INVERSE, SUM
+sum the reciprocals of the values less than 5
+
+DIVIS_BY 2, SUM
+tell me the sum of the even things
+
+DIVIS_BY 5
+evaluate the elements divisible by 5
+
+DIVIS_BY 4, ADD 2
+tell me 2 plus the elements divisible by 4
+
+DIVIS_BY 2, MULT 3, PROD
+the product of 3 times the even things
+
+DIVIS_BY 3, MULT 2
+tell me 2 times the values divisible by 3
+
+DIVIS_BY 4, ADD 3
+compute 3 plus the elements divisible by 4
+
+DIVIS_BY 5, AVG
+average the numbers divisible by 5
+
+LESS_THAN 2, PROD
+tell me the product of the elements less than 2
+
+LESS_THAN 4, MULT 2, SUM
+take the sum of 2 times the values less than 4
+
+DIVIS_BY 4
+tell me the values divisible by 4
+
+ADD 2
+tell me 2 plus the numbers
+
+DIVIS_BY 3, MULT 2
+evaluate 2 times the elements divisible by 3
+
+DIVIS_BY 5, MIN
+find the min of the elements divisible by 5
+
+DIVIS_BY 5, INVERSE
+compute the reciprocals of the things divisible by 5
+
+LESS_THAN 4, SQUARE
+tell me the squares of the numbers less than 4
+
+DIVIS_BY 5, AVG
+average the numbers divisible by 5
+
+LESS_THAN 5, SQUARE
+take the squares of the values less than 5
+
+LESS_THAN 5
+take the values less than 5
+
+DIVIS_BY 4
+tell me the numbers divisible by 4
+
+LESS_THAN 3, SQUARE
+find the squares of the things less than 3
+
+LESS_THAN 2
+tell me the numbers less than 2
+
+LESS_THAN 2, MULT 4, PROD
+multiply all 4 times the values less than 2
+
+LESS_THAN 3, SQUARE
+compute the squares of the numbers less than 3
+
+LESS_THAN 5, MULT 2, PROD
+compute the product of 2 times the things less than 5
+
+DIVIS_BY 5, MULT 5
+take 5 times the elements divisible by 5
+
+LESS_THAN 4, INVERSE, SUM
+evaluate the sum of the reciprocals of the things less than 4
+
+LESS_THAN 4, INVERSE
+find the reciprocals of the things less than 4
+
+LESS_THAN 2, INVERSE
+find the inverses of the elements less than 2
+
+LESS_THAN 3, SQUARE
+find the squares of the things less than 3
+
+LESS_THAN 2, MULT 5
+take 5 times the numbers less than 2
+
+LESS_THAN 3, MULT 3, MIN
+compute the minimum of 3 times the things less than 3
+
+DIVIS_BY 2, INVERSE, MIN
+the minimum of the inverses of the even things
+
+SUM
+find the sum of the values
+
+LESS_THAN 5, INVERSE, PROD
+take the product of the inverses of the elements less than 5
+
+LESS_THAN 4, INVERSE
+find the inverses of the values less than 4
+
+LESS_THAN 2
+tell me the values less than 2
+
+LESS_THAN 2, INVERSE
+evaluate the inverses of the numbers less than 2
+
+LESS_THAN 4, INVERSE
+tell me the inverses of the values less than 4
+
+ADD 3, MIN
+find the min of 3 plus the things
+
+DIVIS_BY 5, ADD 2
+take 2 plus the numbers divisible by 5
+
+DIVIS_BY 4
+compute the values divisible by 4
+
+LESS_THAN 2, SQUARE
+compute the squares of the numbers less than 2
+
+LESS_THAN 4, MULT 5, AVG
+compute the average of 5 times the values less than 4
+
+LESS_THAN 3, INVERSE
+evaluate the inverses of the values less than 3
+
+MULT 5
+compute 5 times the things
+
+INVERSE, MIN
+find the min value of the inverses of the things
+
+DIVIS_BY 4, MULT 3, SUM
+evaluate the sum of 3 times the values divisible by 4
+
+MULT 4
+evaluate 4 times the numbers
+
+DIVIS_BY 2, INVERSE, MIN
+find the min of the inverses of the even numbers
+
+LESS_THAN 3, INVERSE
+evaluate the inverses of the things less than 3
+
+DIVIS_BY 4, MULT 4, SUM
+the sum of 4 times the things divisible by 4
+
+DIVIS_BY 4, SQUARE, AVG
+average the squares of the numbers divisible by 4
+
+LESS_THAN 3
+find the elements less than 3
+
+LESS_THAN 4, SQUARE, SUM
+take the sum of the squares of the elements less than 4
+
+DIVIS_BY 2, INVERSE
+find the inverses of the even values
+
+INVERSE
+compute the inverses of the elements
+
+INVERSE
+tell me the inverses of the things
+
+MULT 2, MIN
+find the minimum of 2 times the things
+
+DIVIS_BY 2, ADD 5
+compute 5 plus the even numbers
+
+LESS_THAN 2, PROD
+compute the product of the values less than 2
+
+LESS_THAN 2, INVERSE, SUM
+add up the inverses of the numbers less than 2
+
+DIVIS_BY 3
+tell me the numbers divisible by 3
+
+DIVIS_BY 2, ADD 4
+tell me 4 plus the even things
+
+SQUARE, PROD
+take the product of the squares of the things
+
+DIVIS_BY 5, ADD 5
+take 5 plus the elements divisible by 5
+
+LESS_THAN 4, INVERSE, AVG
+average the inverses of the elements less than 4
+
+LESS_THAN 2
+tell me the numbers less than 2
+
+DIVIS_BY 3, MULT 2
+take 2 times the elements divisible by 3
+
+DIVIS_BY 5, SQUARE
+take the squares of the elements divisible by 5
+
+
+take the elements
+
+DIVIS_BY 3, SQUARE
+evaluate the squares of the things divisible by 3
+
+DIVIS_BY 4, ADD 4, AVG
+evaluate the average of 4 plus the things divisible by 4
+
+MULT 3, PROD
+multiply 3 times the values
+
+DIVIS_BY 2, ADD 4
+evaluate 4 plus the even values
+
+SQUARE
+take the squares of the numbers
+
+DIVIS_BY 3
+find the values divisible by 3
+
+LESS_THAN 5, SQUARE
+take the squares of the values less than 5
+
+INVERSE, AVG
+take the average of the reciprocals of the things
+
+LESS_THAN 5, INVERSE
+tell me the reciprocals of the numbers less than 5
+
+DIVIS_BY 5, MULT 5
+take 5 times the elements divisible by 5
+
+LESS_THAN 3, INVERSE
+tell me the inverses of the numbers less than 3
+
+LESS_THAN 3, INVERSE, SUM
+find the sum of the reciprocals of the things less than 3
+
+DIVIS_BY 2, ADD 4
+compute 4 plus the even numbers
+
+LESS_THAN 3, ADD 3, AVG
+average 3 plus the elements less than 3
+
+
+take the elements
+
+LESS_THAN 4
+take the things less than 4
+
+LESS_THAN 2, INVERSE, AVG
+find the average of the reciprocals of the values less than 2
+
+LESS_THAN 4, SQUARE, MIN
+find the min of the squares of the numbers less than 4
+
+LESS_THAN 3
+evaluate the numbers less than 3
+
+SQUARE, SUM
+sum the squares of the values
+
+LESS_THAN 2, SQUARE
+tell me the squares of the values less than 2
+
+PROD
+evaluate the product of the values
+
+DIVIS_BY 2, MULT 2, PROD
+find the product of 2 times the even numbers
+
+LESS_THAN 2, SQUARE, AVG
+average the squares of the elements less than 2
+
+MULT 3
+take 3 times the elements
+
+LESS_THAN 5, SQUARE, AVG
+average the squares of the elements less than 5
+
+LESS_THAN 2, INVERSE
+tell me the inverses of the values less than 2
+
+LESS_THAN 2, MULT 3, PROD
+the product of 3 times the values less than 2
+
+LESS_THAN 3, SQUARE
+take the squares of the values less than 3
+
+SQUARE
+compute the squares of the things
+
+LESS_THAN 4, SQUARE, AVG
+find the average of the squares of the values less than 4
+
+LESS_THAN 2, INVERSE
+take the reciprocals of the values less than 2
+
+LESS_THAN 2, ADD 2, MIN
+find the min of 2 plus the things less than 2
+
+
+take the values
+
+DIVIS_BY 2, ADD 2, SUM
+compute the sum of 2 plus the even things
+
+LESS_THAN 3, SQUARE
+take the squares of the things less than 3
+
+DIVIS_BY 5, ADD 5, MIN
+compute the min of 5 plus the things divisible by 5
+
+DIVIS_BY 3, ADD 3, AVG
+evaluate the mean of 3 plus the values divisible by 3
+
+DIVIS_BY 3, ADD 4
+tell me 4 plus the elements divisible by 3
+
+DIVIS_BY 5, SQUARE
+evaluate the squares of the numbers divisible by 5
+
+LESS_THAN 5, SQUARE, SUM
+find the sum of the squares of the values less than 5
+
+LESS_THAN 2, MIN
+take the min value of the values less than 2
+
+DIVIS_BY 4, INVERSE
+take the inverses of the numbers divisible by 4
+
+SUM
+take the sum of the values
+
+DIVIS_BY 3, ADD 2
+evaluate 2 plus the values divisible by 3
+
+DIVIS_BY 3, SQUARE, PROD
+the product of the squares of the things divisible by 3
+
+LESS_THAN 5, INVERSE, SUM
+compute the sum of the reciprocals of the things less than 5
+
+ADD 3
+compute 3 plus the elements
+
+DIVIS_BY 4
+evaluate the numbers divisible by 4
+
+LESS_THAN 3, ADD 2
+compute 2 plus the things less than 3
+
+LESS_THAN 4, ADD 3
+tell me 3 plus the elements less than 4
+
+LESS_THAN 3, INVERSE, MIN
+find the min of the reciprocals of the elements less than 3
+
+LESS_THAN 5, PROD
+evaluate the product of the values less than 5
+
+LESS_THAN 2, INVERSE, AVG
+evaluate the mean of the inverses of the things less than 2
+
+LESS_THAN 2, MULT 2, SUM
+add up 2 times the numbers less than 2
+
+LESS_THAN 5, ADD 3
+compute 3 plus the things less than 5
+
+INVERSE, MIN
+tell me the min value of the inverses of the numbers
+
+LESS_THAN 3, AVG
+average the values less than 3
+
+LESS_THAN 3, INVERSE
+tell me the inverses of the values less than 3
+
+DIVIS_BY 3, INVERSE, AVG
+the mean value of the reciprocals of the values divisible by 3
+
+DIVIS_BY 3, SQUARE
+compute the squares of the numbers divisible by 3
+
+LESS_THAN 2, INVERSE
+take the inverses of the elements less than 2
+
+DIVIS_BY 4, MULT 2
+tell me 2 times the numbers divisible by 4
+
+LESS_THAN 5, PROD
+the product of the numbers less than 5
+
+LESS_THAN 5, SQUARE, MIN
+find the min of the squares of the values less than 5
+
+LESS_THAN 3, SQUARE, SUM
+find the sum of the squares of the elements less than 3
+
+DIVIS_BY 4, SQUARE, AVG
+the mean of the squares of the values divisible by 4
+
+DIVIS_BY 4, MULT 3
+take 3 times the things divisible by 4
+
+ADD 3, AVG
+compute the mean value of 3 plus the values
+
+LESS_THAN 4, INVERSE, PROD
+multiply all the inverses of the values less than 4
+
+LESS_THAN 5, INVERSE, MIN
+the minimum of the reciprocals of the things less than 5
+
+LESS_THAN 3, INVERSE
+tell me the inverses of the values less than 3
+
+LESS_THAN 2, SQUARE, SUM
+tell me the sum of the squares of the values less than 2
+
+DIVIS_BY 2, MULT 5
+find 5 times the even things
+
+DIVIS_BY 4, INVERSE
+take the inverses of the numbers divisible by 4
+
+ADD 4
+evaluate 4 plus the elements
+
+DIVIS_BY 5
+evaluate the numbers divisible by 5
+
+LESS_THAN 3, SQUARE
+evaluate the squares of the values less than 3
+
+LESS_THAN 3
+take the values less than 3
+
+DIVIS_BY 3, SQUARE, PROD
+multiply the squares of the numbers divisible by 3
+
+DIVIS_BY 2, MULT 4, SUM
+tell me the sum of 4 times the even values
+
+LESS_THAN 4
+compute the things less than 4
+
+LESS_THAN 4, MULT 5, MIN
+tell me the minimum of 5 times the numbers less than 4
+
+DIVIS_BY 2, INVERSE, PROD
+take the product of the reciprocals of the even elements
+
+INVERSE, SUM
+tell me the sum of the inverses of the elements
+
+LESS_THAN 2, SQUARE
+tell me the squares of the numbers less than 2
+
+LESS_THAN 2, SQUARE
+find the squares of the things less than 2
+
+LESS_THAN 3
+take the values less than 3
+
+LESS_THAN 3, ADD 3, PROD
+evaluate the product of 3 plus the values less than 3
+
+LESS_THAN 3, SQUARE
+find the squares of the numbers less than 3
+
+DIVIS_BY 5, ADD 3, AVG
+the average of 3 plus the values divisible by 5
+
+DIVIS_BY 4, SQUARE, PROD
+compute the product of the squares of the values divisible by 4
+
+LESS_THAN 3, ADD 2
+tell me 2 plus the numbers less than 3
+
+LESS_THAN 2, SQUARE, PROD
+multiply all the squares of the things less than 2
+
+DIVIS_BY 4, ADD 5
+evaluate 5 plus the numbers divisible by 4
+
+LESS_THAN 5, SQUARE, SUM
+tell me the sum of the squares of the values less than 5
+
+DIVIS_BY 3, INVERSE, MIN
+the minimum value of the inverses of the values divisible by 3
+
+MULT 3, MIN
+tell me the min of 3 times the numbers
+
+DIVIS_BY 4
+tell me the numbers divisible by 4
+
+LESS_THAN 5, SQUARE
+tell me the squares of the numbers less than 5
+
+LESS_THAN 5, INVERSE
+find the reciprocals of the things less than 5
+
+DIVIS_BY 2, MULT 4, MIN
+find the min of 4 times the even things
+
+LESS_THAN 2, SQUARE, AVG
+compute the mean of the squares of the elements less than 2
+
+DIVIS_BY 4
+find the numbers divisible by 4
+
+LESS_THAN 2, ADD 2
+find 2 plus the elements less than 2
+
+LESS_THAN 2, MULT 4
+take 4 times the things less than 2
+
+DIVIS_BY 5, SQUARE, PROD
+multiply the squares of the numbers divisible by 5
+
+LESS_THAN 4
+compute the values less than 4
+
+SQUARE
+find the squares of the numbers
+
+DIVIS_BY 5, MULT 3
+take 3 times the values divisible by 5
+
+DIVIS_BY 5, INVERSE
+find the reciprocals of the numbers divisible by 5
+
+DIVIS_BY 4, SQUARE
+take the squares of the elements divisible by 4
+
+LESS_THAN 2, MULT 5
+evaluate 5 times the numbers less than 2
+
+DIVIS_BY 2, INVERSE
+take the inverses of the even elements
+
+
+tell me the elements
+
+LESS_THAN 5, SQUARE, MIN
+find the min of the squares of the values less than 5
+
+DIVIS_BY 5, ADD 5
+compute 5 plus the things divisible by 5
+
+LESS_THAN 3, ADD 2, MIN
+take the minimum value of 2 plus the elements less than 3
+
+LESS_THAN 2
+evaluate the things less than 2
+
+LESS_THAN 2, SQUARE, MIN
+find the min of the squares of the things less than 2
+
+LESS_THAN 3, INVERSE
+compute the inverses of the numbers less than 3
+
+DIVIS_BY 2, MULT 4
+compute 4 times the even numbers
+
+LESS_THAN 2, ADD 2
+evaluate 2 plus the elements less than 2
+
+LESS_THAN 5, MULT 3
+tell me 3 times the numbers less than 5
+
+DIVIS_BY 3, MULT 2
+tell me 2 times the elements divisible by 3
+
+DIVIS_BY 5, SQUARE, MIN
+evaluate the minimum of the squares of the numbers divisible by 5
+
+DIVIS_BY 5, ADD 4
+evaluate 4 plus the numbers divisible by 5
+
+DIVIS_BY 5, INVERSE
+take the reciprocals of the numbers divisible by 5
+
+LESS_THAN 4, ADD 4, SUM
+take the sum of 4 plus the elements less than 4
+
+LESS_THAN 4, SQUARE, AVG
+tell me the mean of the squares of the elements less than 4
+
+LESS_THAN 2, INVERSE
+compute the inverses of the elements less than 2
+
+INVERSE
+take the reciprocals of the values
+
+INVERSE
+tell me the inverses of the numbers
+
+SQUARE
+tell me the squares of the things
+
+ADD 2, AVG
+average 2 plus the numbers
+
+LESS_THAN 2, MULT 5
+find 5 times the values less than 2
+
+LESS_THAN 2, INVERSE, MIN
+compute the min of the reciprocals of the things less than 2
+
+LESS_THAN 3, SQUARE
+tell me the squares of the values less than 3
+
+DIVIS_BY 5, MULT 4, MIN
+find the min value of 4 times the things divisible by 5
+
+LESS_THAN 5, INVERSE, SUM
+sum the inverses of the things less than 5
+
+DIVIS_BY 3, AVG
+average the things divisible by 3
+
+LESS_THAN 2, MULT 5
+tell me 5 times the values less than 2
+
+LESS_THAN 3
+evaluate the elements less than 3
+
+DIVIS_BY 2, SQUARE
+compute the squares of the even things
+
+LESS_THAN 3, SQUARE
+take the squares of the numbers less than 3
+
+DIVIS_BY 2, ADD 4, MIN
+find the min of 4 plus the even numbers
+
+DIVIS_BY 4, ADD 2, SUM
+tell me the sum of 2 plus the values divisible by 4
+
+DIVIS_BY 3, MULT 4
+evaluate 4 times the numbers divisible by 3
+
+LESS_THAN 3
+evaluate the things less than 3
+
+LESS_THAN 4, INVERSE
+tell me the reciprocals of the numbers less than 4
+
+LESS_THAN 5, MULT 2, AVG
+average 2 times the elements less than 5
+
+DIVIS_BY 3, INVERSE, PROD
+compute the product of the reciprocals of the things divisible by 3
+
+DIVIS_BY 5, INVERSE
+take the inverses of the things divisible by 5
+
+MULT 3
+take 3 times the numbers
+
+LESS_THAN 3, SQUARE, PROD
+find the product of the squares of the elements less than 3
+
+DIVIS_BY 5, AVG
+compute the average of the elements divisible by 5
+
+
+tell me the values
+
+SQUARE
+compute the squares of the things
+
+INVERSE
+find the reciprocals of the numbers
+
+DIVIS_BY 2, INVERSE, AVG
+evaluate the average of the reciprocals of the even things
+
+DIVIS_BY 3, MULT 2, SUM
+find the sum of 2 times the values divisible by 3
+
+DIVIS_BY 5, ADD 2
+evaluate 2 plus the things divisible by 5
+
+LESS_THAN 4, SQUARE
+find the squares of the things less than 4
+
+DIVIS_BY 5, SQUARE, MIN
+find the min of the squares of the things divisible by 5
+
+LESS_THAN 5, SQUARE
+compute the squares of the things less than 5
+
+LESS_THAN 4, ADD 5
+compute 5 plus the things less than 4
+
+DIVIS_BY 4, ADD 4, PROD
+multiply all 4 plus the elements divisible by 4
+
+LESS_THAN 5, ADD 3, MIN
+find the min of 3 plus the elements less than 5
+
+LESS_THAN 2, SQUARE
+take the squares of the numbers less than 2
+
+LESS_THAN 2, SQUARE, SUM
+add all the squares of the elements less than 2
+
+DIVIS_BY 2, ADD 4
+tell me 4 plus the even elements
+
+LESS_THAN 3, MULT 3
+tell me 3 times the values less than 3
+
+LESS_THAN 3, INVERSE, MIN
+find the min value of the reciprocals of the numbers less than 3
+
+DIVIS_BY 2, INVERSE
+tell me the reciprocals of the even numbers
+
+DIVIS_BY 2, MULT 2, SUM
+tell me the sum of 2 times the even elements
+
+
+evaluate the numbers
+
+
+tell me the numbers
+
+
+compute the things
+
+LESS_THAN 5, ADD 2, SUM
+the sum of 2 plus the things less than 5
+
+DIVIS_BY 3, INVERSE, PROD
+take the product of the inverses of the things divisible by 3
+
+DIVIS_BY 3, INVERSE, SUM
+find the sum of the inverses of the things divisible by 3
+
+DIVIS_BY 3, SUM
+evaluate the sum of the things divisible by 3
+
+SQUARE
+take the squares of the values
+
+SQUARE
+evaluate the squares of the things
+
+DIVIS_BY 2, MULT 2, AVG
+evaluate the mean of 2 times the even values
+
+LESS_THAN 5, MULT 4
+find 4 times the things less than 5
+
+LESS_THAN 2, INVERSE
+find the reciprocals of the things less than 2
+
+SQUARE
+take the squares of the numbers
+
+DIVIS_BY 3, INVERSE, MIN
+find the min of the inverses of the elements divisible by 3
+
+LESS_THAN 3, MULT 3, SUM
+evaluate the sum of 3 times the things less than 3
+
+LESS_THAN 2
+find the things less than 2
+
+DIVIS_BY 2, INVERSE
+compute the inverses of the even values
+
+LESS_THAN 4, ADD 2, MIN
+take the min of 2 plus the elements less than 4
+
+DIVIS_BY 4, MULT 4
+tell me 4 times the values divisible by 4
+
+DIVIS_BY 3, INVERSE, AVG
+evaluate the mean of the inverses of the numbers divisible by 3
+
+SQUARE
+find the squares of the numbers
+
+DIVIS_BY 4, SQUARE, MIN
+compute the min of the squares of the values divisible by 4
+
+LESS_THAN 5, MULT 3, PROD
+compute the product of 3 times the numbers less than 5
+
+DIVIS_BY 2, SQUARE, MIN
+take the minimum of the squares of the even things
+
+LESS_THAN 5, MULT 4, PROD
+find the product of 4 times the things less than 5
+
+LESS_THAN 5, INVERSE, MIN
+take the min of the reciprocals of the values less than 5
+
+SQUARE
+compute the squares of the numbers
+
+LESS_THAN 4, INVERSE, AVG
+evaluate the mean value of the inverses of the things less than 4
+
+LESS_THAN 5, ADD 2, MIN
+the min value of 2 plus the numbers less than 5
+
+
+take the values
+
+SQUARE, SUM
+tell me the sum of the squares of the values
+
+LESS_THAN 5, INVERSE, PROD
+multiply the inverses of the things less than 5
+
+SQUARE
+tell me the squares of the elements
+
+DIVIS_BY 2
+find the even things
+
+SQUARE, PROD
+multiply the squares of the values
+
+LESS_THAN 3, SQUARE, MIN
+the min value of the squares of the values less than 3
+
+DIVIS_BY 3, MULT 4, PROD
+take the product of 4 times the things divisible by 3
+
+DIVIS_BY 4, SUM
+add all the values divisible by 4
+
+DIVIS_BY 5, INVERSE
+tell me the reciprocals of the things divisible by 5
+
+DIVIS_BY 4, INVERSE
+evaluate the reciprocals of the values divisible by 4
+
+DIVIS_BY 4, SUM
+the sum of the numbers divisible by 4
+
+DIVIS_BY 5, INVERSE, MIN
+find the min of the inverses of the values divisible by 5
+
+MULT 4
+take 4 times the numbers
+
+DIVIS_BY 5, INVERSE, AVG
+evaluate the mean value of the reciprocals of the elements divisible by 5
+
+LESS_THAN 4, MULT 4
+compute 4 times the things less than 4
+
+LESS_THAN 2, INVERSE, AVG
+compute the average of the inverses of the things less than 2
+
+LESS_THAN 3, MULT 4, MIN
+take the min value of 4 times the numbers less than 3
+
+LESS_THAN 5
+tell me the elements less than 5
+
+LESS_THAN 3, ADD 5, AVG
+average 5 plus the numbers less than 3
+
+DIVIS_BY 4
+compute the things divisible by 4
+
+LESS_THAN 4, MULT 5
+tell me 5 times the values less than 4
+
+SQUARE, PROD
+take the product of the squares of the elements
+
+DIVIS_BY 5, INVERSE
+compute the inverses of the numbers divisible by 5
+
+DIVIS_BY 5, MULT 3
+find 3 times the things divisible by 5
+
+PROD
+multiply all the elements
+
+LESS_THAN 3
+compute the things less than 3
+
+SQUARE, MIN
+tell me the minimum value of the squares of the elements
+
+LESS_THAN 2, ADD 5
+find 5 plus the numbers less than 2
+
+MULT 5
+find 5 times the elements
+
+DIVIS_BY 5, MULT 5
+take 5 times the elements divisible by 5
+
+DIVIS_BY 5, SQUARE, SUM
+take the sum of the squares of the numbers divisible by 5
+
+LESS_THAN 4, SQUARE, AVG
+evaluate the mean value of the squares of the things less than 4
+
+LESS_THAN 4, INVERSE
+evaluate the inverses of the things less than 4
+
+LESS_THAN 2
+compute the elements less than 2
+
+INVERSE, PROD
+the product of the reciprocals of the things
+
+ADD 4
+take 4 plus the values
+
+DIVIS_BY 2, INVERSE
+take the inverses of the even numbers
+
+LESS_THAN 3, AVG
+take the mean of the things less than 3
+
+INVERSE
+evaluate the reciprocals of the numbers
+
+DIVIS_BY 2, SQUARE
+take the squares of the even elements
+
+LESS_THAN 3, INVERSE, AVG
+compute the mean value of the reciprocals of the values less than 3
+
+DIVIS_BY 2, MULT 5, MIN
+tell me the minimum value of 5 times the even things
+
+DIVIS_BY 2, INVERSE, PROD
+find the product of the reciprocals of the even elements
+
+
+compute the values
+
+LESS_THAN 3, INVERSE, MIN
+take the minimum value of the reciprocals of the values less than 3
+
+MULT 5
+take 5 times the things
+
+DIVIS_BY 2, SQUARE
+evaluate the squares of the even values
+
+MULT 4, PROD
+the product of 4 times the things
+
+LESS_THAN 3, ADD 4
+tell me 4 plus the things less than 3
+
+LESS_THAN 5, INVERSE
+take the inverses of the values less than 5
+
+DIVIS_BY 2, PROD
+compute the product of the even numbers
+
+LESS_THAN 2, MULT 5, SUM
+find the sum of 5 times the values less than 2
+
+DIVIS_BY 3, INVERSE
+tell me the inverses of the numbers divisible by 3
+
+LESS_THAN 5, ADD 2, MIN
+take the min of 2 plus the numbers less than 5
+
+SQUARE, SUM
+compute the sum of the squares of the values
+
+LESS_THAN 4, INVERSE, MIN
+the min of the reciprocals of the numbers less than 4
+
+DIVIS_BY 2, SUM
+take the sum of the even things
+
+DIVIS_BY 4, MULT 4
+compute 4 times the numbers divisible by 4
+
+DIVIS_BY 3, ADD 5
+take 5 plus the values divisible by 3
+
+LESS_THAN 3, INVERSE
+tell me the inverses of the numbers less than 3
+
+LESS_THAN 5, SQUARE
+compute the squares of the values less than 5
+
+LESS_THAN 4, INVERSE, PROD
+the product of the reciprocals of the numbers less than 4
+
+LESS_THAN 3, SQUARE
+compute the squares of the numbers less than 3
+
+DIVIS_BY 4, MULT 5, PROD
+the product of 5 times the things divisible by 4
+
+DIVIS_BY 3, ADD 5, MIN
+find the min of 5 plus the numbers divisible by 3
+
+LESS_THAN 3, SQUARE
+evaluate the squares of the things less than 3
+
+DIVIS_BY 3, INVERSE
+evaluate the reciprocals of the elements divisible by 3
+
+LESS_THAN 3
+find the values less than 3
+
+LESS_THAN 5
+tell me the values less than 5
+
+LESS_THAN 5, ADD 5, SUM
+tell me the sum of 5 plus the things less than 5
+
+LESS_THAN 4, SUM
+add up the values less than 4
+
+LESS_THAN 3, INVERSE
+tell me the reciprocals of the values less than 3
+
+LESS_THAN 4, MULT 4
+take 4 times the numbers less than 4
+
+LESS_THAN 3, MULT 2, SUM
+the sum of 2 times the things less than 3
+
+LESS_THAN 5, MULT 4
+tell me 4 times the values less than 5
+
+INVERSE, AVG
+find the average of the inverses of the elements
+
+INVERSE
+tell me the inverses of the values
+
+DIVIS_BY 2, INVERSE, MIN
+tell me the min of the reciprocals of the even numbers
+
+LESS_THAN 3, PROD
+take the product of the numbers less than 3
+
+DIVIS_BY 3, INVERSE, AVG
+take the average of the reciprocals of the elements divisible by 3
+
+ADD 2
+compute 2 plus the values
+
+DIVIS_BY 3, MULT 2, MIN
+the minimum value of 2 times the elements divisible by 3
+
+ADD 2, SUM
+find the sum of 2 plus the things
+
+LESS_THAN 3
+tell me the things less than 3
+
+SQUARE
+take the squares of the numbers
+
+DIVIS_BY 3
+evaluate the values divisible by 3
+
+INVERSE, AVG
+compute the average of the inverses of the numbers
+
+
+compute the numbers
+
+DIVIS_BY 2, ADD 2, PROD
+multiply all 2 plus the even elements
+
+LESS_THAN 4, INVERSE, AVG
+tell me the mean of the inverses of the numbers less than 4
+
+LESS_THAN 3, INVERSE, MIN
+compute the minimum of the inverses of the numbers less than 3
+
+LESS_THAN 2, MULT 4, MIN
+evaluate the minimum of 4 times the values less than 2
+
+LESS_THAN 4, SQUARE, SUM
+evaluate the sum of the squares of the things less than 4
+
+LESS_THAN 4, SQUARE, SUM
+the sum of the squares of the things less than 4
+
+DIVIS_BY 4, PROD
+compute the product of the values divisible by 4
+
+LESS_THAN 2, SQUARE
+compute the squares of the numbers less than 2
+
+DIVIS_BY 3, SQUARE
+tell me the squares of the elements divisible by 3
+
+LESS_THAN 5, INVERSE, SUM
+add all the reciprocals of the numbers less than 5
+
+INVERSE
+find the inverses of the elements
+
+LESS_THAN 5, ADD 4, MIN
+find the min of 4 plus the things less than 5
+
+AVG
+compute the average of the numbers
+
+DIVIS_BY 4, SQUARE, MIN
+find the min of the squares of the elements divisible by 4
+
+DIVIS_BY 4, INVERSE, MIN
+the min of the reciprocals of the numbers divisible by 4
+
+DIVIS_BY 5, MULT 2
+find 2 times the values divisible by 5
+
+DIVIS_BY 3, INVERSE
+find the inverses of the values divisible by 3
+
+LESS_THAN 5, INVERSE, SUM
+take the sum of the inverses of the values less than 5
+
+LESS_THAN 3, MULT 4
+tell me 4 times the values less than 3
+
+DIVIS_BY 3, INVERSE
+tell me the inverses of the things divisible by 3
+
+LESS_THAN 2, MULT 2, AVG
+take the mean value of 2 times the values less than 2
+
+LESS_THAN 4, INVERSE, AVG
+average the reciprocals of the values less than 4
+
+DIVIS_BY 2, SQUARE, AVG
+evaluate the average of the squares of the even elements
+
+DIVIS_BY 5, INVERSE
+take the reciprocals of the things divisible by 5
+
+SQUARE, PROD
+take the product of the squares of the values
+
+LESS_THAN 5, AVG
+compute the average of the elements less than 5
+
+DIVIS_BY 5, INVERSE, PROD
+compute the product of the reciprocals of the elements divisible by 5
+
+LESS_THAN 2, ADD 4, AVG
+find the mean of 4 plus the numbers less than 2
+
+LESS_THAN 3, ADD 5
+compute 5 plus the elements less than 3
+
+LESS_THAN 5, ADD 4, MIN
+evaluate the minimum value of 4 plus the numbers less than 5
+
+DIVIS_BY 3, MULT 4, PROD
+tell me the product of 4 times the things divisible by 3
+
+DIVIS_BY 5, INVERSE, SUM
+the sum of the reciprocals of the elements divisible by 5
+
+INVERSE
+find the inverses of the things
+
+DIVIS_BY 5, INVERSE
+tell me the inverses of the values divisible by 5
+
+SQUARE
+compute the squares of the values
+
+DIVIS_BY 2, INVERSE
+find the inverses of the even things
+
+LESS_THAN 5, ADD 2
+find 2 plus the numbers less than 5
+
+DIVIS_BY 5, ADD 4, AVG
+the mean value of 4 plus the things divisible by 5
+
+DIVIS_BY 3, MULT 5, AVG
+evaluate the mean of 5 times the numbers divisible by 3
+
+DIVIS_BY 2, INVERSE
+evaluate the inverses of the even numbers
+
+LESS_THAN 3, SQUARE, SUM
+the sum of the squares of the numbers less than 3
+
+DIVIS_BY 5
+evaluate the values divisible by 5
+
+DIVIS_BY 2, ADD 3, AVG
+the mean of 3 plus the even numbers
+
+INVERSE
+compute the reciprocals of the values
+
+ADD 2, PROD
+multiply all 2 plus the elements
+
+DIVIS_BY 2, ADD 5, PROD
+find the product of 5 plus the even values
+
+LESS_THAN 4, SQUARE, AVG
+average the squares of the things less than 4
+
+DIVIS_BY 2
+compute the even things
+
+PROD
+compute the product of the numbers
+
+DIVIS_BY 3, ADD 4
+evaluate 4 plus the things divisible by 3
+
+DIVIS_BY 2, INVERSE
+evaluate the reciprocals of the even things
+
+LESS_THAN 5, MULT 4, SUM
+sum 4 times the things less than 5
+
+LESS_THAN 5, INVERSE
+evaluate the reciprocals of the things less than 5
+
+LESS_THAN 2, INVERSE, SUM
+take the sum of the reciprocals of the elements less than 2
+
+LESS_THAN 5, ADD 5, PROD
+take the product of 5 plus the values less than 5
+
+SQUARE
+find the squares of the things
+
+ADD 2
+compute 2 plus the elements
+
+MULT 3
+tell me 3 times the elements
+
+DIVIS_BY 4, INVERSE, MIN
+compute the minimum value of the inverses of the things divisible by 4
+
+DIVIS_BY 4, SQUARE
+tell me the squares of the values divisible by 4
+
+DIVIS_BY 4, INVERSE
+take the reciprocals of the elements divisible by 4
+
+
+find the values
+
+
+evaluate the elements
+
+LESS_THAN 4, ADD 2, PROD
+find the product of 2 plus the values less than 4
+
+LESS_THAN 5, PROD
+evaluate the product of the values less than 5
+
+LESS_THAN 4, ADD 2, SUM
+the sum of 2 plus the elements less than 4
+
+LESS_THAN 2, ADD 3, SUM
+find the sum of 3 plus the values less than 2
+
+LESS_THAN 2, INVERSE, SUM
+evaluate the sum of the inverses of the numbers less than 2
+
+LESS_THAN 2, AVG
+the average of the things less than 2
+
+DIVIS_BY 5, INVERSE, PROD
+the product of the reciprocals of the values divisible by 5
+
+LESS_THAN 4, INVERSE, SUM
+add all the inverses of the things less than 4
+
+DIVIS_BY 4, SQUARE
+take the squares of the elements divisible by 4
+
+LESS_THAN 5, MIN
+find the min of the numbers less than 5
+
+DIVIS_BY 3, MULT 4, PROD
+multiply 4 times the values divisible by 3
+
+DIVIS_BY 4, INVERSE
+find the reciprocals of the values divisible by 4
+
+LESS_THAN 2, ADD 3
+find 3 plus the things less than 2
+
+DIVIS_BY 2, SQUARE, PROD
+multiply the squares of the even things
+
+DIVIS_BY 5, MULT 4, AVG
+evaluate the average of 4 times the things divisible by 5
+
+DIVIS_BY 2, SQUARE
+compute the squares of the even elements
+
+LESS_THAN 4
+evaluate the elements less than 4
+
+ADD 2, PROD
+the product of 2 plus the things
+
+SQUARE
+take the squares of the things
+
+LESS_THAN 5
+evaluate the elements less than 5
+
+LESS_THAN 4, MIN
+find the min of the things less than 4
+
+
+find the numbers
+
+DIVIS_BY 3, MULT 5, SUM
+tell me the sum of 5 times the values divisible by 3
+
+LESS_THAN 3, INVERSE, PROD
+the product of the reciprocals of the things less than 3
+
+SQUARE
+tell me the squares of the things
+
+INVERSE
+tell me the reciprocals of the things
+
+PROD
+compute the product of the elements
+
+DIVIS_BY 2, INVERSE, SUM
+tell me the sum of the reciprocals of the even elements
+
+LESS_THAN 3
+tell me the elements less than 3
+
+LESS_THAN 2, AVG
+find the average of the elements less than 2
+
+LESS_THAN 2, ADD 5
+compute 5 plus the things less than 2
+
+LESS_THAN 2, INVERSE
+compute the reciprocals of the elements less than 2
+
+LESS_THAN 2, ADD 5
+evaluate 5 plus the things less than 2
+
+DIVIS_BY 4, AVG
+the mean of the elements divisible by 4
+
+DIVIS_BY 4
+tell me the values divisible by 4
+
+DIVIS_BY 3, INVERSE, SUM
+compute the sum of the inverses of the numbers divisible by 3
+
+LESS_THAN 5, ADD 5, MIN
+the minimum value of 5 plus the values less than 5
+
+LESS_THAN 5, SQUARE, SUM
+add up the squares of the values less than 5
+
+LESS_THAN 4, PROD
+the product of the elements less than 4
+
+LESS_THAN 4, SQUARE, PROD
+the product of the squares of the things less than 4
+
+INVERSE, SUM
+compute the sum of the reciprocals of the elements
+
+LESS_THAN 3, SQUARE, AVG
+tell me the mean value of the squares of the numbers less than 3
+
+DIVIS_BY 5, ADD 2
+take 2 plus the values divisible by 5
+
+DIVIS_BY 2, INVERSE, PROD
+evaluate the product of the inverses of the even values
+
+LESS_THAN 2, INVERSE, SUM
+add all the inverses of the things less than 2
+
+SQUARE
+compute the squares of the values
+
+DIVIS_BY 4, SQUARE
+evaluate the squares of the things divisible by 4
+
+DIVIS_BY 2, INVERSE
+take the inverses of the even values
+
+ADD 2
+tell me 2 plus the things
+
+LESS_THAN 3, AVG
+average the things less than 3
+
+DIVIS_BY 2, INVERSE
+tell me the reciprocals of the even things
+
+DIVIS_BY 2, SQUARE, SUM
+tell me the sum of the squares of the even values
+
+LESS_THAN 2, ADD 2
+find 2 plus the values less than 2
+
+DIVIS_BY 5, INVERSE
+evaluate the inverses of the values divisible by 5
+
+INVERSE
+find the inverses of the things
+
+DIVIS_BY 3, AVG
+the average of the values divisible by 3
+
+LESS_THAN 4, INVERSE, SUM
+the sum of the reciprocals of the numbers less than 4
+
+LESS_THAN 3, MULT 2
+tell me 2 times the things less than 3
+
+DIVIS_BY 3, INVERSE
+take the reciprocals of the values divisible by 3
+
+DIVIS_BY 3, INVERSE, PROD
+tell me the product of the reciprocals of the values divisible by 3
+
+LESS_THAN 3, SQUARE, SUM
+the sum of the squares of the numbers less than 3
+
+LESS_THAN 5, SQUARE
+tell me the squares of the values less than 5
+
+LESS_THAN 4, SQUARE, AVG
+find the mean value of the squares of the elements less than 4
+
+LESS_THAN 3
+compute the numbers less than 3
+
+INVERSE, MIN
+tell me the minimum value of the reciprocals of the values
+
+DIVIS_BY 2, INVERSE
+tell me the inverses of the even values
+
+DIVIS_BY 3, SQUARE
+find the squares of the numbers divisible by 3
+
+DIVIS_BY 4, MULT 2
+compute 2 times the things divisible by 4
+
+DIVIS_BY 5
+tell me the values divisible by 5
+
+DIVIS_BY 5, INVERSE, MIN
+find the min of the reciprocals of the values divisible by 5
+
+SUM
+the sum of the numbers
+
+LESS_THAN 5, MULT 2, PROD
+multiply 2 times the numbers less than 5
+
+LESS_THAN 5
+tell me the numbers less than 5
+
+DIVIS_BY 4
+take the elements divisible by 4
+
+MULT 3
+take 3 times the things
+
+DIVIS_BY 5, MULT 5, MIN
+evaluate the minimum of 5 times the values divisible by 5
+
+DIVIS_BY 4, SQUARE, MIN
+find the min value of the squares of the values divisible by 4
+
+INVERSE, AVG
+average the reciprocals of the elements
+
+LESS_THAN 5, INVERSE
+find the reciprocals of the elements less than 5
 
 INVERSE
 tell me the reciprocals of the things
 
 DIVIS_BY 4, SQUARE
-find the squares of the elements divisible by 4
-
-LESS_THAN 4, INVERSE
-find the reciprocals of the things less than 4
-
-SQUARE, SUM
-take the sum of the squares of the values
-
-ADD 3
-take 3 plus the elements
-
-MULT 3, PROD
-evaluate the product of 3 times the things
-
-DIVIS_BY 2, SQUARE, AVG
-average the squares of the even values
-
-DIVIS_BY 3, INVERSE
-take the reciprocals of the values divisible by 3
-
-DIVIS_BY 4, INVERSE, SUM
-compute the sum of the inverses of the numbers divisible by 4
-
-ADD 4
-tell me 4 plus the things
-
-DIVIS_BY 3
-tell me the elements divisible by 3
-
-INVERSE
-find the reciprocals of the numbers
-
-LESS_THAN 2, INVERSE, AVG
-evaluate the average of the reciprocals of the things less than 2
-
-LESS_THAN 3, INVERSE, MIN
-tell me the minimum value of the reciprocals of the things less than 3
-
-DIVIS_BY 2, SQUARE
-compute the squares of the even values
-
-LESS_THAN 2, SQUARE
-tell me the squares of the numbers less than 2
-
-DIVIS_BY 5, MULT 3, AVG
-average 3 times the numbers divisible by 5
-
-LESS_THAN 2, SQUARE, AVG
-average the squares of the numbers less than 2
-
-MULT 3
-evaluate 3 times the values
-
-DIVIS_BY 2, ADD 2
-evaluate 2 plus the even things
-
-INVERSE, MIN
-evaluate the min value of the reciprocals of the elements
-
-LESS_THAN 5, INVERSE, SUM
-evaluate the sum of the reciprocals of the elements less than 5
+compute the squares of the things divisible by 4
 
 DIVIS_BY 2, INVERSE
-find the inverses of the even values
-
-DIVIS_BY 2, SUM
-add all the even values
-
-LESS_THAN 2
-tell me the values less than 2
-
-
-evaluate the things
-
-DIVIS_BY 2, AVG
-compute the mean of the even numbers
-
-DIVIS_BY 3, SUM
-add all the elements divisible by 3
-
-LESS_THAN 4, INVERSE, MIN
-the min value of the inverses of the numbers less than 4
-
-LESS_THAN 5, INVERSE
-evaluate the reciprocals of the elements less than 5
-
-
-evaluate the elements
-
-LESS_THAN 2, SQUARE
-find the squares of the things less than 2
-
-DIVIS_BY 4
-find the things divisible by 4
-
-
-tell me the values
-
-DIVIS_BY 3, SQUARE
-evaluate the squares of the elements divisible by 3
-
-LESS_THAN 3, INVERSE
-evaluate the inverses of the elements less than 3
-
-DIVIS_BY 4, SQUARE
-compute the squares of the values divisible by 4
-
-LESS_THAN 3, INVERSE
-evaluate the reciprocals of the values less than 3
-
-LESS_THAN 3, ADD 2
-tell me 2 plus the values less than 3
-
-LESS_THAN 3, SQUARE, PROD
-multiply the squares of the values less than 3
-
-MULT 4
-evaluate 4 times the values
-
-LESS_THAN 4, INVERSE, AVG
-take the average of the inverses of the numbers less than 4
-
-DIVIS_BY 4
-evaluate the numbers divisible by 4
-
-LESS_THAN 3, ADD 5
-evaluate 5 plus the things less than 3
-
-DIVIS_BY 5, MULT 3, AVG
-evaluate the average of 3 times the things divisible by 5
-
-LESS_THAN 5, SQUARE, PROD
-find the product of the squares of the numbers less than 5
-
-DIVIS_BY 4, ADD 2
-tell me 2 plus the things divisible by 4
-
-LESS_THAN 3, ADD 2
-compute 2 plus the elements less than 3
-
-SQUARE, AVG
-find the mean value of the squares of the values
-
-INVERSE
-tell me the reciprocals of the elements
-
-SQUARE
-find the squares of the things
-
-DIVIS_BY 4, SQUARE
-find the squares of the things divisible by 4
-
-DIVIS_BY 2, MULT 5
-tell me 5 times the even numbers
-
-DIVIS_BY 2
-find the even things
-
-DIVIS_BY 3, SQUARE, AVG
-the average of the squares of the values divisible by 3
-
-LESS_THAN 3, MULT 3
-take 3 times the things less than 3
-
-DIVIS_BY 3, SQUARE, MIN
-tell me the minimum of the squares of the values divisible by 3
-
-DIVIS_BY 5, ADD 5, MIN
-find the minimum value of 5 plus the values divisible by 5
-
-DIVIS_BY 3, SQUARE
-evaluate the squares of the things divisible by 3
-
-DIVIS_BY 4, MULT 4
-tell me 4 times the numbers divisible by 4
-
-AVG
-take the mean of the values
-
-LESS_THAN 2, PROD
-the product of the things less than 2
-
-DIVIS_BY 4, SQUARE, MIN
-evaluate the minimum value of the squares of the elements divisible by 4
-
-LESS_THAN 4, INVERSE
-take the reciprocals of the things less than 4
-
-LESS_THAN 2, SUM
-the sum of the things less than 2
-
-LESS_THAN 2, MULT 3, PROD
-evaluate the product of 3 times the values less than 2
-
-LESS_THAN 5, SQUARE, AVG
-the mean value of the squares of the elements less than 5
-
-DIVIS_BY 2, INVERSE
-compute the inverses of the even things
-
-DIVIS_BY 4, SQUARE, AVG
-evaluate the mean value of the squares of the values divisible by 4
-
-LESS_THAN 2, SQUARE
-evaluate the squares of the values less than 2
-
-INVERSE, SUM
-evaluate the sum of the inverses of the things
-
-LESS_THAN 3, MULT 2, MIN
-take the minimum value of 2 times the things less than 3
-
-MULT 3
-evaluate 3 times the elements
-
-DIVIS_BY 5, MIN
-the minimum of the elements divisible by 5
-
-LESS_THAN 4, MULT 2, MIN
-find the min of 2 times the values less than 4
-
-LESS_THAN 3, ADD 4
-evaluate 4 plus the values less than 3
-
-LESS_THAN 3, INVERSE, MIN
-find the min of the inverses of the things less than 3
-
-DIVIS_BY 5
-tell me the numbers divisible by 5
-
-MULT 3
-evaluate 3 times the values
-
-LESS_THAN 3, SQUARE
-tell me the squares of the numbers less than 3
-
-SQUARE, SUM
-sum the squares of the numbers
-
-LESS_THAN 5, ADD 3
-compute 3 plus the numbers less than 5
-
-DIVIS_BY 3, SQUARE, AVG
-average the squares of the things divisible by 3
-
-MULT 4, PROD
-multiply 4 times the things
-
-LESS_THAN 3, INVERSE, PROD
-tell me the product of the reciprocals of the elements less than 3
-
-DIVIS_BY 4, SUM
-tell me the sum of the numbers divisible by 4
-
-DIVIS_BY 3, ADD 3
-find 3 plus the values divisible by 3
-
-ADD 4, SUM
-take the sum of 4 plus the numbers
-
-LESS_THAN 4, SQUARE, MIN
-find the min of the squares of the values less than 4
-
-LESS_THAN 2
-find the things less than 2
-
-MULT 4, SUM
-tell me the sum of 4 times the values
-
-LESS_THAN 2, SQUARE, MIN
-find the min of the squares of the elements less than 2
-
-LESS_THAN 3, INVERSE, AVG
-average the inverses of the things less than 3
-
-LESS_THAN 4, MULT 4
-tell me 4 times the elements less than 4
-
-LESS_THAN 3, MIN
-compute the min of the elements less than 3
-
-LESS_THAN 5, MULT 5, AVG
-average 5 times the elements less than 5
-
-ADD 3
-evaluate 3 plus the numbers
-
-LESS_THAN 5
-evaluate the things less than 5
-
-DIVIS_BY 5
-tell me the numbers divisible by 5
-
-SQUARE
-tell me the squares of the things
-
-DIVIS_BY 2, MIN
-find the min value of the even numbers
-
-DIVIS_BY 3, MULT 5, SUM
-tell me the sum of 5 times the values divisible by 3
-
-DIVIS_BY 2, INVERSE
-tell me the inverses of the even numbers
-
-MULT 3
-tell me 3 times the things
-
-DIVIS_BY 2, INVERSE
-tell me the reciprocals of the even numbers
-
-DIVIS_BY 2, INVERSE
-take the inverses of the even values
-
-MULT 5
-compute 5 times the elements
-
-DIVIS_BY 5, SQUARE, SUM
-compute the sum of the squares of the numbers divisible by 5
-
-LESS_THAN 2, SUM
-take the sum of the values less than 2
-
-DIVIS_BY 5, SQUARE, MIN
-compute the minimum value of the squares of the values divisible by 5
-
-LESS_THAN 5, ADD 4, PROD
-tell me the product of 4 plus the numbers less than 5
-
-LESS_THAN 2, SUM
-find the sum of the elements less than 2
-
-LESS_THAN 5, MULT 3, AVG
-average 3 times the things less than 5
-
-LESS_THAN 4, SQUARE
-take the squares of the things less than 4
-
-LESS_THAN 4, ADD 2, MIN
-take the min of 2 plus the things less than 4
-
-LESS_THAN 3, MULT 3
-tell me 3 times the numbers less than 3
-
-LESS_THAN 5, INVERSE, SUM
-evaluate the sum of the inverses of the values less than 5
-
-DIVIS_BY 2
-tell me the even things
-
-DIVIS_BY 2, SQUARE
-find the squares of the even elements
-
-PROD
-the product of the things
-
-DIVIS_BY 5, INVERSE
-tell me the inverses of the values divisible by 5
-
-LESS_THAN 3, ADD 4, AVG
-find the mean of 4 plus the elements less than 3
-
-LESS_THAN 5, MULT 5
-compute 5 times the values less than 5
-
-LESS_THAN 2
-find the numbers less than 2
-
-DIVIS_BY 5, AVG
-average the values divisible by 5
-
-DIVIS_BY 5, MULT 5
-evaluate 5 times the numbers divisible by 5
-
-DIVIS_BY 5, MULT 3
-take 3 times the values divisible by 5
-
-LESS_THAN 5, ADD 2, MIN
-evaluate the minimum of 2 plus the elements less than 5
-
-INVERSE, PROD
-tell me the product of the inverses of the numbers
-
-INVERSE, SUM
-tell me the sum of the inverses of the numbers
-
-DIVIS_BY 5
-find the numbers divisible by 5
-
-DIVIS_BY 2, INVERSE, MIN
-compute the min of the reciprocals of the even values
-
-LESS_THAN 3, SUM
-compute the sum of the numbers less than 3
-
-DIVIS_BY 2, ADD 3, PROD
-take the product of 3 plus the even elements
-
-PROD
-multiply the numbers
-
-DIVIS_BY 4, SQUARE
-find the squares of the elements divisible by 4
-
-DIVIS_BY 2, ADD 4, SUM
-take the sum of 4 plus the even things
-
-DIVIS_BY 5, MULT 4, AVG
-the mean value of 4 times the elements divisible by 5
-
-DIVIS_BY 2, MULT 2, PROD
-compute the product of 2 times the even values
-
-DIVIS_BY 5, SQUARE
-find the squares of the values divisible by 5
-
-DIVIS_BY 3, SUM
-take the sum of the values divisible by 3
-
-LESS_THAN 3, ADD 4, AVG
-tell me the mean of 4 plus the elements less than 3
-
-MULT 2
-compute 2 times the values
-
-DIVIS_BY 2, SQUARE
-tell me the squares of the even numbers
-
-DIVIS_BY 4, SQUARE, AVG
-compute the average of the squares of the values divisible by 4
-
-LESS_THAN 2, MULT 5, MIN
-find the min of 5 times the things less than 2
-
-LESS_THAN 2, ADD 3, PROD
-multiply 3 plus the values less than 2
-
-LESS_THAN 2, INVERSE
-evaluate the reciprocals of the values less than 2
-
-DIVIS_BY 4, ADD 4
-find 4 plus the things divisible by 4
-
-LESS_THAN 4, SQUARE
-find the squares of the numbers less than 4
-
-DIVIS_BY 4, AVG
-compute the mean value of the things divisible by 4
-
-
-compute the elements
-
-MULT 4, PROD
-multiply 4 times the things
-
-AVG
-the mean value of the elements
-
-DIVIS_BY 4, AVG
-the mean value of the things divisible by 4
-
-AVG
-tell me the mean of the elements
-
-LESS_THAN 5, INVERSE, AVG
-compute the average of the reciprocals of the numbers less than 5
-
-DIVIS_BY 2, INVERSE, SUM
-tell me the sum of the reciprocals of the even numbers
-
-DIVIS_BY 5, ADD 5
-take 5 plus the elements divisible by 5
-
-DIVIS_BY 2, AVG
-compute the mean value of the even values
-
-SQUARE
-compute the squares of the numbers
-
-DIVIS_BY 2, INVERSE, MIN
-the min value of the inverses of the even elements
-
-LESS_THAN 2, MULT 3
-tell me 3 times the things less than 2
-
-DIVIS_BY 2, INVERSE, PROD
-compute the product of the reciprocals of the even elements
-
-ADD 3, PROD
-tell me the product of 3 plus the elements
-
-DIVIS_BY 4, SQUARE, PROD
-multiply all the squares of the values divisible by 4
-
-DIVIS_BY 3
-compute the things divisible by 3
-
-DIVIS_BY 2, AVG
-take the average of the even elements
-
-LESS_THAN 5, ADD 2, AVG
-average 2 plus the numbers less than 5
-
-LESS_THAN 5
-find the values less than 5
-
-DIVIS_BY 2, SQUARE
-take the squares of the even things
-
-SQUARE, AVG
-average the squares of the things
-
-DIVIS_BY 3
-evaluate the elements divisible by 3
-
-DIVIS_BY 2, INVERSE
-tell me the reciprocals of the even numbers
-
-DIVIS_BY 5
-take the things divisible by 5
-
-INVERSE
-evaluate the inverses of the numbers
-
-LESS_THAN 5
-evaluate the elements less than 5
-
-LESS_THAN 3, SQUARE, AVG
-take the average of the squares of the numbers less than 3
-
-ADD 3
-compute 3 plus the numbers
-
-ADD 3
-compute 3 plus the numbers
-
-DIVIS_BY 3
-tell me the values divisible by 3
-
-DIVIS_BY 3, MULT 2, SUM
-add up 2 times the numbers divisible by 3
-
-DIVIS_BY 3, INVERSE
-compute the reciprocals of the numbers divisible by 3
-
-LESS_THAN 3, INVERSE
-find the inverses of the elements less than 3
-
-DIVIS_BY 5, MULT 5
-compute 5 times the elements divisible by 5
-
-DIVIS_BY 4, SUM
-tell me the sum of the elements divisible by 4
-
-LESS_THAN 2, MULT 4, MIN
-find the min of 4 times the values less than 2
-
-DIVIS_BY 2, MULT 3
-compute 3 times the even numbers
-
-DIVIS_BY 5, ADD 4
-tell me 4 plus the things divisible by 5
-
-DIVIS_BY 2, ADD 3, SUM
-take the sum of 3 plus the even values
-
-LESS_THAN 2, INVERSE
-evaluate the inverses of the values less than 2
-
-DIVIS_BY 5, INVERSE, MIN
-find the min of the reciprocals of the numbers divisible by 5
-
-DIVIS_BY 4, PROD
-tell me the product of the numbers divisible by 4
-
-DIVIS_BY 4, SQUARE
-take the squares of the values divisible by 4
-
-DIVIS_BY 3, ADD 2
-compute 2 plus the values divisible by 3
-
-SQUARE, AVG
-compute the mean value of the squares of the elements
-
-LESS_THAN 3, INVERSE, MIN
-find the min of the reciprocals of the things less than 3
-
-INVERSE, AVG
-average the reciprocals of the values
-
-LESS_THAN 2, MULT 3
-find 3 times the numbers less than 2
-
-DIVIS_BY 3, MULT 2, SUM
-sum 2 times the numbers divisible by 3
-
-MULT 4, AVG
-compute the average of 4 times the values
-
-MULT 5, PROD
-multiply 5 times the values
-
-MULT 2, SUM
-add up 2 times the elements
-
-DIVIS_BY 3, SQUARE
-evaluate the squares of the values divisible by 3
+take the inverses of the even elements
 
 LESS_THAN 5, INVERSE
 evaluate the inverses of the elements less than 5
 
-DIVIS_BY 4, AVG
-average the things divisible by 4
-
-INVERSE
-find the inverses of the things
-
-INVERSE, AVG
-average the reciprocals of the values
-
-SQUARE
-take the squares of the values
-
-LESS_THAN 2, INVERSE, SUM
-sum the reciprocals of the elements less than 2
-
-LESS_THAN 5, INVERSE
-find the inverses of the values less than 5
-
-LESS_THAN 5, MULT 2, PROD
-compute the product of 2 times the values less than 5
-
-LESS_THAN 5
-tell me the elements less than 5
-
-LESS_THAN 2, MULT 3, SUM
-take the sum of 3 times the elements less than 2
-
-DIVIS_BY 2, SQUARE, SUM
-the sum of the squares of the even values
-
-LESS_THAN 5, INVERSE, SUM
-find the sum of the inverses of the things less than 5
-
-MULT 4, SUM
-find the sum of 4 times the elements
-
-LESS_THAN 3, ADD 3
-evaluate 3 plus the numbers less than 3
-
-DIVIS_BY 5, INVERSE
-evaluate the reciprocals of the elements divisible by 5
-
-INVERSE
-compute the reciprocals of the things
-
-INVERSE, PROD
-multiply the inverses of the elements
-
-LESS_THAN 4, INVERSE
-find the reciprocals of the elements less than 4
-
-LESS_THAN 3, SUM
-sum the elements less than 3
-
-LESS_THAN 4, SQUARE
-evaluate the squares of the values less than 4
-
-SUM
-tell me the sum of the numbers
-
-ADD 3
-take 3 plus the elements
-
-PROD
-compute the product of the numbers
-
-LESS_THAN 3, ADD 5
-find 5 plus the elements less than 3
-
-DIVIS_BY 3
-find the values divisible by 3
-
-LESS_THAN 3, INVERSE
-compute the reciprocals of the values less than 3
-
-LESS_THAN 2, ADD 2
-compute 2 plus the values less than 2
-
-LESS_THAN 3, INVERSE
-take the inverses of the numbers less than 3
-
-INVERSE, PROD
-multiply all the inverses of the things
-
-LESS_THAN 3, SQUARE
-compute the squares of the elements less than 3
-
-MULT 4, PROD
-multiply all 4 times the things
-
-DIVIS_BY 5, MULT 2
-compute 2 times the values divisible by 5
-
-DIVIS_BY 4, MIN
-find the min value of the numbers divisible by 4
-
-LESS_THAN 3, MULT 5, PROD
-tell me the product of 5 times the numbers less than 3
-
-DIVIS_BY 2, INVERSE, SUM
-evaluate the sum of the inverses of the even things
-
-DIVIS_BY 2, ADD 2, PROD
-find the product of 2 plus the even elements
-
-DIVIS_BY 5, INVERSE, AVG
-tell me the average of the inverses of the values divisible by 5
-
-LESS_THAN 2, MIN
-tell me the min value of the numbers less than 2
-
-DIVIS_BY 2, SQUARE
-evaluate the squares of the even elements
-
-DIVIS_BY 4, SQUARE, SUM
-evaluate the sum of the squares of the things divisible by 4
-
-LESS_THAN 2, INVERSE
-find the inverses of the numbers less than 2
-
-ADD 2, SUM
-the sum of 2 plus the numbers
-
-SQUARE
-evaluate the squares of the values
-
-DIVIS_BY 4, MULT 5, SUM
-add all 5 times the values divisible by 4
-
-LESS_THAN 3, INVERSE
-compute the inverses of the numbers less than 3
-
-DIVIS_BY 2, INVERSE, MIN
-find the minimum of the reciprocals of the even values
-
-DIVIS_BY 4, MULT 4
-compute 4 times the elements divisible by 4
-
-MULT 4, MIN
-tell me the min value of 4 times the numbers
-
-LESS_THAN 5, SQUARE, PROD
-multiply all the squares of the numbers less than 5
-
-DIVIS_BY 4, INVERSE
-find the reciprocals of the things divisible by 4
-
-LESS_THAN 5, AVG
-tell me the mean value of the values less than 5
-
-MULT 5
-tell me 5 times the values
-
-LESS_THAN 5, PROD
-the product of the elements less than 5
-
-INVERSE, AVG
-compute the mean of the inverses of the values
-
-DIVIS_BY 4, INVERSE
-take the inverses of the things divisible by 4
-
-DIVIS_BY 3, SQUARE
-find the squares of the things divisible by 3
-
-DIVIS_BY 5, MULT 2
-compute 2 times the things divisible by 5
-
-LESS_THAN 5, INVERSE, SUM
-add all the reciprocals of the elements less than 5
-
-LESS_THAN 5, ADD 3, SUM
-sum 3 plus the things less than 5
-
-LESS_THAN 5, MULT 4
-tell me 4 times the things less than 5
-
-INVERSE, AVG
-evaluate the mean value of the reciprocals of the elements
-
-DIVIS_BY 3, MULT 4
-take 4 times the values divisible by 3
-
-DIVIS_BY 3, MULT 2, MIN
-take the min value of 2 times the things divisible by 3
-
 DIVIS_BY 2, INVERSE
-find the inverses of the even things
+evaluate the inverses of the even elements
 
-DIVIS_BY 4, MULT 5
-take 5 times the things divisible by 4
-
-LESS_THAN 5, SQUARE, AVG
-average the squares of the things less than 5
-
-DIVIS_BY 3
-compute the numbers divisible by 3
-
-LESS_THAN 3, SQUARE
-take the squares of the numbers less than 3
-
-LESS_THAN 5, INVERSE, PROD
-evaluate the product of the inverses of the numbers less than 5
-
-DIVIS_BY 4, ADD 3
-tell me 3 plus the numbers divisible by 4
-
-INVERSE, AVG
-evaluate the mean value of the reciprocals of the things
-
-LESS_THAN 2, INVERSE, PROD
-the product of the inverses of the things less than 2
-
-DIVIS_BY 5, INVERSE
-compute the reciprocals of the things divisible by 5
-
-INVERSE, PROD
-the product of the reciprocals of the values
-
-DIVIS_BY 2, ADD 2
-tell me 2 plus the even elements
-
-LESS_THAN 5, SUM
-the sum of the values less than 5
-
-MIN
-the min of the elements
-
-DIVIS_BY 3, MULT 4
-compute 4 times the elements divisible by 3
-
-LESS_THAN 3, SQUARE, AVG
-average the squares of the values less than 3
-
-LESS_THAN 3, INVERSE, PROD
-multiply all the inverses of the values less than 3
-
-LESS_THAN 5, ADD 5
-compute 5 plus the numbers less than 5
-
-DIVIS_BY 3, INVERSE, MIN
-find the min of the inverses of the elements divisible by 3
-
-LESS_THAN 4
-take the values less than 4
-
-DIVIS_BY 3, INVERSE, MIN
-find the min of the reciprocals of the numbers divisible by 3
-
-LESS_THAN 5, ADD 4, PROD
-find the product of 4 plus the values less than 5
-
-LESS_THAN 2, SQUARE
-evaluate the squares of the values less than 2
-
-DIVIS_BY 2, MULT 5
-take 5 times the even numbers
-
-DIVIS_BY 4, SQUARE
-compute the squares of the things divisible by 4
-
-DIVIS_BY 2, MULT 4, PROD
-multiply 4 times the even numbers
-
-DIVIS_BY 3, ADD 4, MIN
-find the min of 4 plus the values divisible by 3
-
-LESS_THAN 3, SQUARE
-tell me the squares of the values less than 3
-
-LESS_THAN 3, MULT 4, SUM
-evaluate the sum of 4 times the numbers less than 3
-
-INVERSE, MIN
-evaluate the min value of the inverses of the elements
-
-SQUARE, PROD
-tell me the product of the squares of the values
-
-ADD 3, PROD
-find the product of 3 plus the things
-
-INVERSE
-tell me the inverses of the things
-
-DIVIS_BY 4, SQUARE
-compute the squares of the elements divisible by 4
-
-DIVIS_BY 4
-take the elements divisible by 4
-
-DIVIS_BY 2, MULT 4
-evaluate 4 times the even values
-
-DIVIS_BY 2, SQUARE, SUM
-take the sum of the squares of the even numbers
-
-DIVIS_BY 4, ADD 4
-find 4 plus the elements divisible by 4
-
-LESS_THAN 5
-take the numbers less than 5
-
-LESS_THAN 4, MIN
-tell me the min value of the numbers less than 4
-
-LESS_THAN 3, PROD
-take the product of the things less than 3
-
-DIVIS_BY 5, INVERSE
-evaluate the reciprocals of the things divisible by 5
-
-SQUARE, PROD
-multiply all the squares of the things
-
-DIVIS_BY 5, INVERSE
-find the reciprocals of the numbers divisible by 5
-
-DIVIS_BY 2
-compute the even things
-
-DIVIS_BY 3, ADD 4
-take 4 plus the elements divisible by 3
-
-LESS_THAN 5, MULT 4, MIN
-find the min of 4 times the things less than 5
-
-DIVIS_BY 5, INVERSE, SUM
-the sum of the inverses of the numbers divisible by 5
-
-MULT 2, PROD
-find the product of 2 times the values
-
-SQUARE
-tell me the squares of the elements
-
-MULT 2, AVG
-average 2 times the elements
-
-DIVIS_BY 5, PROD
-evaluate the product of the elements divisible by 5
-
-SQUARE
-take the squares of the things
-
-LESS_THAN 2, INVERSE, SUM
-sum the inverses of the values less than 2
-
-DIVIS_BY 3
-take the numbers divisible by 3
-
-INVERSE
-evaluate the reciprocals of the things
-
-DIVIS_BY 3, INVERSE, AVG
-evaluate the average of the inverses of the elements divisible by 3
-
-SQUARE
-evaluate the squares of the values
-
-LESS_THAN 5, SQUARE
-find the squares of the numbers less than 5
-
-INVERSE
-tell me the inverses of the things
-
-DIVIS_BY 3, MULT 2
-compute 2 times the values divisible by 3
-
-LESS_THAN 2, SQUARE, AVG
-compute the mean of the squares of the numbers less than 2
-
-DIVIS_BY 4, ADD 5
-compute 5 plus the elements divisible by 4
-
-SQUARE
-find the squares of the numbers
-
-LESS_THAN 3, ADD 5
-compute 5 plus the things less than 3
-
-DIVIS_BY 3, ADD 4, MIN
-compute the minimum value of 4 plus the things divisible by 3
-
-LESS_THAN 2, SQUARE, AVG
-average the squares of the numbers less than 2
-
-LESS_THAN 3, INVERSE
-evaluate the inverses of the elements less than 3
-
-DIVIS_BY 3, INVERSE, AVG
-take the mean value of the inverses of the values divisible by 3
-
-LESS_THAN 2, SQUARE, SUM
-add up the squares of the numbers less than 2
-
-INVERSE
-evaluate the inverses of the values
-
-DIVIS_BY 5
-compute the elements divisible by 5
-
-AVG
-the mean value of the elements
-
-SQUARE
-take the squares of the things
-
-LESS_THAN 3, SQUARE, MIN
-find the min of the squares of the things less than 3
-
-DIVIS_BY 4, INVERSE, MIN
-evaluate the min of the inverses of the values divisible by 4
-
-LESS_THAN 5, INVERSE, SUM
-take the sum of the reciprocals of the things less than 5
-
-DIVIS_BY 3, ADD 3
-find 3 plus the values divisible by 3
-
-DIVIS_BY 3, MULT 3, SUM
-add all 3 times the numbers divisible by 3
-
-DIVIS_BY 5, SQUARE, PROD
-evaluate the product of the squares of the things divisible by 5
-
-LESS_THAN 5, SQUARE, MIN
-tell me the min of the squares of the elements less than 5
-
-LESS_THAN 4, INVERSE, PROD
-multiply all the reciprocals of the values less than 4
-
-LESS_THAN 3, SQUARE, MIN
-tell me the min value of the squares of the things less than 3
-
-LESS_THAN 5, INVERSE
-take the reciprocals of the elements less than 5
-
-LESS_THAN 2, MULT 3, AVG
-the mean of 3 times the values less than 2
-
-
-take the elements
-
-DIVIS_BY 2, MULT 4, PROD
-evaluate the product of 4 times the even elements
-
-MULT 4
-tell me 4 times the things
-
-DIVIS_BY 5, ADD 3, SUM
-evaluate the sum of 3 plus the numbers divisible by 5
-
-LESS_THAN 5, SUM
-sum the things less than 5
-
-LESS_THAN 3
-take the elements less than 3
-
-LESS_THAN 4, SQUARE, AVG
-take the average of the squares of the values less than 4
-
-DIVIS_BY 2, INVERSE, PROD
-multiply all the inverses of the even numbers
-
-INVERSE
-evaluate the inverses of the numbers
-
-DIVIS_BY 2, SQUARE
-find the squares of the even numbers
-
-LESS_THAN 3, MULT 2
-compute 2 times the values less than 3
-
-LESS_THAN 5, MULT 5, SUM
-add all 5 times the values less than 5
-
-SQUARE, SUM
-tell me the sum of the squares of the elements
-
-DIVIS_BY 2, MULT 2
-evaluate 2 times the even things
-
-DIVIS_BY 5, MULT 3
-evaluate 3 times the values divisible by 5
-
-DIVIS_BY 2, SQUARE
-compute the squares of the even numbers
-
-DIVIS_BY 2, SQUARE
-evaluate the squares of the even values
-
-DIVIS_BY 4
-take the values divisible by 4
-
-LESS_THAN 5, INVERSE
-take the inverses of the numbers less than 5
-
-SQUARE
-take the squares of the things
-
-DIVIS_BY 5, INVERSE, MIN
-evaluate the minimum of the inverses of the things divisible by 5
-
-LESS_THAN 5, ADD 5
-compute 5 plus the things less than 5
-
-AVG
-find the average of the elements
-
-DIVIS_BY 4
-compute the elements divisible by 4
-
-LESS_THAN 2, MIN
-find the min of the elements less than 2
-
-LESS_THAN 5, ADD 5
-take 5 plus the things less than 5
-
-DIVIS_BY 4, SQUARE, SUM
-tell me the sum of the squares of the elements divisible by 4
-
-DIVIS_BY 4
-compute the elements divisible by 4
-
-DIVIS_BY 4, PROD
-find the product of the values divisible by 4
-
-DIVIS_BY 5, AVG
-compute the mean value of the numbers divisible by 5
-
-DIVIS_BY 4, SQUARE
-find the squares of the elements divisible by 4
-
-DIVIS_BY 4
-find the values divisible by 4
-
-DIVIS_BY 2, ADD 4
-take 4 plus the even things
-
-DIVIS_BY 2, MIN
-find the min of the even numbers
-
-DIVIS_BY 2, INVERSE, AVG
-find the mean of the inverses of the even values
-
-LESS_THAN 5, AVG
-take the mean of the things less than 5
-
-LESS_THAN 2, ADD 2
-compute 2 plus the elements less than 2
-
-LESS_THAN 4, ADD 2
-evaluate 2 plus the things less than 4
-
-MULT 3
-tell me 3 times the elements
-
-DIVIS_BY 2, AVG
-tell me the mean of the even elements
-
-DIVIS_BY 2, SQUARE
-evaluate the squares of the even numbers
-
-DIVIS_BY 5, SQUARE
-evaluate the squares of the elements divisible by 5
-
-LESS_THAN 2, INVERSE, AVG
-find the mean of the reciprocals of the elements less than 2
-
-INVERSE, SUM
-add all the inverses of the numbers
-
-DIVIS_BY 5, MULT 3
-compute 3 times the numbers divisible by 5
-
-DIVIS_BY 2, SQUARE
-take the squares of the even values
-
-LESS_THAN 4, SQUARE
-find the squares of the things less than 4
-
-INVERSE, SUM
-add all the reciprocals of the values
-
-DIVIS_BY 3, SQUARE
-evaluate the squares of the numbers divisible by 3
-
-DIVIS_BY 3, INVERSE
-evaluate the reciprocals of the numbers divisible by 3
-
-DIVIS_BY 4, INVERSE, AVG
-find the average of the inverses of the things divisible by 4
-
-DIVIS_BY 3, ADD 5, AVG
-average 5 plus the things divisible by 3
-
-DIVIS_BY 2
-compute the even numbers
-
-AVG
-take the mean value of the elements
-
-LESS_THAN 4, INVERSE
-tell me the reciprocals of the values less than 4
-
-DIVIS_BY 4, ADD 5
-evaluate 5 plus the numbers divisible by 4
-
-DIVIS_BY 5, SQUARE, AVG
-tell me the mean value of the squares of the values divisible by 5
-
-DIVIS_BY 3, INVERSE, PROD
-compute the product of the inverses of the elements divisible by 3
-
-
-compute the numbers
-
-DIVIS_BY 4, SQUARE
-find the squares of the elements divisible by 4
-
-DIVIS_BY 3, ADD 2
-evaluate 2 plus the elements divisible by 3
-
-ADD 5, SUM
-the sum of 5 plus the things
-
-DIVIS_BY 5, INVERSE, AVG
-average the reciprocals of the values divisible by 5
-
-LESS_THAN 3, MIN
-tell me the minimum of the elements less than 3
-
-DIVIS_BY 2, MULT 3
-tell me 3 times the even things
-
-DIVIS_BY 5, SQUARE
-take the squares of the elements divisible by 5
-
-DIVIS_BY 2
-tell me the even things
-
-SUM
-compute the sum of the values
-
-DIVIS_BY 4, INVERSE, SUM
-evaluate the sum of the inverses of the things divisible by 4
-
-LESS_THAN 2, SQUARE, AVG
-evaluate the average of the squares of the numbers less than 2
-
-DIVIS_BY 5, MULT 3, MIN
-evaluate the minimum value of 3 times the numbers divisible by 5
-
-DIVIS_BY 4, INVERSE
-tell me the inverses of the numbers divisible by 4
-
-LESS_THAN 2, SQUARE
-evaluate the squares of the numbers less than 2
-
-LESS_THAN 2, ADD 2
-tell me 2 plus the numbers less than 2
-
-LESS_THAN 2, INVERSE, MIN
-evaluate the min of the reciprocals of the values less than 2
-
-DIVIS_BY 2, MULT 3
-evaluate 3 times the even numbers
-
-DIVIS_BY 2
-compute the even things
-
-DIVIS_BY 4
-take the elements divisible by 4
-
-ADD 2
-tell me 2 plus the numbers
-
-DIVIS_BY 3, INVERSE, AVG
-tell me the mean of the reciprocals of the elements divisible by 3
-
-DIVIS_BY 3, SQUARE, AVG
-tell me the mean of the squares of the things divisible by 3
-
-DIVIS_BY 2, MULT 3, AVG
-compute the mean value of 3 times the even numbers
-
-SQUARE
-compute the squares of the elements
-
-DIVIS_BY 3, ADD 3
-tell me 3 plus the numbers divisible by 3
-
-LESS_THAN 4, ADD 3
-compute 3 plus the numbers less than 4
-
-LESS_THAN 3, ADD 5
-evaluate 5 plus the numbers less than 3
-
-INVERSE
-find the inverses of the elements
-
-DIVIS_BY 2, INVERSE
-tell me the reciprocals of the even values
-
-DIVIS_BY 2, INVERSE, SUM
-evaluate the sum of the inverses of the even elements
-
-DIVIS_BY 4, SUM
-tell me the sum of the elements divisible by 4
-
-DIVIS_BY 2, INVERSE, AVG
-find the mean of the reciprocals of the even values
-
-LESS_THAN 2, ADD 2
-take 2 plus the numbers less than 2
-
-ADD 5, SUM
-the sum of 5 plus the values
-
-DIVIS_BY 4, ADD 2
-tell me 2 plus the numbers divisible by 4
-
-LESS_THAN 3, MULT 3, MIN
-compute the min of 3 times the elements less than 3
-
-SQUARE
-evaluate the squares of the things
-
-DIVIS_BY 4
-compute the elements divisible by 4
-
-DIVIS_BY 2, AVG
-find the mean value of the even things
-
-INVERSE
-compute the reciprocals of the elements
-
-LESS_THAN 4, SQUARE
-evaluate the squares of the elements less than 4
-
-DIVIS_BY 5, MULT 2, AVG
-the mean value of 2 times the values divisible by 5
-
-DIVIS_BY 4, ADD 2, SUM
-tell me the sum of 2 plus the numbers divisible by 4
-
-LESS_THAN 2, SQUARE, PROD
-find the product of the squares of the values less than 2
-
-LESS_THAN 3
-compute the values less than 3
-
-DIVIS_BY 3, INVERSE
-find the inverses of the things divisible by 3
-
-SQUARE, PROD
-tell me the product of the squares of the elements
-
-MULT 5, MIN
-find the min of 5 times the numbers
-
-DIVIS_BY 4, SQUARE
-take the squares of the things divisible by 4
-
-LESS_THAN 5, SQUARE, AVG
-average the squares of the elements less than 5
-
-DIVIS_BY 2, INVERSE, AVG
-find the mean value of the reciprocals of the even elements
-
-DIVIS_BY 5, AVG
-average the values divisible by 5
-
-INVERSE
-find the reciprocals of the things
-
-LESS_THAN 4, MULT 2, MIN
-compute the minimum value of 2 times the elements less than 4
-
-LESS_THAN 3, MULT 4, AVG
-tell me the mean value of 4 times the numbers less than 3
-
-DIVIS_BY 5, PROD
-tell me the product of the elements divisible by 5
-
-DIVIS_BY 4, MULT 3, MIN
-take the minimum of 3 times the elements divisible by 4
-
-INVERSE, AVG
-average the reciprocals of the values
-
-LESS_THAN 3, SQUARE, MIN
-tell me the minimum value of the squares of the values less than 3
-
-LESS_THAN 4, ADD 2, MIN
-tell me the minimum value of 2 plus the numbers less than 4
-
-DIVIS_BY 3, INVERSE
-evaluate the inverses of the numbers divisible by 3
-
-DIVIS_BY 3, MULT 5
-evaluate 5 times the values divisible by 3
-
-DIVIS_BY 5
-find the numbers divisible by 5
-
-DIVIS_BY 3, SQUARE
-compute the squares of the elements divisible by 3
-
-DIVIS_BY 5, SQUARE
-evaluate the squares of the numbers divisible by 5
-
-LESS_THAN 5, MULT 3, MIN
-find the min of 3 times the things less than 5
-
-DIVIS_BY 5, SQUARE, PROD
-multiply the squares of the values divisible by 5
-
-LESS_THAN 5, SQUARE, PROD
-evaluate the product of the squares of the values less than 5
-
-DIVIS_BY 5
-find the things divisible by 5
-
-DIVIS_BY 4, INVERSE
-evaluate the reciprocals of the numbers divisible by 4
-
-DIVIS_BY 2, INVERSE, PROD
-multiply all the reciprocals of the even numbers
+DIVIS_BY 5, ADD 5, AVG
+take the mean of 5 plus the values divisible by 5
 
 DIVIS_BY 2, ADD 4
 evaluate 4 plus the even things
 
-DIVIS_BY 2, AVG
-the mean value of the even numbers
-
-SQUARE, SUM
-tell me the sum of the squares of the values
-
-DIVIS_BY 3
-compute the values divisible by 3
-
-LESS_THAN 2, ADD 5, SUM
-take the sum of 5 plus the values less than 2
-
-DIVIS_BY 4, SQUARE
-compute the squares of the elements divisible by 4
-
-LESS_THAN 4, SQUARE
-tell me the squares of the things less than 4
-
-LESS_THAN 5, MULT 4, PROD
-the product of 4 times the elements less than 5
-
-SQUARE
-tell me the squares of the things
-
-DIVIS_BY 5, INVERSE
-tell me the inverses of the elements divisible by 5
-
-DIVIS_BY 4, MULT 5
-tell me 5 times the values divisible by 4
-
-LESS_THAN 2, MULT 2
-take 2 times the numbers less than 2
-
-ADD 4
-take 4 plus the elements
-
-SQUARE
-find the squares of the things
-
-DIVIS_BY 5, INVERSE
-evaluate the inverses of the numbers divisible by 5
-
-LESS_THAN 2, ADD 2
-take 2 plus the elements less than 2
-
-LESS_THAN 4, MULT 4
-compute 4 times the things less than 4
-
-LESS_THAN 5, INVERSE
-find the inverses of the elements less than 5
-
-DIVIS_BY 2, AVG
-average the even things
-
-DIVIS_BY 3, MULT 2
-find 2 times the elements divisible by 3
-
-LESS_THAN 5, SQUARE
-compute the squares of the things less than 5
-
-LESS_THAN 4, ADD 4
-compute 4 plus the elements less than 4
-
-DIVIS_BY 3, PROD
-the product of the things divisible by 3
-
-LESS_THAN 4, SQUARE
-tell me the squares of the things less than 4
-
-DIVIS_BY 3, INVERSE, SUM
-evaluate the sum of the reciprocals of the elements divisible by 3
-
-DIVIS_BY 5, MULT 2, AVG
-tell me the mean of 2 times the numbers divisible by 5
-
-MIN
-compute the min of the elements
-
-LESS_THAN 2, SQUARE, MIN
-find the min of the squares of the things less than 2
-
-INVERSE
-compute the reciprocals of the values
-
-LESS_THAN 3, MULT 3, SUM
-tell me the sum of 3 times the numbers less than 3
-
-INVERSE
-take the reciprocals of the elements
-
-INVERSE, SUM
-compute the sum of the reciprocals of the numbers
-
-LESS_THAN 4
-compute the things less than 4
-
-ADD 2
-find 2 plus the values
-
-MULT 5, SUM
-tell me the sum of 5 times the values
-
-DIVIS_BY 5, MULT 5, PROD
-compute the product of 5 times the numbers divisible by 5
-
-SQUARE
-tell me the squares of the values
-
-INVERSE
-compute the reciprocals of the numbers
-
-
-compute the values
-
-LESS_THAN 2, SQUARE
-evaluate the squares of the values less than 2
-
-DIVIS_BY 4
-compute the elements divisible by 4
-
-DIVIS_BY 2, ADD 3, MIN
-find the min of 3 plus the even numbers
-
-DIVIS_BY 4, SQUARE
-find the squares of the elements divisible by 4
-
-MULT 5, MIN
-the min value of 5 times the numbers
-
-LESS_THAN 5, ADD 3, SUM
-sum 3 plus the numbers less than 5
-
-LESS_THAN 3, AVG
-take the mean of the numbers less than 3
-
-DIVIS_BY 4, INVERSE
-find the reciprocals of the values divisible by 4
-
-INVERSE, SUM
-sum the inverses of the things
-
-LESS_THAN 5, INVERSE
-take the inverses of the numbers less than 5
-
 LESS_THAN 3
 take the things less than 3
 
-SQUARE
-evaluate the squares of the values
+DIVIS_BY 4, ADD 5, PROD
+the product of 5 plus the elements divisible by 4
 
-DIVIS_BY 2
-find the even elements
+LESS_THAN 4, INVERSE
+take the reciprocals of the values less than 4
 
-DIVIS_BY 2, MULT 4, PROD
-find the product of 4 times the even elements
+LESS_THAN 3, INVERSE, AVG
+find the mean of the inverses of the values less than 3
 
-LESS_THAN 5, SQUARE
-find the squares of the numbers less than 5
+LESS_THAN 5, INVERSE, MIN
+take the min value of the reciprocals of the numbers less than 5
 
-LESS_THAN 2, AVG
-take the average of the elements less than 2
+LESS_THAN 5, SUM
+find the sum of the things less than 5
 
-DIVIS_BY 2, MULT 5
-find 5 times the even values
+DIVIS_BY 3, MULT 5, MIN
+find the min value of 5 times the things divisible by 3
 
+LESS_THAN 3, MULT 2
+take 2 times the elements less than 3
 
-tell me the elements
+DIVIS_BY 4, SQUARE
+compute the squares of the numbers divisible by 4
 
-LESS_THAN 4, AVG
-average the values less than 4
 
-LESS_THAN 5, INVERSE
-take the reciprocals of the things less than 5
+compute the elements
 
-ADD 4, SUM
-sum 4 plus the numbers
-
-DIVIS_BY 2, ADD 4, AVG
-the mean of 4 plus the even things
-
-
-evaluate the values
-
-LESS_THAN 5, INVERSE
-compute the inverses of the values less than 5
-
-DIVIS_BY 4, SUM
-add all the elements divisible by 4
-
-LESS_THAN 3
-tell me the things less than 3
-
-INVERSE, MIN
-evaluate the min of the inverses of the things
-
-DIVIS_BY 2, MULT 5
-evaluate 5 times the even numbers
-
-DIVIS_BY 3, MULT 4
-find 4 times the numbers divisible by 3
-
-LESS_THAN 2, MULT 4
-compute 4 times the numbers less than 2
-
-LESS_THAN 4, ADD 2
-evaluate 2 plus the numbers less than 4
-
-SQUARE, SUM
-the sum of the squares of the values
-
-INVERSE, SUM
-tell me the sum of the inverses of the elements
-
-DIVIS_BY 5
-take the elements divisible by 5
-
-DIVIS_BY 3, INVERSE
-find the inverses of the values divisible by 3
-
-DIVIS_BY 5, SQUARE, MIN
-take the min value of the squares of the values divisible by 5
-
-ADD 3
-tell me 3 plus the numbers
-
-LESS_THAN 4, SQUARE, MIN
-find the minimum of the squares of the things less than 4
-
-DIVIS_BY 3, INVERSE
-find the inverses of the elements divisible by 3
-
-DIVIS_BY 3, SQUARE, AVG
-take the mean value of the squares of the elements divisible by 3
-
-LESS_THAN 3, MULT 5
-compute 5 times the values less than 3
-
-LESS_THAN 3, MULT 5, MIN
-tell me the min of 5 times the things less than 3
-
-DIVIS_BY 3, INVERSE
-take the inverses of the elements divisible by 3
-
-LESS_THAN 4, INVERSE, SUM
-add all the inverses of the elements less than 4
-
-SQUARE
-take the squares of the elements
-
-DIVIS_BY 5, SQUARE, SUM
-evaluate the sum of the squares of the numbers divisible by 5
-
-DIVIS_BY 5, INVERSE, AVG
-the mean of the inverses of the things divisible by 5
-
-DIVIS_BY 4, MULT 5
-find 5 times the elements divisible by 4
-
-LESS_THAN 3, ADD 4, AVG
-find the mean of 4 plus the numbers less than 3
-
-LESS_THAN 3, INVERSE, MIN
-the min of the inverses of the things less than 3
-
-DIVIS_BY 2, SQUARE
-take the squares of the even values
-
-DIVIS_BY 4, SQUARE, SUM
-compute the sum of the squares of the elements divisible by 4
-
-DIVIS_BY 2, SQUARE
-evaluate the squares of the even numbers
-
-MULT 4
-find 4 times the values
-
-LESS_THAN 3, INVERSE, MIN
-compute the minimum of the inverses of the elements less than 3
-
-DIVIS_BY 2, INVERSE
-find the inverses of the even elements
-
-DIVIS_BY 3, ADD 2
-evaluate 2 plus the numbers divisible by 3
-
-LESS_THAN 2, MIN
-find the min of the elements less than 2
-
-SUM
-find the sum of the values
-
-LESS_THAN 5, SQUARE, SUM
-compute the sum of the squares of the numbers less than 5
-
-DIVIS_BY 2, MULT 2, SUM
-add up 2 times the even elements
-
-LESS_THAN 4
-compute the values less than 4
-
-DIVIS_BY 3, SQUARE, MIN
-compute the minimum value of the squares of the numbers divisible by 3
-
-LESS_THAN 5, INVERSE, AVG
-compute the average of the reciprocals of the values less than 5
-
-DIVIS_BY 3
-take the values divisible by 3
-
-LESS_THAN 2, INVERSE
-evaluate the inverses of the values less than 2
-
-INVERSE
-tell me the inverses of the things
-
-SQUARE
-find the squares of the numbers
-
-LESS_THAN 3, INVERSE, PROD
-compute the product of the reciprocals of the values less than 3
-
-DIVIS_BY 4, INVERSE
-find the inverses of the elements divisible by 4
-
-DIVIS_BY 5, AVG
-average the elements divisible by 5
-
-LESS_THAN 5, MIN
-tell me the minimum value of the numbers less than 5
-
-DIVIS_BY 3, INVERSE, PROD
-find the product of the inverses of the things divisible by 3
-
-DIVIS_BY 3, SQUARE
-compute the squares of the elements divisible by 3
-
-LESS_THAN 3, SQUARE
-tell me the squares of the things less than 3
-
-LESS_THAN 3, MULT 3, AVG
-evaluate the average of 3 times the numbers less than 3
-
-DIVIS_BY 2, AVG
-evaluate the mean of the even elements
-
-LESS_THAN 5, ADD 2
-take 2 plus the elements less than 5
-
-LESS_THAN 3, MIN
-take the minimum of the elements less than 3
-
-LESS_THAN 5, SQUARE
-find the squares of the elements less than 5
-
-DIVIS_BY 2
-find the even numbers
-
-DIVIS_BY 4, ADD 5
-evaluate 5 plus the values divisible by 4
-
-DIVIS_BY 2, MULT 5, SUM
-add up 5 times the even elements
-
-DIVIS_BY 4, PROD
-the product of the values divisible by 4
-
-
-evaluate the elements
-
-LESS_THAN 5, INVERSE
-compute the inverses of the elements less than 5
-
-SQUARE
-evaluate the squares of the elements
-
-LESS_THAN 5, AVG
-average the values less than 5
-
-INVERSE, SUM
-take the sum of the reciprocals of the values
-
-LESS_THAN 3, ADD 5, MIN
-find the min of 5 plus the things less than 3
-
-LESS_THAN 5
-compute the elements less than 5
-
-LESS_THAN 5, ADD 2, PROD
-multiply all 2 plus the elements less than 5
-
-INVERSE, MIN
-find the min of the inverses of the elements
-
-MULT 4
-evaluate 4 times the numbers
+LESS_THAN 3, AVG
+take the average of the values less than 3
 
 LESS_THAN 2, SQUARE
-compute the squares of the elements less than 2
-
-DIVIS_BY 2, MULT 2
-take 2 times the even values
-
-DIVIS_BY 4, MULT 2, MIN
-find the min value of 2 times the things divisible by 4
-
-LESS_THAN 2
-take the things less than 2
-
-DIVIS_BY 2, SQUARE, PROD
-compute the product of the squares of the even values
-
-LESS_THAN 5, SQUARE, PROD
-find the product of the squares of the numbers less than 5
-
-DIVIS_BY 2, MULT 4
-evaluate 4 times the even values
+find the squares of the numbers less than 2
 
 LESS_THAN 5, ADD 2, PROD
-find the product of 2 plus the numbers less than 5
+find the product of 2 plus the elements less than 5
 
-LESS_THAN 4
-evaluate the elements less than 4
-
-SQUARE, SUM
-take the sum of the squares of the numbers
-
-DIVIS_BY 2, ADD 4, PROD
-compute the product of 4 plus the even numbers
-
-DIVIS_BY 4
-find the things divisible by 4
-
-LESS_THAN 5, INVERSE
-take the reciprocals of the numbers less than 5
+DIVIS_BY 3, ADD 3
+take 3 plus the things divisible by 3
 
 DIVIS_BY 2, SQUARE
 take the squares of the even things
 
-LESS_THAN 4, ADD 4, PROD
-compute the product of 4 plus the elements less than 4
+DIVIS_BY 4, SUM
+find the sum of the values divisible by 4
 
-SQUARE, AVG
-average the squares of the things
+LESS_THAN 5, SUM
+evaluate the sum of the values less than 5
 
-LESS_THAN 3, SUM
-tell me the sum of the values less than 3
+DIVIS_BY 2, MULT 5, MIN
+compute the min of 5 times the even elements
 
-LESS_THAN 3, ADD 2, MIN
-the minimum of 2 plus the things less than 3
+INVERSE, SUM
+find the sum of the reciprocals of the things
 
-LESS_THAN 4, INVERSE
-tell me the inverses of the values less than 4
+MULT 4
+evaluate 4 times the things
 
-LESS_THAN 3, SQUARE, PROD
-the product of the squares of the elements less than 3
+DIVIS_BY 2, ADD 2
+compute 2 plus the even elements
 
-DIVIS_BY 4, INVERSE
-tell me the reciprocals of the values divisible by 4
+LESS_THAN 5, SQUARE, MIN
+tell me the min value of the squares of the values less than 5
 
-INVERSE, AVG
-average the inverses of the values
+LESS_THAN 4, ADD 5
+tell me 5 plus the numbers less than 4
 
-LESS_THAN 3, SQUARE, PROD
-multiply all the squares of the values less than 3
+LESS_THAN 5, SQUARE, AVG
+average the squares of the elements less than 5
 
-DIVIS_BY 2
-evaluate the even values
+DIVIS_BY 4, SQUARE, SUM
+evaluate the sum of the squares of the things divisible by 4
 
-ADD 4
-tell me 4 plus the values
+DIVIS_BY 4, SQUARE, SUM
+compute the sum of the squares of the elements divisible by 4
 
-DIVIS_BY 5, SQUARE
-compute the squares of the things divisible by 5
+DIVIS_BY 3, SQUARE, PROD
+find the product of the squares of the numbers divisible by 3
 
-LESS_THAN 2
-find the numbers less than 2
+DIVIS_BY 2, SQUARE
+find the squares of the even numbers
 
-LESS_THAN 4, INVERSE
-evaluate the reciprocals of the things less than 4
+LESS_THAN 2, SQUARE, PROD
+find the product of the squares of the values less than 2
 
-LESS_THAN 5, ADD 5
-tell me 5 plus the things less than 5
+DIVIS_BY 4, SQUARE, SUM
+find the sum of the squares of the things divisible by 4
 
-DIVIS_BY 3, MULT 5, AVG
-tell me the mean value of 5 times the numbers divisible by 3
+LESS_THAN 4, INVERSE, PROD
+multiply the reciprocals of the numbers less than 4
 
-DIVIS_BY 2, MULT 4, AVG
-take the mean of 4 times the even elements
+DIVIS_BY 5, SUM
+tell me the sum of the numbers divisible by 5
 
-LESS_THAN 2, MULT 5, AVG
-take the average of 5 times the elements less than 2
+LESS_THAN 5, ADD 2
+compute 2 plus the numbers less than 5
 
-LESS_THAN 2, MULT 5, MIN
-compute the min value of 5 times the values less than 2
+DIVIS_BY 4, ADD 2
+find 2 plus the numbers divisible by 4
 
-
-tell me the things
-
-LESS_THAN 2, INVERSE
-evaluate the reciprocals of the numbers less than 2
-
-LESS_THAN 3, ADD 5
-take 5 plus the numbers less than 3
-
-ADD 5, SUM
-compute the sum of 5 plus the elements
-
-LESS_THAN 3, SQUARE, PROD
-multiply all the squares of the values less than 3
-
-LESS_THAN 2, SUM
-evaluate the sum of the numbers less than 2
-
-
-tell me the things
-
-DIVIS_BY 3, MULT 4, PROD
-multiply all 4 times the numbers divisible by 3
-
-LESS_THAN 3
-find the numbers less than 3
-
-LESS_THAN 3, MULT 2
-find 2 times the elements less than 3
-
-LESS_THAN 3, SQUARE, PROD
-multiply the squares of the values less than 3
-
-MULT 2, SUM
-evaluate the sum of 2 times the numbers
-
-DIVIS_BY 2
-find the even values
-
-LESS_THAN 5, ADD 4, SUM
-take the sum of 4 plus the elements less than 5
-
-SQUARE, MIN
-compute the minimum of the squares of the numbers
-
-DIVIS_BY 4, MIN
-tell me the minimum of the elements divisible by 4
-
-DIVIS_BY 4, INVERSE, MIN
-tell me the min value of the reciprocals of the things divisible by 4
-
-LESS_THAN 4
-find the numbers less than 4
+LESS_THAN 4, ADD 2, AVG
+tell me the average of 2 plus the things less than 4
 
 DIVIS_BY 3, INVERSE
-evaluate the inverses of the numbers divisible by 3
+take the reciprocals of the things divisible by 3
 
-LESS_THAN 3, ADD 3
-compute 3 plus the elements less than 3
+DIVIS_BY 2, MULT 3, MIN
+take the min value of 3 times the even numbers
 
-ADD 5
-take 5 plus the things
+MIN
+take the minimum value of the things
 
-LESS_THAN 4, SQUARE
-take the squares of the numbers less than 4
+DIVIS_BY 2, PROD
+find the product of the even values
 
-LESS_THAN 4, MULT 3, PROD
-take the product of 3 times the things less than 4
+SQUARE, PROD
+multiply the squares of the elements
 
-DIVIS_BY 3, SQUARE, AVG
-find the average of the squares of the values divisible by 3
 
-LESS_THAN 3, MULT 3, AVG
-tell me the mean value of 3 times the values less than 3
+evaluate the values
 
-DIVIS_BY 3, SQUARE, SUM
-take the sum of the squares of the things divisible by 3
-
-DIVIS_BY 2, INVERSE
-tell me the inverses of the even elements
-
-LESS_THAN 2, SQUARE
-find the squares of the elements less than 2
-
-DIVIS_BY 3, ADD 4
-find 4 plus the elements divisible by 3
-
-ADD 5, SUM
-the sum of 5 plus the elements
-
-DIVIS_BY 2, ADD 3, PROD
-multiply all 3 plus the even elements
-
-ADD 2
-take 2 plus the values
-
-DIVIS_BY 4, INVERSE
-tell me the inverses of the values divisible by 4
-
-DIVIS_BY 5, SQUARE
-find the squares of the numbers divisible by 5
-
-DIVIS_BY 2
-evaluate the even numbers
-
-DIVIS_BY 5, INVERSE, MIN
-compute the min value of the inverses of the elements divisible by 5
-
-LESS_THAN 3, SQUARE, PROD
-multiply the squares of the values less than 3
-
-LESS_THAN 3, INVERSE, AVG
-tell me the average of the inverses of the values less than 3
-
-DIVIS_BY 2, SQUARE, SUM
-take the sum of the squares of the even elements
-
-DIVIS_BY 4, ADD 3, MIN
-evaluate the min of 3 plus the numbers divisible by 4
-
-DIVIS_BY 4, MIN
-compute the min value of the things divisible by 4
-
-DIVIS_BY 5, SQUARE
-take the squares of the elements divisible by 5
-
-LESS_THAN 3, SQUARE, MIN
-find the min of the squares of the things less than 3
-
-LESS_THAN 4, MULT 5
-tell me 5 times the values less than 4
-
-SQUARE
-find the squares of the things
-
-LESS_THAN 5, INVERSE, AVG
-average the inverses of the numbers less than 5
-
-INVERSE, AVG
-evaluate the average of the inverses of the elements
-
-LESS_THAN 5, MULT 5, PROD
-compute the product of 5 times the things less than 5
-
-DIVIS_BY 4, AVG
-compute the average of the elements divisible by 4
-
-SQUARE
-evaluate the squares of the elements
-
-DIVIS_BY 3, MULT 4
-compute 4 times the elements divisible by 3
-
-LESS_THAN 3, MULT 2
-compute 2 times the numbers less than 3
-
-DIVIS_BY 2, INVERSE, SUM
-find the sum of the inverses of the even elements
-
-LESS_THAN 4, MULT 4, PROD
-tell me the product of 4 times the things less than 4
-
-LESS_THAN 4, INVERSE
-find the reciprocals of the things less than 4
-
-DIVIS_BY 5, SQUARE
-take the squares of the elements divisible by 5
-
-DIVIS_BY 4, SQUARE, MIN
-the minimum of the squares of the values divisible by 4
-
-DIVIS_BY 5
-compute the numbers divisible by 5
-
-LESS_THAN 5, ADD 3
-find 3 plus the numbers less than 5
-
-DIVIS_BY 5, MIN
-find the min of the elements divisible by 5
-
-DIVIS_BY 5, ADD 4, SUM
-the sum of 4 plus the things divisible by 5
-
-LESS_THAN 2, SQUARE, AVG
-average the squares of the things less than 2
-
-DIVIS_BY 3, SQUARE, SUM
-tell me the sum of the squares of the numbers divisible by 3
-
-LESS_THAN 5, INVERSE
-tell me the inverses of the values less than 5
-
-LESS_THAN 5, SQUARE
-tell me the squares of the elements less than 5
+LESS_THAN 5, INVERSE, PROD
+the product of the reciprocals of the elements less than 5
 
 DIVIS_BY 3, SQUARE
-evaluate the squares of the elements divisible by 3
+take the squares of the values divisible by 3
 
-DIVIS_BY 4, ADD 5
-evaluate 5 plus the things divisible by 4
+LESS_THAN 5, ADD 4
+evaluate 4 plus the numbers less than 5
 
-LESS_THAN 5, SQUARE
-compute the squares of the elements less than 5
+DIVIS_BY 2, MULT 4, AVG
+compute the average of 4 times the even elements
 
-DIVIS_BY 2, INVERSE
-take the inverses of the even numbers
+DIVIS_BY 3, MULT 2
+take 2 times the values divisible by 3
+
+SQUARE, PROD
+multiply all the squares of the things
+
+DIVIS_BY 4, ADD 3, MIN
+find the min of 3 plus the elements divisible by 4
+
+LESS_THAN 3, MULT 4
+evaluate 4 times the elements less than 3
+
+INVERSE
+evaluate the inverses of the things
+
+LESS_THAN 2, SQUARE, PROD
+compute the product of the squares of the elements less than 2
+
+DIVIS_BY 3, MULT 4, SUM
+tell me the sum of 4 times the numbers divisible by 3
 
 DIVIS_BY 4, INVERSE
-evaluate the reciprocals of the numbers divisible by 4
+tell me the inverses of the elements divisible by 4
 
-LESS_THAN 2, SQUARE, AVG
-average the squares of the elements less than 2
+DIVIS_BY 4, ADD 5, PROD
+multiply 5 plus the values divisible by 4
 
-LESS_THAN 3, MULT 5
-compute 5 times the numbers less than 3
+DIVIS_BY 4, SQUARE
+tell me the squares of the things divisible by 4
+
+LESS_THAN 5
+tell me the elements less than 5
+
+INVERSE
+take the inverses of the elements
+
+LESS_THAN 4, ADD 5, AVG
+tell me the mean of 5 plus the values less than 4
+
+DIVIS_BY 2, MULT 4
+tell me 4 times the even elements
+
+LESS_THAN 3, SQUARE
+take the squares of the elements less than 3
+
+DIVIS_BY 4, MULT 5
+find 5 times the values divisible by 4
+
+DIVIS_BY 5, ADD 5, MIN
+find the min value of 5 plus the elements divisible by 5
+
+DIVIS_BY 3, ADD 4
+compute 4 plus the things divisible by 3
+
+LESS_THAN 5
+evaluate the values less than 5
+
+DIVIS_BY 3, SQUARE, MIN
+take the min of the squares of the things divisible by 3
+
+DIVIS_BY 3, SQUARE, AVG
+take the mean of the squares of the things divisible by 3
+
+DIVIS_BY 2, INVERSE, PROD
+compute the product of the reciprocals of the even values
+
+DIVIS_BY 3, ADD 2
+compute 2 plus the values divisible by 3
+
+DIVIS_BY 2, ADD 4, SUM
+tell me the sum of 4 plus the even values
+
+DIVIS_BY 5, MULT 4, SUM
+evaluate the sum of 4 times the elements divisible by 5
+
+INVERSE
+compute the inverses of the values
+
+DIVIS_BY 5, INVERSE, PROD
+take the product of the reciprocals of the things divisible by 5
+
+INVERSE, AVG
+the mean value of the reciprocals of the numbers
+
+DIVIS_BY 3, SQUARE
+evaluate the squares of the values divisible by 3
+
+LESS_THAN 4, MIN
+the minimum value of the values less than 4
 
 DIVIS_BY 4
-compute the things divisible by 4
+tell me the numbers divisible by 4
 
-LESS_THAN 3, INVERSE, MIN
-find the min value of the inverses of the things less than 3
+DIVIS_BY 5, PROD
+take the product of the numbers divisible by 5
+
+DIVIS_BY 2, SQUARE
+tell me the squares of the even elements
+
+ADD 5, MIN
+the minimum of 5 plus the numbers
 
 
 take the elements
 
-DIVIS_BY 4, MULT 5, PROD
-evaluate the product of 5 times the numbers divisible by 4
-
-DIVIS_BY 2, SUM
-the sum of the even numbers
+INVERSE
+find the reciprocals of the things
 
 LESS_THAN 5, MULT 5
-take 5 times the numbers less than 5
+evaluate 5 times the numbers less than 5
 
-INVERSE, AVG
-average the inverses of the values
-
-ADD 5
-find 5 plus the values
-
-LESS_THAN 2, INVERSE, MIN
-find the min of the inverses of the numbers less than 2
-
-LESS_THAN 2, SQUARE
-compute the squares of the values less than 2
-
-LESS_THAN 5
-evaluate the things less than 5
-
-LESS_THAN 4, SQUARE, MIN
-find the min of the squares of the things less than 4
-
-LESS_THAN 2, ADD 4
-evaluate 4 plus the elements less than 2
-
-LESS_THAN 3, ADD 4
-find 4 plus the things less than 3
-
-INVERSE, PROD
-evaluate the product of the reciprocals of the values
-
-DIVIS_BY 2, SQUARE, SUM
-tell me the sum of the squares of the even things
-
-DIVIS_BY 4, INVERSE
-take the reciprocals of the numbers divisible by 4
-
-SQUARE
-compute the squares of the things
-
-LESS_THAN 5, ADD 5
-tell me 5 plus the elements less than 5
-
-LESS_THAN 2, INVERSE, SUM
-evaluate the sum of the reciprocals of the values less than 2
-
-DIVIS_BY 4, MULT 3
-compute 3 times the values divisible by 4
-
-MULT 5
-tell me 5 times the things
-
-MULT 5, MIN
-compute the min value of 5 times the things
-
-DIVIS_BY 5
-compute the things divisible by 5
-
-LESS_THAN 3, SQUARE, PROD
-tell me the product of the squares of the things less than 3
-
-LESS_THAN 2, SQUARE
-find the squares of the values less than 2
-
-DIVIS_BY 5, SQUARE
-find the squares of the values divisible by 5
-
-DIVIS_BY 5, MULT 2, MIN
-find the min of 2 times the numbers divisible by 5
-
-LESS_THAN 4, SQUARE, PROD
-find the product of the squares of the elements less than 4
-
-INVERSE, AVG
-tell me the average of the reciprocals of the numbers
-
-ADD 2, MIN
-the min value of 2 plus the values
-
-LESS_THAN 3, SQUARE, AVG
-the mean of the squares of the things less than 3
-
-DIVIS_BY 5, INVERSE, SUM
-find the sum of the reciprocals of the elements divisible by 5
+DIVIS_BY 2, MULT 4
+find 4 times the even values
 
 DIVIS_BY 5, INVERSE
-find the inverses of the numbers divisible by 5
+tell me the reciprocals of the values divisible by 5
 
-LESS_THAN 3, ADD 4
-find 4 plus the things less than 3
+LESS_THAN 3, INVERSE
+evaluate the inverses of the elements less than 3
 
-DIVIS_BY 3, PROD
-tell me the product of the elements divisible by 3
+DIVIS_BY 3
+find the values divisible by 3
 
-LESS_THAN 4, ADD 5, SUM
-compute the sum of 5 plus the numbers less than 4
+LESS_THAN 5, ADD 2, SUM
+add all 2 plus the things less than 5
 
-DIVIS_BY 3, MULT 4
-evaluate 4 times the numbers divisible by 3
+LESS_THAN 4
+compute the elements less than 4
 
-DIVIS_BY 5, INVERSE, AVG
-take the mean of the reciprocals of the things divisible by 5
+DIVIS_BY 4, ADD 5
+take 5 plus the elements divisible by 4
+
+LESS_THAN 2, SQUARE, SUM
+tell me the sum of the squares of the numbers less than 2
+
+DIVIS_BY 2, MULT 2
+tell me 2 times the even numbers
+
+LESS_THAN 2, INVERSE, MIN
+the min value of the reciprocals of the things less than 2
+
+DIVIS_BY 2, MULT 2, SUM
+the sum of 2 times the even values
+
+LESS_THAN 4
+compute the values less than 4
+
+
+tell me the numbers
 
 SQUARE, PROD
-the product of the squares of the elements
+compute the product of the squares of the things
 
-INVERSE
-evaluate the inverses of the numbers
+LESS_THAN 5, ADD 3
+compute 3 plus the numbers less than 5
 
-DIVIS_BY 3, MULT 2, PROD
-find the product of 2 times the values divisible by 3
+LESS_THAN 5, MULT 4
+evaluate 4 times the elements less than 5
 
-INVERSE, AVG
-the mean value of the inverses of the elements
+LESS_THAN 5, MULT 4, AVG
+evaluate the average of 4 times the things less than 5
 
-DIVIS_BY 4, SQUARE, AVG
-compute the average of the squares of the things divisible by 4
+LESS_THAN 4, ADD 3, AVG
+the average of 3 plus the elements less than 4
 
-DIVIS_BY 5, ADD 3
-compute 3 plus the things divisible by 5
+DIVIS_BY 4, ADD 2, SUM
+tell me the sum of 2 plus the elements divisible by 4
 
-DIVIS_BY 4, SQUARE
-take the squares of the elements divisible by 4
+LESS_THAN 3, INVERSE, SUM
+the sum of the inverses of the numbers less than 3
 
-MULT 5, MIN
-find the min of 5 times the elements
+DIVIS_BY 5, SQUARE, AVG
+average the squares of the numbers divisible by 5
 
-LESS_THAN 3, INVERSE, MIN
-tell me the min value of the inverses of the numbers less than 3
+DIVIS_BY 4, ADD 4
+find 4 plus the things divisible by 4
 
-LESS_THAN 4, ADD 4, PROD
-compute the product of 4 plus the things less than 4
+SQUARE, AVG
+tell me the mean value of the squares of the values
 
-LESS_THAN 4, ADD 5
-take 5 plus the numbers less than 4
+DIVIS_BY 2, MULT 3, PROD
+compute the product of 3 times the even things
 
-MULT 3, PROD
-the product of 3 times the values
 
-DIVIS_BY 2
-compute the even numbers
+evaluate the things
 
-LESS_THAN 2, INVERSE
-take the inverses of the things less than 2
-
-LESS_THAN 5, INVERSE
-compute the inverses of the values less than 5
-
-LESS_THAN 5, MULT 3, MIN
-tell me the min of 3 times the things less than 5
+SQUARE, AVG
+tell me the mean of the squares of the values
 
 DIVIS_BY 4, INVERSE
-tell me the reciprocals of the elements divisible by 4
+tell me the inverses of the numbers divisible by 4
 
-DIVIS_BY 2, INVERSE
-find the inverses of the even things
 
-DIVIS_BY 4, SQUARE
-find the squares of the things divisible by 4
+find the values
 
-DIVIS_BY 3
-tell me the numbers divisible by 3
+LESS_THAN 4, ADD 4, MIN
+tell me the min of 4 plus the numbers less than 4
 
-LESS_THAN 3, INVERSE, MIN
-take the min value of the reciprocals of the things less than 3
-
-DIVIS_BY 2, PROD
-evaluate the product of the even things
-
-DIVIS_BY 3
-find the elements divisible by 3
-
-MULT 3
-find 3 times the things
-
-LESS_THAN 3, AVG
-evaluate the average of the numbers less than 3
-
-DIVIS_BY 2, INVERSE, PROD
-compute the product of the inverses of the even values
-
-LESS_THAN 4, SUM
-take the sum of the elements less than 4
-
-LESS_THAN 2, PROD
-find the product of the values less than 2
-
-ADD 5, SUM
-add all 5 plus the things
-
-LESS_THAN 4, ADD 5
-evaluate 5 plus the values less than 4
-
-DIVIS_BY 4, ADD 4, SUM
-add all 4 plus the values divisible by 4
-
-DIVIS_BY 2, INVERSE, MIN
-find the min of the inverses of the even values
-
-DIVIS_BY 4, SQUARE, MIN
-the min value of the squares of the numbers divisible by 4
-
-LESS_THAN 3, INVERSE, AVG
-average the reciprocals of the numbers less than 3
-
-PROD
-compute the product of the values
-
-LESS_THAN 5
-find the values less than 5
-
-SQUARE
-evaluate the squares of the things
-
-LESS_THAN 5, ADD 5, PROD
-evaluate the product of 5 plus the values less than 5
-
-LESS_THAN 2, MULT 5, MIN
-take the minimum value of 5 times the elements less than 2
-
-DIVIS_BY 4, SQUARE
-find the squares of the numbers divisible by 4
-
-LESS_THAN 2, INVERSE
-compute the reciprocals of the elements less than 2
-
-LESS_THAN 3, SUM
-take the sum of the numbers less than 3
-
-INVERSE, SUM
-add up the reciprocals of the things
-
-DIVIS_BY 5, MULT 5, AVG
-the mean of 5 times the numbers divisible by 5
-
-DIVIS_BY 3, SQUARE
-find the squares of the elements divisible by 3
+DIVIS_BY 3, ADD 5
+tell me 5 plus the values divisible by 3
 
 MULT 4, PROD
-take the product of 4 times the things
+take the product of 4 times the elements
+
+DIVIS_BY 5, MULT 4, SUM
+tell me the sum of 4 times the elements divisible by 5
+
+MULT 4, SUM
+add up 4 times the values
+
+LESS_THAN 5, INVERSE, MIN
+find the min of the reciprocals of the things less than 5
+
+DIVIS_BY 3, SQUARE
+evaluate the squares of the numbers divisible by 3
+
+DIVIS_BY 3, MULT 4, PROD
+the product of 4 times the things divisible by 3
+
+LESS_THAN 4
+compute the elements less than 4
+
+DIVIS_BY 3, INVERSE, PROD
+evaluate the product of the reciprocals of the elements divisible by 3
+
+DIVIS_BY 4, ADD 4, AVG
+find the mean value of 4 plus the values divisible by 4
+
+LESS_THAN 5, AVG
+the average of the things less than 5
+
+DIVIS_BY 5, MULT 5, AVG
+take the mean value of 5 times the elements divisible by 5
+
+SQUARE
+tell me the squares of the elements
+
+LESS_THAN 3, SQUARE
+find the squares of the things less than 3
+
+LESS_THAN 5, ADD 4
+compute 4 plus the elements less than 5
+
+LESS_THAN 2, INVERSE, MIN
+take the minimum of the reciprocals of the things less than 2
+
+DIVIS_BY 5, MULT 2
+evaluate 2 times the numbers divisible by 5
 

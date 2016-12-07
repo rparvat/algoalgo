@@ -88,7 +88,7 @@ def rep_to_english(rep):
 		english += reduceToEnglish(rep[REDUCE])
 	else:
 		english += choice(beginning_choices)
-	
+
 	if MAP in rep:
 		english += " " + mapToEnglish(rep[MAP])
 

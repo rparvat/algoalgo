@@ -60,7 +60,7 @@ def preprocess_english(list_of_sentences):
         for word in split_sentence:
             sentence_arrays.append(wordToArray(word))
         sentence_lists.append(sentence_arrays)
-    return sentence_lists, numDistinctWords
+    return np.array(sentence_lists), numDistinctWords
 
 def preprocess_operators(list_of_operators):
     GO = "GO"
@@ -92,12 +92,16 @@ def preprocess_operators(list_of_operators):
         return np.array(array)
 
     operator_chain_lists = []
+    desired_length = 5
     for split_chain in split_chains:
+        if len(split_chain) < desired_length:
+            new_part = [EOL] * (desired_length - len(split_chain))
+            split_chain += new_part
         chain_arrays = []
         for operator in split_chain:
             chain_arrays.append(operatorToArray(operator))
-        operator_chain_lists.append(chain_arrays)
-    return operator_chain_lists
+        operator_chain_lists.append(np.array(chain_arrays))
+    return np.array(operator_chain_lists)
 
 def translate(filename):
     sess = tf.InteractiveSession()
@@ -111,7 +115,43 @@ def translate(filename):
     
     training_data = ((sentence_lists[i], operator_chain_lists[i]) 
         for i in range(num_sentences))
-    train(sess, training_data)
+    train_keras(training_data)
+    # train(sess, training_data)
+
+def train_keras(training_data):
+    from seq2seq import SimpleSeq2Seq, Seq2Seq, AttentionSeq2Seq
+
+    in_seq_length = 15
+    out_seq_length = 5
+
+    batch_size = 64
+
+    in_vocab_size = 100
+    out_vocab_size = 7
+
+    embedding_dim = 50
+    memory_dim = 200
+
+    x = np.array([each[0] for each in training_data])
+    x=x.reshape((1,)+x.shape)
+    # print x.shape
+    # new_x = []
+    # for i in range(len(x) / batch_size):
+    #     new_x.append(x[i * batch_size : min((i + 1) * batch_size, len(x))])
+    # x = np.array(new_x)
+    print x.shape
+    print in_seq_length, in_vocab_size
+
+    y = np.array([each[1] for each in training_data])
+    model = Seq2Seq(input_shape=(in_seq_length, in_vocab_size),
+        hidden_dim=embedding_dim,
+        output_length=out_seq_length, 
+        output_dim=out_vocab_size, 
+        depth=4)
+    model.compile(loss='categorical_crossentropy', optimizer='adam')
+    model.fit(x, y, nb_epoch=1)
+    return model
+
 
 def train(sess, training_data):
     # training data is a list of tuples of np arrays.
@@ -125,30 +165,35 @@ def train(sess, training_data):
     out_vocab_size = 7
 
     embedding_dim = 50
-    memory_dim = 100
+    memory_dim = 200
 
-    enc_inp = [tf.placeholder(tf.int32, shape=(None,), name="inp%i" % t)
-     for t in range(in_seq_length)]
+    enc_inp = [tf.placeholder(tf.float32, shape=(1,in_vocab_size), name="inp%i" % t)
+        for t in range(in_seq_length)]
 
-    dec_inp = ([tf.zeros_like(enc_inp[0], dtype=np.int32, name="GO")] + 
-        [tf.placeholder(tf.int32, shape=(None,), name="outp%i" % t)
+    dec_inp = ([tf.zeros(shape=(1,out_vocab_size), dtype=tf.float32, name="GO")] + 
+        [tf.placeholder(tf.float32, shape=(1,out_vocab_size), name="outp%i" % t)
             for t in range(out_seq_length)
         ])
-    dec_truth = dec_inp[1:]
-    weights = [tf.ones_like(each, dtype=tf.float32)
-           for each in dec_truth]
 
-    cell = tf.python.nn.rnn_cell.LSTMCell(memory_dim)
+    dec_truth = dec_inp[1:] + [tf.zeros(shape=(1,out_vocab_size), dtype=tf.float32, name="EOS")]
+    
+    weights = [tf.ones_like(each, dtype=tf.float32) for each in dec_truth]
 
-    output = tf.nn.seq2seq.basic_rnn_seq2seq(
-        enc_inp,
-        dec_inp,
-        cell)
+    cell = tf.python.nn.rnn_cell.BasicLSTMCell(memory_dim)
+
+    outputs, states = tf.nn.seq2seq.basic_rnn_seq2seq(
+        encoder_inputs=enc_inp,
+        decoder_inputs=dec_inp,
+        cell=cell,
+        # num_encoder_symbols=in_vocab_size,
+        # num_decoder_symbols=out_vocab_size,
+        # embedding_size=3,
+        dtype=tf.float32)
+
     loss = tf.nn.seq2seq.sequence_loss(
-        output, 
+        outputs, 
         dec_truth, 
-        weights, 
-        out_vocab_size)
+        weights)
 
     learning_rate = 0.045
     momentum = 0.91

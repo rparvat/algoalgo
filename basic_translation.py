@@ -2,6 +2,8 @@
 import tensorflow as tf
 # import tensorflow.python.ops.rnn_cell
 import numpy as np
+from keras.models import Sequential
+from keras.layers import Activation, TimeDistributed, Dense, RepeatVector, recurrent
 
 def read_data_file(filename):
     list_of_sentences, list_of_operators = [], []
@@ -55,12 +57,13 @@ def preprocess_english(list_of_sentences):
         return np.array(array)
 
     sentence_lists = []
-    for split_sentence in split_sentences:
-        sentence_arrays = []
-        for word in split_sentence:
-            sentence_arrays.append(wordToArray(word))
-        sentence_lists.append(sentence_arrays)
-    return np.array(sentence_lists), numDistinctWords
+    IN_SEQ_LENGTH = 15
+    sentence_array = np.zeros((len(split_sentences), 
+        IN_SEQ_LENGTH, numDistinctWords))
+    for i, split_sentence in enumerate(split_sentences):
+        for j, word in enumerate(split_sentence):
+            sentence_array[i][j] = wordToArray(word)
+    return sentence_array, numDistinctWords
 
 def preprocess_operators(list_of_operators):
     GO = "GO"
@@ -91,65 +94,101 @@ def preprocess_operators(list_of_operators):
         array[distinct_operators[operator]] = 1
         return np.array(array)
 
-    operator_chain_lists = []
-    desired_length = 5
-    for split_chain in split_chains:
-        if len(split_chain) < desired_length:
-            new_part = [EOL] * (desired_length - len(split_chain))
-            split_chain += new_part
-        chain_arrays = []
-        for operator in split_chain:
-            chain_arrays.append(operatorToArray(operator))
-        operator_chain_lists.append(np.array(chain_arrays))
-    return np.array(operator_chain_lists)
+    OUT_SEQ_LENGTH = 5
+    operator_chain_array = np.zeros((len(split_chains), 
+        OUT_SEQ_LENGTH, numDistinctOperators))
+    for i, split_chain in enumerate(split_chains):
+        for j, operator in enumerate(split_chain):
+            operator_chain_array[i][j] = operatorToArray(operator)
+    return operator_chain_array
 
 def translate(filename):
     sess = tf.InteractiveSession()
 
     list_of_sentences, list_of_operators = read_data_file(filename)
-    sentence_lists, numDistinctWords = preprocess_english(list_of_sentences)
-    operator_chain_lists = preprocess_operators(list_of_operators)
+    sentence_array, numDistinctWords = preprocess_english(list_of_sentences)
+    operator_chain_array = preprocess_operators(list_of_operators)
     
-    num_sentences = len(sentence_lists)
-    assert num_sentences == len(operator_chain_lists)
+    num_sentences = len(sentence_array)
+    assert num_sentences == len(operator_chain_array)
     
-    training_data = ((sentence_lists[i], operator_chain_lists[i]) 
-        for i in range(num_sentences))
-    train_keras(training_data)
+    # training_data = ((sentence_lists[i], operator_chain_array[i]) 
+    #     for i in range(num_sentences))
+    return train_keras(sentence_array, operator_chain_array)
     # train(sess, training_data)
 
-def train_keras(training_data):
+def train_keras(sentence_array, operator_chain_array):
     from seq2seq import SimpleSeq2Seq, Seq2Seq, AttentionSeq2Seq
 
-    in_seq_length = 15
-    out_seq_length = 5
+    sentence_shape = sentence_array.shape
+    length = sentence_shape[0]
+    in_seq_length = sentence_shape[1]
+    in_vocab_size = sentence_shape[2]
+
+    op_shape = operator_chain_array.shape
+    out_seq_length = op_shape[1]
+    out_vocab_size = op_shape[2]
+
+    print sentence_shape, op_shape
 
     batch_size = 64
-
-    in_vocab_size = 100
-    out_vocab_size = 7
-
-    embedding_dim = 50
+    hidden_size, embedding_dim = 3, 3
     memory_dim = 200
+    num_layers = 4
 
-    x = np.array([each[0] for each in training_data])
-    x=x.reshape((1,)+x.shape)
-    # print x.shape
-    # new_x = []
-    # for i in range(len(x) / batch_size):
-    #     new_x.append(x[i * batch_size : min((i + 1) * batch_size, len(x))])
-    # x = np.array(new_x)
-    print x.shape
-    print in_seq_length, in_vocab_size
+    # model = SimpleSeq2Seq(input_dim=in_vocab_size, 
+    #     hidden_dim=embedding_dim, 
+    #     output_length=out_seq_length, 
+    #     output_dim=out_vocab_size, 
+    #     depth=3)
 
-    y = np.array([each[1] for each in training_data])
-    model = Seq2Seq(input_shape=(in_seq_length, in_vocab_size),
-        hidden_dim=embedding_dim,
-        output_length=out_seq_length, 
-        output_dim=out_vocab_size, 
-        depth=4)
+    # model = Seq2Seq(batch_input_shape=sentence_shape,
+    #     hidden_dim=embedding_dim,
+    #     output_length=out_seq_length, 
+    #     output_dim=out_vocab_size, 
+    #     depth=4)
+    RNN = recurrent.LSTM
+    model = Sequential()
+    model.add(RNN(hidden_size, input_shape=(in_seq_length, in_vocab_size)))
+    model.add(RepeatVector(out_seq_length))
+    for _ in range(num_layers):
+        model.add(RNN(hidden_size, return_sequences=True))
+    model.add(TimeDistributed(Dense(out_vocab_size)))
+    model.add(Activation('softmax'))
+
     model.compile(loss='categorical_crossentropy', optimizer='adam')
-    model.fit(x, y, nb_epoch=1)
+
+    num_train = 900
+    X_train = sentence_array[:num_train]
+    X_val = sentence_array[num_train:]
+
+    y_train = operator_chain_array[:num_train]
+    y_val = operator_chain_array[num_train:]
+
+    # model.fit(sentence_array, 
+    #     operator_chain_array, 
+    #     batch_size=batch_size,
+    #     nb_epoch=1,
+    #     validation_data=(sentence_array, operator_chain_array))
+
+    for iteration in range(1, 200):
+        print()
+        print('-' * 50)
+        print('Iteration', iteration)
+        model.fit(X_train, y_train, batch_size=batch_size, nb_epoch=1,
+                  validation_data=(X_val, y_val))
+        ###
+        # Select 10 samples from the validation set at random so we can visualize errors
+        for i in range(10):
+            ind = np.random.randint(0, len(X_val))
+            rowX, rowy = X_val[np.array([ind])], y_val[np.array([ind])]
+            preds = model.predict_classes(rowX, verbose=0)
+            # q = ctable.decode(rowX[0])
+            # correct = ctable.decode(rowy[0])
+            # guess = ctable.decode(preds[0], calc_argmax=False)
+            # print('Q', q[::-1] if INVERT else q)
+            # print('T', correct)
+            # print('---')
     return model
 
 

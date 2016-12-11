@@ -49,16 +49,12 @@ elements_choices = ["elements", "values", "numbers", "things"]
 # FILTER: conversion
 def filterToEnglish(filt):
 	# get filt_type and num
-	[filt_type, num] = filt.split()
-	num = int(num)
+	[filt_type] = filt.split()
 
 	if filt_type == "DIVIS_BY":
-		if num == 2:
-			return "the even " + choice(elements_choices)
-		else:
-			return " ".join(["the", choice(elements_choices), "divisible by", str(num)])
+		return " ".join(["the", choice(elements_choices), "divisible by"])
 	elif filt_type == "LESS_THAN":
-		return " ".join(["the", choice(elements_choices), "less than", str(num)])
+		return " ".join(["the", choice(elements_choices), "less than"])
 	else:
 		raise NotImplementedError
 
@@ -71,11 +67,11 @@ def mapToEnglish(m):
 	if m in maps_without_consts:
 		return choice(m_wo_consts_dict[m])
 	# otherwise, it's a map with a constant
-	[m, num] = m.split()
+	[m] = m.split()
 	if m == "MULT":
-		return " ".join([num, "times"])
+		return "times"
 	elif m == "ADD":
-		return " ".join([num, "plus"])
+		return "plus"
 	else:
 		raise NotImplementedError
 
@@ -117,16 +113,13 @@ def gen_rep():
 
 	rep = {}
 
-	def gen_num():
-		return randint(2, 5)
-
 	if hasFilter:
-		rep[FILTER] = choice(filters) + " " + str(gen_num())
+		rep[FILTER] = choice(filters)
 
 	if hasMap:
 		hasConstant = random() < MAP_PROBABILITY / 2.0
 		if hasConstant:
-			rep[MAP] = choice(maps_with_consts) + " " + str(gen_num())
+			rep[MAP] = choice(maps_with_consts)
 		else:
 			rep[MAP] = choice(maps_without_consts)
 
@@ -139,17 +132,12 @@ def rep_to_string(rep):
 	list_rep = [(each, rep[each]) for each in rep]
 	list_rep.sort()
 	list_rep = [each[1] for each in list_rep]
-	return ", ".join(list_rep)
+	return " ".join(list_rep)
 
 
-NUM_SAMPLES = 1000
+NUM_SAMPLES = 5000
 with open("reps.txt", "w") as file:
 	for i in range(NUM_SAMPLES):
 		rep = gen_rep()
-		file.write(rep_to_string(rep) + "\n")
+		file.write(rep_to_string(rep) + ",")
 		file.write(rep_to_english(rep) + "\n")
-		file.write("\n")
-
-
-
-

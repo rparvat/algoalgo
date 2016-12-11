@@ -11,16 +11,9 @@ def read_data_file(filename):
         shouldSkip = False
         isChain = True
         for line in file:
-            if shouldSkip:
-                shouldSkip = False
-                isChain = True
-                continue
-            if isChain:
-                list_of_operators.append(line)
-                isChain = False
-            else:
-                list_of_sentences.append(line)
-                shouldSkip = True
+            [operators, english] = line.split(",")
+            list_of_operators.append(operators)
+            list_of_sentences.append(english)
     return list_of_sentences, list_of_operators
 
 def isNumber(word):
@@ -28,10 +21,11 @@ def isNumber(word):
     return sum([letter in digits for letter in word]) > 0
 
 def preprocess_english(list_of_sentences):
-    EOL = "EOL"
-    NUMBER_MARK = "GARBBAGGE"
-    distinct_words = {EOL: True, NUMBER_MARK: True}
+    PAD = "pad"
+    NUMBER_MARK = "#"
+    distinct_words = {PAD: True}
     split_sentences = []
+    max_length = 1
     for sentence in list_of_sentences:
         sentence = sentence.upper()
         words = sentence.split()
@@ -40,82 +34,74 @@ def preprocess_english(list_of_sentences):
             if not isNumber(word):
                 distinct_words[word] = True
                 new_sentence.append(word)
-            else:
-                new_sentence.append(NUMBER_MARK)
-        new_sentence.append(EOL)
+            # else:
+            #     new_sentence.append(NUMBER_MARK)
+        max_length = max(max_length, len(new_sentence))
         split_sentences.append(new_sentence)
 
     numDistinctWords = len(distinct_words)
-    index = 0
-    for each in distinct_words:
-        distinct_words[each] = index
-        index += 1
+    for i, each in enumerate(distinct_words):
+        distinct_words[each] = i
 
     def wordToArray(word):
-        array = [0 for i in range(numDistinctWords)]
+        array = np.zeros(numDistinctWords)
         array[distinct_words[word]] = 1
         return np.array(array)
 
     sentence_lists = []
-    IN_SEQ_LENGTH = 15
+    IN_SEQ_LENGTH = max_length
     sentence_array = np.zeros((len(split_sentences), 
         IN_SEQ_LENGTH, numDistinctWords))
     for i, split_sentence in enumerate(split_sentences):
         for j, word in enumerate(split_sentence):
             sentence_array[i][j] = wordToArray(word)
-    return sentence_array, numDistinctWords
+        for j in xrange(len(split_sentence), IN_SEQ_LENGTH):
+            sentence_array[i][j] = wordToArray(PAD)
+    return sentence_array
 
 def preprocess_operators(list_of_operators):
-    GO = "GO"
-    EOL = "EOL"
-    distinct_operators = {GO: True, EOL: True}
+    PAD = "PAD"
+    distinct_operators = {PAD: True}
     split_chains = []
     # TODO: handle constants in operators
     for chain in list_of_operators:
         chain = chain.upper()
         operators = chain.split()
-        new_chain = [GO]
+        new_chain = []
         for word in operators:
             if isNumber(word):
                 continue
             distinct_operators[word] = True
             new_chain.append(word)
-        new_chain.append(EOL)
         split_chains.append(new_chain)
 
     numDistinctOperators = len(distinct_operators)
-    index = 0
-    for each in distinct_operators:
-        distinct_operators[each] = index
-        index += 1
+    for i, each in enumerate(distinct_operators):
+        distinct_operators[each] = i
 
     def operatorToArray(operator):
-        array = [0 for i in range(numDistinctOperators)]
+        array = np.zeros(numDistinctOperators)
         array[distinct_operators[operator]] = 1
         return np.array(array)
 
-    OUT_SEQ_LENGTH = 5
+    OUT_SEQ_LENGTH = 3
     operator_chain_array = np.zeros((len(split_chains), 
         OUT_SEQ_LENGTH, numDistinctOperators))
     for i, split_chain in enumerate(split_chains):
         for j, operator in enumerate(split_chain):
             operator_chain_array[i][j] = operatorToArray(operator)
+        for j in xrange(len(split_chain), OUT_SEQ_LENGTH):
+            operator_chain_array[i][j] = operatorToArray(PAD)
     return operator_chain_array
 
 def translate(filename):
-    sess = tf.InteractiveSession()
-
     list_of_sentences, list_of_operators = read_data_file(filename)
-    sentence_array, numDistinctWords = preprocess_english(list_of_sentences)
+    sentence_array = preprocess_english(list_of_sentences)
     operator_chain_array = preprocess_operators(list_of_operators)
     
-    num_sentences = len(sentence_array)
-    assert num_sentences == len(operator_chain_array)
+    assert len(sentence_array) == len(operator_chain_array)
     
-    # training_data = ((sentence_lists[i], operator_chain_array[i]) 
-    #     for i in range(num_sentences))
     return train_keras(sentence_array, operator_chain_array)
-    # train(sess, training_data)
 
 def train_keras(sentence_array, operator_chain_array):
     from seq2seq import SimpleSeq2Seq, Seq2Seq, AttentionSeq2Seq
@@ -134,7 +120,7 @@ def train_keras(sentence_array, operator_chain_array):
     batch_size = 64
     hidden_size, embedding_dim = 3, 3
     memory_dim = 200
-    num_layers = 4
+    num_layers = 2
 
     # model = SimpleSeq2Seq(input_dim=in_vocab_size, 
     #     hidden_dim=embedding_dim, 
@@ -142,23 +128,29 @@ def train_keras(sentence_array, operator_chain_array):
     #     output_dim=out_vocab_size, 
     #     depth=3)
 
-    # model = Seq2Seq(batch_input_shape=sentence_shape,
-    #     hidden_dim=embedding_dim,
-    #     output_length=out_seq_length, 
-    #     output_dim=out_vocab_size, 
-    #     depth=4)
-    RNN = recurrent.LSTM
-    model = Sequential()
-    model.add(RNN(hidden_size, input_shape=(in_seq_length, in_vocab_size)))
-    model.add(RepeatVector(out_seq_length))
-    for _ in range(num_layers):
-        model.add(RNN(hidden_size, return_sequences=True))
-    model.add(TimeDistributed(Dense(out_vocab_size)))
-    model.add(Activation('softmax'))
+    model = Seq2Seq(batch_input_shape=(batch_size, in_seq_length, in_vocab_size),
+        hidden_dim=embedding_dim,
+        output_length=out_seq_length, 
+        output_dim=out_vocab_size, 
+        depth=num_layers)
 
-    model.compile(loss='categorical_crossentropy', optimizer='adam')
+    def get_basic_model():
+        RNN = recurrent.LSTM
+        model = Sequential()
+        model.add(RNN(hidden_size, input_shape=(in_seq_length, in_vocab_size)))
+        model.add(RepeatVector(out_seq_length))
+        for _ in range(num_layers):
+            model.add(RNN(hidden_size, return_sequences=True))
+        model.add(TimeDistributed(Dense(out_vocab_size)))
+        model.add(Activation('softmax'))
+        return model
+    model = get_basic_model()
 
-    num_train = 900
+    model.compile(loss='categorical_crossentropy', 
+        optimizer='adam',
+        metrics = ['accuracy'])
+
+    num_train = int(0.9 * length)
     X_train = sentence_array[:num_train]
     X_val = sentence_array[num_train:]
 
@@ -175,7 +167,7 @@ def train_keras(sentence_array, operator_chain_array):
         print()
         print('-' * 50)
         print('Iteration', iteration)
-        model.fit(X_train, y_train, batch_size=batch_size, nb_epoch=1,
+        a = model.fit(X_train, y_train, batch_size=batch_size, nb_epoch=1,
                   validation_data=(X_val, y_val))
         ###
         # Select 10 samples from the validation set at random so we can visualize errors

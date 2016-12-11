@@ -135,7 +135,7 @@ def rep_to_string(rep):
 	return " ".join(list_rep)
 
 
-NUM_SAMPLES = 5000
+NUM_SAMPLES = 10000
 with open("reps.txt", "w") as file:
 	for i in range(NUM_SAMPLES):
 		rep = gen_rep()

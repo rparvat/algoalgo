@@ -73,7 +73,11 @@ algo_maxlen = 0
 
 for line in lines:
 	[algo, sentence] = line.split(',')
+	algo = algo.strip()
+	sentence = sentence.strip()
 	for operator in algo.split(' '):
+		if operator == '':
+			continue
 		operators.add(operator)
 	for word in sentence.split(' '):
 		words.add(word)
@@ -84,8 +88,11 @@ questions = []
 expected = []
 for line in lines:
 	[algo, sentence] = line.split(',')
-	query = sentence + ' pad' * (sentence_maxlen - len(sentence))
-	ans = (algo + ' PAD' * (algo_maxlen - len(algo))).strip()
+	algo = algo.strip()
+	sentence = sentence.strip()
+	query = (sentence + ' pad' * (sentence_maxlen - len(sentence.split(' ')))).strip()
+	empty_algo = 1 if algo == '' else 0
+	ans = (algo + ' PAD' * (algo_maxlen - len(algo.split(' ')) + empty_algo)).strip()
 	questions.append(query)
 	expected.append(ans)
 print('Total problems:', len(questions))

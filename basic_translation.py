@@ -40,7 +40,9 @@ def preprocess_english(list_of_sentences):
                 new_sentence.append(word)
             else:
                 new_sentence.append(NUMBER_MARK)
+                distinct_words[NUMBER_MARK] = True
             if hasPeriod:
+		distinct_words["."] = True
                 new_sentence.append(".")
         max_length = max(max_length, len(new_sentence))
         split_sentences.append(new_sentence)
@@ -90,7 +92,7 @@ def preprocess_operators(list_of_operators):
         array[distinct_operators[operator]] = 1
         return np.array(array)
 
-    OUT_SEQ_LENGTH = 3
+    OUT_SEQ_LENGTH = max([len(each) for each in split_chains])
     operator_chain_array = np.zeros((len(split_chains), 
         OUT_SEQ_LENGTH, numDistinctOperators))
     for i, split_chain in enumerate(split_chains):

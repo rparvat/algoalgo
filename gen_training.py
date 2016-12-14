@@ -130,10 +130,10 @@ def genNumber():
 #	we choose not to consider a map before a filter, because this is unlikely to be needed
 #	IMPORTANT: any of the above patterns can be followed by a reduce
 
-def gen_rep():
+def gen_rep(hasReduce = True):
 	hasMap = random() < MAP_PROBABILITY
 	hasFilter = random() < FILTER_PROBABILITY
-	hasReduce = random() < REDUCE_PROBABILITY
+	hasReduce &= random() < REDUCE_PROBABILITY
 
 	rep = {}
 
@@ -288,22 +288,50 @@ def if_stmt_to_english(ops):
 
 
 
-# def gen_complex_rep():
-# 	# so for each of the first few sentences, want only maps and filters.
-# 	# each sentences: represented as sub-lists.
+def gen_paragraph_rep_and_english():
+	num_sentences = 3
+	contains_if = random() < 0.3
+	if_index = choice(range(num_sentences)) if contains_if else -1
+	rep = []
+	english = []
+	for i in range(num_sentences - 1):
+		if if_index == i:
+			newrep = gen_if()
+			rep += newrep
+			english.append(if_stmt_to_english(newrep))
+		else:
+			newrep = gen_rep(hasReduce = False)
+			rep.append(rep_to_string(newrep))
+			english.append(rep_to_english(newrep))
+	newrep = gen_rep()
+	rep.append(rep_to_string(newrep))
+	english.append(rep_to_english(newrep))
 
+	return (" ".join(rep), ". ".join(english))
 
 
 if __name__ == "__main__":
 	NUM_SAMPLES = 10000
+	types = ["if", "simple", "paragraph"]
 	with open("reps.txt", "w") as file:
 		for i in range(NUM_SAMPLES):
-			usingIf = random() < 1
-			if usingIf:
+			this_type = choice(types)
+			if this_type == "if":
 				rep = gen_if()
 				file.write(" ".join(rep) + ",")
 				file.write(if_stmt_to_english(rep) + "\n")
-			else:
+			elif this_type == "simple":
 				rep = gen_rep()
 				file.write(rep_to_string(rep) + ",")
 				file.write(rep_to_english(rep) + "\n")
+			elif this_type == "paragraph":
+				rep_string, english_string = gen_paragraph_rep_and_english()
+				file.write(rep_string + ",")
+				file.write(english_string + "\n")
+			else:
+				print "WRONG"
+
+
+
+
+

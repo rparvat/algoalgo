@@ -5,13 +5,14 @@ from random import choice, random, randint
 # These are the possible operators
 maps_with_consts = ["MULT", "ADD"] # these require a constant
 maps_without_consts = ["SQUARE", "INVERSE"] # these are self sufficient
-filters = ["DIVIS_BY", "LESS_THAN"]
+filters = ["DIVIS_BY", "LESS_THAN", "GREATER_THAN", "EQUAL"]
 reduces = ["SUM", "PROD", "AVG", "MIN"]
 
 # Probabilities each operator is in our rep. Independent for each.
 MAP_PROBABILITY = 0.8
 FILTER_PROBABILITY = 0.8
 REDUCE_PROBABILITY = 0.5
+NOT_PROBABILITY = 0.5
 
 # For convenience
 MAP = "MAP"
@@ -49,14 +50,28 @@ elements_choices = ["elements", "values", "numbers", "things"]
 # FILTER: conversion
 def filterToEnglish(filt):
 	# get filt_type and num
-	[filt_type] = filt.split()
+	[filt_type, num] = filt.split()
+	first_words = ["the", choice(elements_choices)]
+	if random() < 0.5:
+		first_words.append("that are")
+	second_words = []
+
+	hasNot = random() < NOT_PROBABILITY
+	if hasNot:
+		second_words.append("not")
 
 	if filt_type == "DIVIS_BY":
-		return " ".join(["the", choice(elements_choices), "divisible by"])
+		second_words.append("divisible by")
 	elif filt_type == "LESS_THAN":
-		return " ".join(["the", choice(elements_choices), "less than"])
+		second_words.append(choice(["less than", "smaller than"]))
+	elif filt_type == "EQUAL":
+		second_words.append("equal to")
+	elif filt_type == "GREATER_THAN":
+		second_words.append(choice(["greater than", "bigger than"]))
 	else:
 		raise NotImplementedError
+
+	return " ".join(first_words + second_words + [num])
 
 #MAP: conversion
 m_wo_consts_dict = {
@@ -67,11 +82,11 @@ def mapToEnglish(m):
 	if m in maps_without_consts:
 		return choice(m_wo_consts_dict[m])
 	# otherwise, it's a map with a constant
-	[m] = m.split()
+	[m, num] = m.split()
 	if m == "MULT":
-		return "times"
+		return " ".join([num, "times"])
 	elif m == "ADD":
-		return "plus"
+		return " ".join([num, "plus"])
 	else:
 		raise NotImplementedError
 
@@ -95,8 +110,8 @@ def rep_to_english(rep):
 
 	return english
 
-
-
+def genNumber():
+	return str(choice(range(1, 6)))
 
 # There are a few kinds of internal reps without considering reducers:
 #	1. NONE
@@ -114,12 +129,12 @@ def gen_rep():
 	rep = {}
 
 	if hasFilter:
-		rep[FILTER] = choice(filters)
+		rep[FILTER] = " ".join([choice(filters), genNumber()])
 
 	if hasMap:
 		hasConstant = random() < MAP_PROBABILITY / 2.0
 		if hasConstant:
-			rep[MAP] = choice(maps_with_consts)
+			rep[MAP] = " ".join([choice(maps_with_consts), genNumber()])
 		else:
 			rep[MAP] = choice(maps_without_consts)
 

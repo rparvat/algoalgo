@@ -118,7 +118,7 @@ def train_keras(sentence_array, operator_chain_array):
     print sentence_shape, op_shape
 
     batch_size = 64
-    hidden_size, embedding_dim = 3, 3
+    hidden_size, embedding_dim = 10, 10
     memory_dim = 200
     num_layers = 2
 

@@ -49,15 +49,14 @@ def reduceToEnglish(red):
 elements_choices = ["elements", "values", "numbers", "things", "array", "list"]
 
 # FILTER: conversion
-def filterToEnglish(filt):
-	# get filt_type and num
-	[filt_type, num] = filt.split()
-	first_words = ["the", choice(elements_choices)]
-	if random() < 0.5:
-		first_words.append("that are")
+def subFilterToEnglish(filt):
+	filt_split = filt.split()
+	hasNot = False
+	if len(filt_split) == 3:
+		hasNot = True
+		filt_split = filt_split[1:]
+	[filt_type, num] = filt_split
 	second_words = []
-
-	hasNot = random() < NOT_PROBABILITY
 	if hasNot:
 		second_words.append("not")
 
@@ -71,8 +70,17 @@ def filterToEnglish(filt):
 		second_words.append(choice(["greater than", "bigger than"]))
 	else:
 		raise NotImplementedError
+	second_words.append(num)
+	return second_words
 
-	return " ".join(first_words + second_words + [num])
+def filterToEnglish(filt):
+	first_words = ["the", choice(elements_choices)]
+	if random() < 0.5:
+		first_words.append("that are")
+
+	second_words = subFilterToEnglish(filt)
+
+	return " ".join(first_words + second_words)
 
 #MAP: conversion
 m_wo_consts_dict = {
@@ -130,7 +138,10 @@ def gen_rep():
 	rep = {}
 
 	if hasFilter:
-		rep[FILTER] = " ".join([choice(filters), genNumber()])
+		filter_list = [choice(filters), genNumber()]
+		if random() < 0.5:
+			filter_list = ["NOT"] + filter_list
+		rep[FILTER] = " ".join()
 
 	if hasMap:
 		hasConstant = random() < 1.0 / 2.0
@@ -150,8 +161,13 @@ def rep_to_string(rep):
 	list_rep = [each[1] for each in list_rep]
 	return " ".join(list_rep)
 
-
-#### NOW: GENERATION OF COMPLEX REPS
+############################################
+############################################
+############################################
+##### NOW: GENERATION OF COMPLEX REPS ######
+############################################
+############################################
+############################################
 
 def complex_rep_to_string(complex_rep):
 	list_rep = []
@@ -168,10 +184,13 @@ def gen_array_ref():
 	return choice(["it", "them", "the " + choice(elements_choices)])
 
 def gen_complex_filter():
-	return " ".join([choice(filters), genNumber()])
+	filter_list = [choice(filters), genNumber()]
+	if random() < 0.5:
+		filter_list = ["NOT"] + filter_list
+	return " ".join(filter_list)
 
 def complex_filter_to_english(filter_op):
-	return " "
+	return " ".join(subFilterToEnglish(filter_op))
 
 def gen_complex_map():
 	our_map = choice(complex_maps)
@@ -205,6 +224,9 @@ def complex_map_to_english(m):
 				map_description = ["multiply", gen_array_ref(), "by", num]
 			return " ".join(map_description)
 
+def complex_reduce_to_english(red):
+	return " ".join([choice(reduce_dict[red]), "of"])
+
 def gen_if():
 	# format: if (filter) then (map1, ..., mapn) else (map1, ..., mapn) endif
 	if_list = ["IF"]
@@ -224,7 +246,7 @@ def gen_if():
 
 	return if_list + then_list + else_list + endif_list
 
-def if_to_english(ops):
+def if_stmt_to_english(ops):
 	then_index = ops.index("THEN")
 	else_index = ops.index("ELSE")
 	endif_index = -1
@@ -233,8 +255,36 @@ def if_to_english(ops):
 	then_list = ops[then_index: else_index]
 	else_list = ops[else_index: endif_index]
 
+	def if_to_english(if_list):
+		filt = if_list[1]
+		red = if_list[2]
+
+		english_list = ["if"]
+		english_list.append(complex_reduce_to_english(red))
+		english_list.append(gen_array_ref())
+		english_list.append("is")
+		english_list.append(complex_filter_to_english(filt))
+
+		return " ".join(english_list)
+
+	def then_to_english(then_list):
+		map_op = then_list[1]
+		return complex_map_to_english(map_op)
+
 	def else_to_english(else_list):
 		beginning = choice(["otherwise", "if not", "else"])
+		return " ".join([beginning, then_to_english(then_list)])
+
+	english_list = [if_to_english(if_list)]
+	orderReversed = random() < 0.5
+	if orderReversed:
+		english_list = [then_to_english(then_list)] + english_list
+	else:
+		if random() < 0.5:
+			english_list.append("then")
+		english_list.append(then_to_english(then_list))
+	english_list.append(else_to_english(else_list))
+	return " ".join(english_list)
 
 
 

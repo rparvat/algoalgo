@@ -141,7 +141,7 @@ def gen_rep():
 		filter_list = [choice(filters), genNumber()]
 		if random() < 0.5:
 			filter_list = ["NOT"] + filter_list
-		rep[FILTER] = " ".join()
+		rep[FILTER] = " ".join(filter_list)
 
 	if hasMap:
 		hasConstant = random() < 1.0 / 2.0
@@ -298,6 +298,12 @@ if __name__ == "__main__":
 	NUM_SAMPLES = 10000
 	with open("reps.txt", "w") as file:
 		for i in range(NUM_SAMPLES):
-			rep = gen_rep()
-			file.write(rep_to_string(rep) + ",")
-			file.write(rep_to_english(rep) + "\n")
+			usingIf = random() < 0.2
+			if usingIf:
+				rep = gen_if()
+				file.write(" ".join(rep) + ",")
+				file.write(if_stmt_to_english(rep) + "\n")
+			else:
+				rep = gen_rep()
+				file.write(rep_to_string(rep) + ",")
+				file.write(rep_to_english(rep) + "\n")

@@ -2,6 +2,7 @@
 import tensorflow as tf
 # import tensorflow.python.ops.rnn_cell
 import numpy as np
+from random import sample
 from keras.models import Sequential
 from keras.layers import Activation, TimeDistributed, Dense, RepeatVector, recurrent
 
@@ -65,7 +66,22 @@ def preprocess_english(list_of_sentences):
             sentence_array[i][j] = wordToArray(word)
         for j in xrange(len(split_sentence), IN_SEQ_LENGTH):
             sentence_array[i][j] = wordToArray(PAD)
-    return sentence_array
+
+    def arrayToWord(array):
+        index = np.dot(array, np.array(range(len(array))))
+        for each in distinct_words:
+            if distinct_words[each] == index:
+                return each
+        return ":("
+
+    def arrayToSentence(d2_array):
+        words = []
+        for i in range(len(d2_array)):
+            words.append(arrayToWord(d2_array[i]))
+        return " ".join(words)
+
+
+    return sentence_array, arrayToSentence
 
 def preprocess_operators(list_of_operators):
     PAD = "PAD"
@@ -100,18 +116,31 @@ def preprocess_operators(list_of_operators):
             operator_chain_array[i][j] = operatorToArray(operator)
         for j in xrange(len(split_chain), OUT_SEQ_LENGTH):
             operator_chain_array[i][j] = operatorToArray(PAD)
-    return operator_chain_array
+
+    def arrayToOperator(array):
+        index = np.dot(array, np.array(range(len(array))))
+        for each in distinct_operators:
+            if distinct_operators[each] == index:
+                return each
+        return ":("
+    def arrayToChain(array):
+        chain = []
+        for i in range(len(array)):
+            chain.append(arrayToOperator(array[i]))
+        return " ".join(chain)
+
+    return operator_chain_array, arrayToChain
 
 def translate(filename):
     list_of_sentences, list_of_operators = read_data_file(filename)
-    sentence_array = preprocess_english(list_of_sentences)
-    operator_chain_array = preprocess_operators(list_of_operators)
+    sentence_array, arrayToSentence = preprocess_english(list_of_sentences)
+    operator_chain_array, arrayToOperator = preprocess_operators(list_of_operators)
     
     assert len(sentence_array) == len(operator_chain_array)
     
-    return train_keras(sentence_array, operator_chain_array)
+    return train_keras(sentence_array, operator_chain_array, arrayToSentence, arrayToOperator)
 
-def train_keras(sentence_array, operator_chain_array):
+def train_keras(sentence_array, operator_chain_array, arrayToSentence, arrayToOperator):
     # from seq2seq import SimpleSeq2Seq, Seq2Seq, AttentionSeq2Seq
 
     sentence_shape = sentence_array.shape
@@ -154,16 +183,16 @@ def train_keras(sentence_array, operator_chain_array):
         return model
     model = get_basic_model()
 
-    model.compile(loss='categorical_crossentropy', 
-        optimizer='adam',
-        metrics = ['accuracy'])
-
     num_train = int(0.9 * length)
     X_train = sentence_array[:num_train]
     X_val = sentence_array[num_train:]
 
     y_train = operator_chain_array[:num_train]
     y_val = operator_chain_array[num_train:]
+
+    model.compile(loss='categorical_crossentropy', 
+        optimizer='adam',
+        metrics = ['accuracy'])
 
     # model.fit(sentence_array, 
     #     operator_chain_array, 
@@ -189,76 +218,20 @@ def train_keras(sentence_array, operator_chain_array):
             # print('Q', q[::-1] if INVERT else q)
             # print('T', correct)
             # print('---')
+        indices = sample(range(len(X_val)), 10)
+        X_rand = X_val[indices]
+        y_rand = y_val[indices]
+        predictions = model.predict(X_rand)
+
+        for i in range(predictions.shape[0]):
+            english = arrayToSentence(X_rand[i])
+            prediction = arrayToOperator(predictions[i])
+            truth = arrayToOperator(y_rand[i])
+            print "English :", english.lower()
+            print "Prediction: ", prediction
+            print "Truth: ", truth
+
     return model
-
-
-def train(sess, training_data):
-    # training data is a list of tuples of np arrays.
-
-    in_seq_length = 15
-    out_seq_length = 5
-
-    batch_size = 64
-
-    in_vocab_size = 100
-    out_vocab_size = 7
-
-    embedding_dim = 50
-    memory_dim = 200
-
-    enc_inp = [tf.placeholder(tf.float32, shape=(1,in_vocab_size), name="inp%i" % t)
-        for t in range(in_seq_length)]
-
-    dec_inp = ([tf.zeros(shape=(1,out_vocab_size), dtype=tf.float32, name="GO")] + 
-        [tf.placeholder(tf.float32, shape=(1,out_vocab_size), name="outp%i" % t)
-            for t in range(out_seq_length)
-        ])
-
-    dec_truth = dec_inp[1:] + [tf.zeros(shape=(1,out_vocab_size), dtype=tf.float32, name="EOS")]
-    
-    weights = [tf.ones_like(each, dtype=tf.float32) for each in dec_truth]
-
-    cell = tf.python.nn.rnn_cell.BasicLSTMCell(memory_dim)
-
-    outputs, states = tf.nn.seq2seq.basic_rnn_seq2seq(
-        encoder_inputs=enc_inp,
-        decoder_inputs=dec_inp,
-        cell=cell,
-        # num_encoder_symbols=in_vocab_size,
-        # num_decoder_symbols=out_vocab_size,
-        # embedding_size=3,
-        dtype=tf.float32)
-
-    loss = tf.nn.seq2seq.sequence_loss(
-        outputs, 
-        dec_truth, 
-        weights)
-
-    learning_rate = 0.045
-    momentum = 0.91
-    opt = tf.train.MomentumOptimizer(learning_rate, momentum)
-    train_op = opt.minimize(loss)
-
-    sess.run(tf.initialize_all_variables())
-
-    def train_batch(batch_size):
-        batch_data = random.sample(training_data, batch_size)
-        X = [datum[0] for datum in batch_data]
-        Y = [datum[1] for datum in batch_data]
-        
-        # Dimshuffle to seq_len * batch_size
-        X = np.array(X).T
-        Y = np.array(Y).T
-
-        feed_dict = {enc_inp[t]: X[t] for t in range(in_seq_length)}
-        feed_dict.update({dec_truth[t]: Y[t] for t in range(out_seq_length)})
-
-        _, loss_t = sess.run([train_op, loss], feed_dict)
-        return loss_t
-
-    for i in range(500):
-        loss_t = train_batch(batch_size)
-        print(i, loss_t)
 
 if __name__ == "__main__":
     translate("reps.txt")

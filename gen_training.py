@@ -298,7 +298,7 @@ if __name__ == "__main__":
 	NUM_SAMPLES = 10000
 	with open("reps.txt", "w") as file:
 		for i in range(NUM_SAMPLES):
-			usingIf = random() < 0.2
+			usingIf = random() < 1
 			if usingIf:
 				rep = gen_if()
 				file.write(" ".join(rep) + ",")

@@ -48,7 +48,7 @@ class OperatorTable(object):
 	def decode(self, X, calc_argmax=True):
 		if calc_argmax:
 			X = X.argmax(axis=-1)
-		return ''.join(self.indices_operator[x] for x in X)
+		return ' '.join(self.indices_operator[x] for x in X)
 
 class colors:
     ok = '\033[92m'

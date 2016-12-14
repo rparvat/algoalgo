@@ -31,11 +31,17 @@ def preprocess_english(list_of_sentences):
         words = sentence.split()
         new_sentence = []
         for word in words:
+            hasPeriod = False
+            if word[-1] == ".":
+                word = word[:-1]
+                hasPeriod = True
             if not isNumber(word):
                 distinct_words[word] = True
                 new_sentence.append(word)
-            # else:
-            #     new_sentence.append(NUMBER_MARK)
+            else:
+                new_sentence.append(NUMBER_MARK)
+            if hasPeriod:
+                new_sentence.append(".")
         max_length = max(max_length, len(new_sentence))
         split_sentences.append(new_sentence)
 
@@ -104,7 +110,7 @@ def translate(filename):
     return train_keras(sentence_array, operator_chain_array)
 
 def train_keras(sentence_array, operator_chain_array):
-    from seq2seq import SimpleSeq2Seq, Seq2Seq, AttentionSeq2Seq
+    # from seq2seq import SimpleSeq2Seq, Seq2Seq, AttentionSeq2Seq
 
     sentence_shape = sentence_array.shape
     length = sentence_shape[0]
@@ -118,7 +124,7 @@ def train_keras(sentence_array, operator_chain_array):
     print sentence_shape, op_shape
 
     batch_size = 64
-    hidden_size, embedding_dim = 10, 10
+    hidden_size, embedding_dim = 100, 100
     memory_dim = 200
     num_layers = 2
 
@@ -128,11 +134,11 @@ def train_keras(sentence_array, operator_chain_array):
     #     output_dim=out_vocab_size, 
     #     depth=3)
 
-    model = Seq2Seq(batch_input_shape=(batch_size, in_seq_length, in_vocab_size),
-        hidden_dim=embedding_dim,
-        output_length=out_seq_length, 
-        output_dim=out_vocab_size, 
-        depth=num_layers)
+    # model = Seq2Seq(batch_input_shape=(batch_size, in_seq_length, in_vocab_size),
+    #     hidden_dim=embedding_dim,
+    #     output_length=out_seq_length, 
+    #     output_dim=out_vocab_size, 
+    #     depth=num_layers)
 
     def get_basic_model():
         RNN = recurrent.LSTM

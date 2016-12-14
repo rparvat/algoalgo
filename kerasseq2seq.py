@@ -62,7 +62,7 @@ LAYERS = 1
 
 # Load Data
 print('Loading data...')
-with open('reps.txt', 'r') as f:
+with open('rpn.txt', 'r') as f:
 	lines = f.readlines()
 
 words = set()

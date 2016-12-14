@@ -156,7 +156,6 @@ def train_keras(sentence_array, operator_chain_array, arrayToSentence, arrayToOp
 
     batch_size = 64
     hidden_size, embedding_dim = 100, 100
-    memory_dim = 200
     num_layers = 2
 
     # model = SimpleSeq2Seq(input_dim=in_vocab_size, 

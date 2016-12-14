@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 from random import choice, random
 
+MIN_SAMPLE_LEN = 2
 MAX_SAMPLE_LEN = 10
-NUM_SAMPLES = 10000
+NUM_SAMPLES = 100000
 
 def get_value():
 	rand = random()
@@ -197,10 +198,7 @@ def get_sample():
 	return get_statement()
 
 def is_sample_valid(sample):
-	print(sample[0])
-	print(len(sample[0]))
-	print(len(sample[0]) <= MAX_SAMPLE_LEN)
-	return len(sample[0]) <= MAX_SAMPLE_LEN
+	return len(sample[0]) <= MAX_SAMPLE_LEN and len(sample[0]) >= MIN_SAMPLE_LEN
 
 if __name__ == "__main__":
 	samples = []

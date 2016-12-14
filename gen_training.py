@@ -273,7 +273,7 @@ def if_stmt_to_english(ops):
 
 	def else_to_english(else_list):
 		beginning = choice(["otherwise", "if not", "else"])
-		return " ".join([beginning, then_to_english(then_list)])
+		return " ".join([beginning, then_to_english(else_list)])
 
 	english_list = [if_to_english(if_list)]
 	orderReversed = random() < 0.5

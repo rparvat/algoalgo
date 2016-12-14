@@ -25,6 +25,11 @@ class SentenceTable(object):
 			X[i, self.word_indices[w]] = 1
 		return X
 
+	def decode(self, X, calc_argmax=True):
+		if calc_argmax:
+			X = X.argmax(axis=-1)
+		return ' '.join(self.indices_word[x] for x in X)
+
 class OperatorTable(object):
 	'''
 	Given a set of operators:
@@ -147,6 +152,7 @@ for iteration in range(1, 200):
         preds = model.predict_classes(rowX, verbose=0)
         correct = operator_table.decode(rowy[0])
         guess = operator_table.decode(preds[0], calc_argmax=False)
+        print(sentence_table.decode(rowX[0]))
         print('T', correct)
         print(colors.ok + '☑' + colors.close if correct == guess else colors.fail + '☒' + colors.close, guess)
         print('---')

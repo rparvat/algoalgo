@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 ##### THIS FILE CAN BE RUN TO GENERATE NEW INTERNAL REPS #####
 
 from random import choice, random, randint
@@ -21,7 +22,7 @@ REDUCE = "REDUCE"
 
 # CONSTANTS FOR CONVERSION TO ENGLISH
 # First: possible beginning stop phrases
-beginning_choices = ["find", "evaluate", "take", "compute", "tell me"]
+beginning_choices = ["find", "evaluate", "take", "compute"]
 BEGINNING_PROBABILITY = 0.8
 
 # REDUCE: conversion to English. Standalone means no beginning choice.
@@ -45,7 +46,7 @@ def reduceToEnglish(red):
 		return " ".join([choice(beginning_choices), choice(reduce_dict[red]), "of"])
 	return " ".join([choice(reduce_dict[red]), "of"])
 
-elements_choices = ["elements", "values", "numbers", "things"]
+elements_choices = ["elements", "values", "numbers", "things", "array", "list"]
 
 # FILTER: conversion
 def filterToEnglish(filt):
@@ -132,7 +133,7 @@ def gen_rep():
 		rep[FILTER] = " ".join([choice(filters), genNumber()])
 
 	if hasMap:
-		hasConstant = random() < MAP_PROBABILITY / 2.0
+		hasConstant = random() < 1.0 / 2.0
 		if hasConstant:
 			rep[MAP] = " ".join([choice(maps_with_consts), genNumber()])
 		else:
@@ -150,9 +151,103 @@ def rep_to_string(rep):
 	return " ".join(list_rep)
 
 
-NUM_SAMPLES = 10000
-with open("reps.txt", "w") as file:
-	for i in range(NUM_SAMPLES):
-		rep = gen_rep()
-		file.write(rep_to_string(rep) + ",")
-		file.write(rep_to_english(rep) + "\n")
+#### NOW: GENERATION OF COMPLEX REPS
+
+def complex_rep_to_string(complex_rep):
+	list_rep = []
+	for each_list in complex_rep:
+		for operator in complex_rep:
+			list_rep.append(operator)
+	return " ".join(list_rep)
+
+complex_maps_without_consts = ["SORT"] + maps_without_consts
+complex_maps_with_conts = [] + maps_with_consts
+complex_maps = complex_maps_with_conts + complex_maps_without_consts
+
+def gen_array_ref():
+	return choice(["it", "them", "the " + choice(elements_choices)])
+
+def gen_complex_filter():
+	return " ".join([choice(filters), genNumber()])
+
+def complex_filter_to_english(filter_op):
+	return " "
+
+def gen_complex_map():
+	our_map = choice(complex_maps)
+	if our_map in complex_maps_without_consts:
+		return our_map
+	return " ".join([our_map, genNumber()])
+
+def complex_map_to_english(m):
+	if m == "SORT":
+		if random() < 0.5:
+			return "sort " + gen_array_ref()
+		return " ".join([choice(beginning_choices), "the sorted", choice(elements_choices)])
+	elif m == "SQUARE" or m == "INVERSE":
+		verb = "square" if m == "SQUARE" else choice(["invert", "reciprocate"])
+		if random() < 0.5:
+			return " ".join([verb, gen_array_ref()])
+		return " ".join([choice(beginning_choices), choice(m_wo_consts_dict[m]), gen_array_ref()])
+	else:
+		[m, num] = m.split()
+		if random() < 0.5:
+			variant = "plus" if m == "ADD" else "times"
+			map_description = [gen_array_ref(), variant, num]
+			map_description = map_description[::-1] if random() < 0.5 else map_description
+			map_description = [choice(beginning_choices)] + map_description
+			return " ".join(map_description)
+		else:
+			map_description = None
+			if m == "ADD":
+				map_description = ["add", num, "to", gen_array_ref()]
+			else:
+				map_description = ["multiply", gen_array_ref(), "by", num]
+			return " ".join(map_description)
+
+def gen_if():
+	# format: if (filter) then (map1, ..., mapn) else (map1, ..., mapn) endif
+	if_list = ["IF"]
+	if_filter = gen_complex_filter()
+	if_reducer = choice(reduces)
+	if_list = if_list + [if_filter, if_reducer]
+
+	then_list = ["THEN"]
+	then_map = gen_complex_map()
+	then_list.append(then_map)
+
+	else_list = ["ELSE"]
+	else_map = gen_complex_map()
+	else_list.append(else_map)
+
+	endif_list = ["ENDIF"]
+
+	return if_list + then_list + else_list + endif_list
+
+def if_to_english(ops):
+	then_index = ops.index("THEN")
+	else_index = ops.index("ELSE")
+	endif_index = -1
+
+	if_list = ops[:then_index]
+	then_list = ops[then_index: else_index]
+	else_list = ops[else_index: endif_index]
+
+	def else_to_english(else_list):
+		beginning = choice(["otherwise", "if not", "else"])
+
+
+
+# def gen_complex_rep():
+# 	# so for each of the first few sentences, want only maps and filters.
+# 	# each sentences: represented as sub-lists.
+
+
+
+if __name__ == "__main__":
+	NUM_SAMPLES = 10000
+	with open("reps.txt", "w") as file:
+		for i in range(NUM_SAMPLES):
+			rep = gen_rep()
+			file.write(rep_to_string(rep) + ",")
+			file.write(rep_to_english(rep) + "\n")
